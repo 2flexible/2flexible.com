@@ -128,7 +128,7 @@ const config: Config = {
                     position: "right",
                     label: "API",
                 },
-                { to: "/blocks", label: "Blocks", position: "right" },
+                // { to: "/blocks", label: "Blocks", position: "right" },
                 // {to: '/blog', label: 'Blog', position: 'left'},
                 {
                     href: "https://github.com/facebook/docusaurus",
