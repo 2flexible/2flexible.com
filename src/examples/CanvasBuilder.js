@@ -10,7 +10,6 @@ export default function CanvasBuilder({
     useEffect(() => {
         const canvas = ref.current;
         if (!canvas) return;
-        console.log(canvas)
         const initCanvas = new Canvas(id, width, height);
         const blocks = [];
         Children.map(children, (c) => {
