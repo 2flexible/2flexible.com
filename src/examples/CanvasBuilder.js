@@ -8,15 +8,18 @@ export default function CanvasBuilder({
 }) {
     const ref = useRef(null);
     useEffect(() => {
+        const canvas = ref.current;
+        if (!canvas) return;
+        console.log(canvas)
         const initCanvas = new Canvas(id, width, height);
         const blocks = [];
         Children.map(children, (c) => {
             const block = children.type(children.props);
-            block.forEach(element => {
+            block.forEach((element) => {
                 blocks.push(element);
             });
         });
-        // const bg = new ImageBlock(bgnew, {
+        // const bg = new ImageBlock(BgNew, {
         //     width: "100%",
         //     height: "100%",
         //     opacity: "1",
