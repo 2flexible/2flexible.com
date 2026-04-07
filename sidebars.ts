@@ -28,8 +28,8 @@ const sidebars: SidebarsConfig = {
             items: [
                 "documentation/guide/the-block",
                 "documentation/guide/transformation",
-                "documentation/guide/responsibility",
                 "documentation/guide/positions",
+                "documentation/guide/responsibility",
                 "documentation/guide/events",
                 {
                     type: "category",

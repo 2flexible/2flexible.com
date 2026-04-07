@@ -59,6 +59,22 @@ export function RotatingAxisExample() {
     return [rect];
 }
 
+export function ResizingMinMaxExample() {
+    const rect = new RectangleBlock({
+        width: 130,
+        height: 130,
+        x: "30%",
+        y: "30%",
+        maxWidth: Infinity,
+        maxHeight: 150,
+        backgroundColor: "orange",
+        selectable: true,
+        resizable: true,
+    });
+
+    return [rect];
+}
+
 export function ResizingExample() {
     const rect = new RectangleBlock({
         width: 130,

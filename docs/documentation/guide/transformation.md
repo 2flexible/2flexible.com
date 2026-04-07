@@ -1,10 +1,10 @@
-import {RotatingExample, RotatingAxisExample, ResizingExample, ResizingFlipExample, ResizingCustomExample, RotationExample} from '@site/src/examples/transformationExample';
+import {RotatingExample, RotatingAxisExample, ResizingExample, ResizingFlipExample, ResizingCustomExample, RotationExample, ResizingMinMaxExample} from '@site/src/examples/transformationExample';
 import CanvasBuilder from '@site/src/examples/CanvasBuilder';
 
 # Transforamtion
 We're gonna explore different block transformation featrues like draggable, resizable, rotatable.
 
-# Draggable
+## Draggable
 Draggable basic transformation feature. You can simply enable this feature by passing **draggable** option as true in blocks.  
 Additonally you can capture state of the block on drag event by passing callable function to  **onDrag** option.
 :::warning
@@ -34,7 +34,7 @@ new Reactangle({...options, dragX: false, dragY: true})
 </CanvasBuilder>
 
 
-# Resizing
+## Resizing
 Resizing comes as in bounding box with 8 corners resizing, four corners resizing (top-left, top-right, bottom-left, bottom-right) and four side resizing (top, left, bottom, right). These corners calling as **Hot Corners** in blocks, these corners more adjustable to modification you can customize them as you want. More about [Customizing hot corners]()
 
 ```javascript
@@ -43,6 +43,17 @@ new Reactangle({...options, resizable: true})
 <CanvasBuilder id={"canvas3"} width={600} height={400}>
 <ResizingExample />
 </CanvasBuilder>  
+
+
+You must always define how much resizement you want to do in blocks. Otherwise blocks will not grow and shrink without `minWidth`, `maxWidth`, `minHeight` and `maxWidth` options. 
+
+```javascript
+new Reactangle({...options, resizable: true, maxWidth: Infinity, maxHeight: 160})
+```
+<CanvasBuilder id={"canvas33"} width={600} height={400}>
+<ResizingMinMaxExample />
+</CanvasBuilder>  
+
 
 Blocks support vertical and horizontal flip resizing you just need to pass which fliping you want.
 
@@ -63,7 +74,7 @@ new Reactangle({...options, resizeTopLeft: false, resizeTop: false, resizeTopRig
 <ResizingCustomExample />
 </CanvasBuilder>  
 
-# Rotatable
+## Rotatable
 Rotating coming in 4 hot corners (top-left, top-right, bottom-left, bottom-right). As in previus examples you can choose which side of rotations you want to control and you can listen whenever this rotaiton changes by `onRotate` option.
 
 ```javascript
