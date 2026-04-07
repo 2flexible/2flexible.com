@@ -6,13 +6,12 @@ npm install 2flex
 ```
 
 If you want to add more blocks tou your existing project just use 2flex npx command and name of the package you want to use.
-[List of the blocks]()
+[List of the blocks](/blocks)
 ```shell
 npm 2flex add [block name] 
 ```
 
-## GitHub Packages
-
-
 ## Pick your framework
 You can use any of these packages to power your ui.
+
+React comings soon...

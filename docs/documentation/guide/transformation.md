@@ -9,7 +9,7 @@ Draggable basic transformation feature. You can simply enable this feature by pa
 Additonally you can capture state of the block on drag event by passing callable function to  **onDrag** option.
 :::warning
 
-When you are using these transformation features you need to pass addtional **selectale** option as true. This will affect how you blocks beahve each other realted to zIndex. **More about styling [Styling Blocks](styling)**
+When you are using these transformation features you need to pass addtional **selectale** option as true. This will affect how you blocks beahve each other realted to zIndex.
 
 :::
 
@@ -35,7 +35,7 @@ new Reactangle({...options, dragX: false, dragY: true})
 
 
 ## Resizing
-Resizing comes as in bounding box with 8 corners resizing, four corners resizing (top-left, top-right, bottom-left, bottom-right) and four side resizing (top, left, bottom, right). These corners calling as **Hot Corners** in blocks, these corners more adjustable to modification you can customize them as you want. More about [Customizing hot corners]()
+Resizing comes as in bounding box with 8 corners resizing, four corners resizing (top-left, top-right, bottom-left, bottom-right) and four side resizing (top, left, bottom, right). These corners calling as **Hot Corners** in blocks, these corners more adjustable to modification you can customize them as you want. More about [Customizing hot corners](/docs/documentation/advanced_features/customization)
 
 ```javascript
 new Reactangle({...options, resizable: true})
