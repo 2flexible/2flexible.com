@@ -1,3 +1,6 @@
+import {HeartAnimationExample, DirectonExample, IternationExample, CompositeExample, EasingExample, ControlsAnimation, DelayExample, IterStartExample} from '@site/src/examples/animationExample';
+import CanvasBuilder from '@site/src/examples/CanvasBuilder';
+
 # Animation
 Aniamtions in blocks are so easy to impliment, you just need to use `animate` method and define your keyframes. Animate method takes keyframe and callback function where you can define custom animations in given time as you like. 
 
@@ -9,6 +12,9 @@ const animationId = rect.animate({x: [0, 100], autoStart: true, duration: 5000, 
 
 console.log(animationId)
 ```
+<CanvasBuilder id={"canvas1"} width={600} height={400}>
+<HeartAnimationExample />
+</CanvasBuilder>
 
 When you define animation you get animation id of this animation which you can later use for controlling this animation parameters.
 
@@ -28,6 +34,10 @@ Reverse much like same but now animatioin over keyframe values will start from e
 rect.animate({...options, direction: "reverse"})
 ```
 
+<CanvasBuilder id={"canvas2"} width={600} height={400}>
+<DirectonExample />
+</CanvasBuilder>
+
 ## Iterations
 Animations can be simply define how many times will repaet by defining iteration value. Iterations can be number or Infinity value where your animation will run infinitly.
 
@@ -36,6 +46,9 @@ rect.animate({...options, iterations: 3})
 // or
 rect.animate({...options, iterations: Infinity})
 ```
+<CanvasBuilder id={"canvas3"} width={600} height={400}>
+<IternationExample />
+</CanvasBuilder>
 
 ## Composite
 When you define keyframes on your animation you can simply saying run one transformation then another this behaiver is replace value of `composite` method which is default in block animation. 
@@ -52,6 +65,10 @@ And last but not least you have accumulate option to use which in its turn adds 
 ```javascript
 rect.animate({...options, composite: "accumulate"})
 ```
+<CanvasBuilder id={"canvas4"} width={900} height={400}>
+<CompositeExample />
+</CanvasBuilder>
+
 
 ## Easing
 Block animations support different easing modes like linear, steps, cubic-bezier. Easing affect by given `duration` and `playbackRate` options.
@@ -92,6 +109,11 @@ rect.animate({autoStart: true, composite: "add", duration: 2000, easing: bezierE
 ```
 Callback function takes timestamp which is the current timestamp and in the given time easing output of selected easing opton e.g. `ease`. In our example we're moved alongside with our current line.
 
+<CanvasBuilder id={"canvas5"} width={900} height={400}>
+<EasingExample />
+</CanvasBuilder>
+
+
 ## Controls
 If we don't pass autoStart option it will not start until we use `animationStart(id)` method with animation id. You get animation id when you define animation, or you can define id for your animation.
 
@@ -103,6 +125,10 @@ const animationId = rect.animate({...keyframeOptions, id: "myFirstAnimation"})
 if(animationId === "myFirstAnimation") simpleRectangle.animationStart("myFirstAnimation")
 ```
 
+<CanvasBuilder id={"canvas6"} width={900} height={400}>
+<ControlsAnimation />
+</CanvasBuilder>
+
 Additinally you stop animation with `animationStop` or finish animation with `animationFinish`. You can conter other parametrs like `animationDirection`, `animatonDelay`, `animationReverse` etc. See [Block animation api]() for more information.
 
 
@@ -111,7 +137,16 @@ If you want to give a delay for your animation you can use `delay` option which 
 rect.animate({...options, delay: 2000})
 ```
 
+
+<CanvasBuilder id={"canvas7"} width={900} height={400}>
+<DelayExample />
+</CanvasBuilder>
+
 You can change where to start animation on defined keyframes with `iterationStart` option. For example we want to start animation in half of transformation.
 ```javascript
 rect.animate({...options, iterationStart: 0.5})
 ```
+
+<CanvasBuilder id={"canvas8"} width={900} height={400}>
+<IterStartExample />
+</CanvasBuilder>
