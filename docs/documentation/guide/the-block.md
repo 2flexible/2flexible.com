@@ -2,8 +2,8 @@ import {CustomizableCircle, EventCircle, SimpleRectangle, SimpleTransformRectang
 import CanvasBuilder from '@site/src/examples/CanvasBuilder';
 
 # The Block
-If you already read the [intrudoction]() you know the blocks are the essential building block of the canvas.
-The block comes with the many customizable features and even you can define your own block [how to create your own block]()
+If you already read the [intrudoction](/docs/documentation/introduction) you know the blocks are the essential building block of the canvas.
+The block comes with the many customizable features and even you can define your own block [how to create your own block](/docs/documentation/advanced_features/custom_block)
 
 Defining simple block looks like this, you can define for each of block for easily identifiying them later   
 ```javascript
@@ -12,7 +12,7 @@ new Block({x: 0, y: 0, width: 100, height: 100})
 
 If you place a block in a canvas it's always will show of the canvas in top left of the corner you where to put it. Be reminded that if you won't give
 values for any options they gonna use their default values, for example width and height will be 0.
-I will use rectangle block for now but you can choose whatever [block shape]() you want.
+I will use rectangle block for now but you can choose whatever [block shape](/docs/documentation/advanced_features/custom_shape) you want.
 ```javascript
 const myRectangle = new Reactangle({x: 0, y: 0, width: 100, height: 100})
 ```
@@ -36,7 +36,7 @@ new Reactangle({x: 0, y: 0, width: 100, height: 100,
 
 ## Customizable
 
-You can also customize many transformation features. [More of the customizing transformation features]()
+You can also customize many transformation features. [More of the customizing transformation features](/docs/documentation/advanced_features/customization)
 ```javascript
 new Reactangle({x: 0, y: 0, width: 100, height: 100,
     resizeTop: false,
@@ -50,7 +50,7 @@ new Reactangle({x: 0, y: 0, width: 100, height: 100,
 </CanvasBuilder>
 
 ## Responsible
-Blocks designed to be responsible, you can use minWidth, minHeight, maxWidth and maxHeight to control responsibility features. [Responsive blocks]()
+Blocks designed to be responsible, you can use minWidth, minHeight, maxWidth and maxHeight to control responsibility features. [Responsive blocks](/docs/documentation/guide/responsibility)
 ```javascript
 new Reactangle({x: 0, y: 0, width: 100, height: 100,
     minWidth: 30,
@@ -84,7 +84,7 @@ myRect.addChild(childRect)
 </CanvasBuilder>
 
 ## Events
-You can run events on the canvas, for example just like triggering button in the html you can do that on blocks too. [More events]()
+You can run events on the canvas, for example just like triggering button in the html you can do that on blocks too. [More events](/docs/documentation/guide/events)
 ```javascript
 const myRect = new Reactangle({x: 0, y: 0, width: 100, height: 100, selectable: true, backgroundColor: "blue"})
 

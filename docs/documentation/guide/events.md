@@ -3,10 +3,10 @@ import {CreateEventExample, MouseEnterExample, CrossingBlocksExample, ChildBlock
 import CanvasBuilder from '@site/src/examples/CanvasBuilder';
 
 # Events
-Blocks support default transformation events like resiziable, draggable, etc. which we see in [transformation]() section. Right now we are gonna create our events that blocks support, like mouse events, keyboard events etc.  
+Blocks support default transformation events like resiziable, draggable, etc. which we see in [transformation](/docs/documentation/guide/transformation) section. Right now we are gonna create our events that blocks support, like mouse events, keyboard events etc.  
 
 ## Creating Event
-Let's first start with a simple click event. For defining event you just need to use realted event method `click`, `mousemove`, `mousedown` etc. and pass callback function inside event mehtod. **See more in [Block events]()**
+Let's first start with a simple click event. For defining event you just need to use realted event method `click`, `mousemove`, `mousedown` etc. and pass callback function inside event mehtod.
 
 :::info
 
@@ -26,7 +26,7 @@ rectBlock.click((event)=>{
 <CreateEventExample />
 </CanvasBuilder> 
 
-Using `set` method on for changing `backgroundColor` option much more usefull becase set method does two things, sets [canvas history]() and invokings changes to canvas for you to see changes after set applied.
+Using `set` method on for changing `backgroundColor` option much more usefull becase set method does two things, sets [canvas history](/docs/documentation/advanced_features/canvas) and invokings changes to canvas for you to see changes after set applied.
 
 
 Let's see in another example how mouseenter and mouseleave will interact with block.
@@ -105,8 +105,3 @@ const rectangelCustomClickEvent = (event) => {
 <CanvasBuilder id={"canvas5"} width={600} height={400}>
 <CustomEventExample />
 </CanvasBuilder> 
-
-
-
-
-For creating other usefull events see [Block Events Api]().

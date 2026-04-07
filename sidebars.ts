@@ -28,8 +28,8 @@ const sidebars: SidebarsConfig = {
             items: [
                 "documentation/guide/the-block",
                 "documentation/guide/transformation",
-                "documentation/guide/responsibility",
                 "documentation/guide/positions",
+                "documentation/guide/responsibility",
                 "documentation/guide/events",
                 {
                     type: "category",
@@ -49,7 +49,13 @@ const sidebars: SidebarsConfig = {
                     type: "category",
                     label: "Advanced",
                     collapsible: true,
-                    items: ["documentation/advanced_features/history"],
+                    items: [
+                        "documentation/advanced_features/canvas",
+                        "documentation/advanced_features/custom_block",
+                        "documentation/advanced_features/custom_shape",
+                        "documentation/advanced_features/customization",
+                        "documentation/advanced_features/more_of_blocks",
+                    ],
                 },
             ],
         },

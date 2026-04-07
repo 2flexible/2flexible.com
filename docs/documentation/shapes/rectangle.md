@@ -2,7 +2,7 @@ import {SimpleRectangleExample, BorderExample, CustomBorderExample, CustomSingle
 import CanvasBuilder from '@site/src/examples/CanvasBuilder';
 
 # Rectangle block
-You most commonly see rectanlge block in previus examples, because its a simple shape which is extends from [shape block](). Rectangles comes with a style customizations like `backgroundColor`, `borderColor`, `borderWidth` etc.
+You most commonly see rectanlge block in previus examples, because its a simple shape which is extends from [shape block](/docs/api/ShapeBlock). Rectangles comes with a style customizations like `backgroundColor`, `borderColor`, `borderWidth` etc.
 
 ```javascript
 new Reactangle({width: 120, height: 60, backgroundColor: "black"})

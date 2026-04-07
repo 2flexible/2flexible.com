@@ -67,7 +67,7 @@ new TextBlock("Hello World", {...options, strokeWidth: 3, strokeColor: "blue" })
 
 
 ## More customization
-Addtionally you can use canvas context provided featurs for text in text block. See [Shape block api]() for more information.
+Addtionally you can use canvas context provided featurs for text in text block. See [Shape block api](/docs/api/ShapeBlock) for more information.
 ```javascript
 new TextBlock("Hello World", {...options, fontKerning: "normal", textRendering: "optimizeLegibility", fontStretch: "expanded" })
 ```

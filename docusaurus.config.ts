@@ -128,10 +128,10 @@ const config: Config = {
                     position: "right",
                     label: "API",
                 },
-                // { to: "/blocks", label: "Blocks", position: "right" },
+                { to: "/blocks", label: "Blocks", position: "right" },
                 // {to: '/blog', label: 'Blog', position: 'left'},
                 {
-                    href: "https://github.com/facebook/docusaurus",
+                    href: "https://github.com/2flexible/2flex",
                     label: "GitHub",
                     position: "right",
                     target: "_blank",
@@ -150,7 +150,7 @@ const config: Config = {
                     items: [
                         {
                             label: "Tutorial",
-                            to: "/docs/intro",
+                            to: "/docs/documentation/introduction",
                         },
                     ],
                 },
