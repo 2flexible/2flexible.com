@@ -174,6 +174,6 @@ Layout block `grid` option will do the same thing as the css grid method and sam
 ```javascript
 new LayoutBlock({layout: "grid", gridTemplateColumns: [30, 30, 30], gridTemplateRow: [50, 30], width: 120, height: 80})
 ```
-<CanvasBuilder id={"canvas9"} width={600} height={400}>
+<CanvasBuilder id={"canvas10"} width={600} height={400}>
 <GridLayoutSpaceExample />
 </CanvasBuilder>

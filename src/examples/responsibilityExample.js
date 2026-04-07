@@ -307,7 +307,6 @@ export function GridLayoutSpaceExample() {
         width: 120,
         height: 50,
         backgroundColor: "orange",
-        marginLeft: 21,
     });
     const layout = new LayoutBlock({
         width: 300,
@@ -317,7 +316,7 @@ export function GridLayoutSpaceExample() {
         maxWidth: Infinity,
         resizable: true,
         layout: "grid",
-        gridTemplateColumns: [30, 30, 30],
+        gridTemplateColumns: [160, 100, 120],
         gridTemplateRow: [50, 30],
     });
     layout.addChild(rect1, rect2, rect3);
