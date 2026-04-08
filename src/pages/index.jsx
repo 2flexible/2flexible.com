@@ -6,24 +6,24 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
-import CanvasInit from "../playground/playground";
-import { ContextMenu } from "../playground/contextMenu";
-import { NavbarMenu } from "../playground/navbar";
-import { SaveAnimation } from "../playground/animationSave";
-import { BlockOptions } from "../playground/editPropertiesBar";
-import Stock1 from "@site/static/video/stock1.mp4";
-import Stock2 from "@site/static/video/stock2.mp4";
+// import CanvasInit from "../playground/playground";
+// import { ContextMenu } from "../playground/contextMenu";
+// import { NavbarMenu } from "../playground/navbar";
+// import { SaveAnimation } from "../playground/animationSave";
+// import { BlockOptions } from "../playground/editPropertiesBar";
+// import Stock1 from "@site/static/video/stock1.mp4";
+// import Stock2 from "@site/static/video/stock2.mp4";
 import Stock3 from "@site/static/video/stock3.mp4";
-import Stock4 from "@site/static/video/stock4.mp4";
-import Stock5 from "@site/static/video/stock5.mp4";
-import Stock6 from "@site/static/video/stock6.mp4";
+// import Stock4 from "@site/static/video/stock4.mp4";
+// import Stock5 from "@site/static/video/stock5.mp4";
+// import Stock6 from "@site/static/video/stock6.mp4";
 import Logo from "@site/static/img/logo.svg";
 
 function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
     const ref = useRef(null);
 
-    document.title = localStorage.getItem("title") || document.title;
+    // document.title = localStorage.getItem("title") || document.title;
 
     return (
         <header style={{ overflow: "hidden", height: "100vh" }}>
