@@ -11,12 +11,8 @@ import styles from "./index.module.css";
 // import { NavbarMenu } from "../playground/navbar";
 // import { SaveAnimation } from "../playground/animationSave";
 // import { BlockOptions } from "../playground/editPropertiesBar";
-// import Stock1 from "@site/static/video/stock1.mp4";
-// import Stock2 from "@site/static/video/stock2.mp4";
-import Stock3 from "@site/static/video/stock3.mp4";
-// import Stock4 from "@site/static/video/stock4.mp4";
+import Stock3 from "@site/static/video/stock3.webm";
 // import Stock5 from "@site/static/video/stock5.mp4";
-// import Stock6 from "@site/static/video/stock6.mp4";
 import Logo from "@site/static/img/logo.svg";
 
 function HomepageHeader() {
