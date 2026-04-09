@@ -9,6 +9,8 @@ Keep in mind that because ImageBlock inherits from ShapeBlock, it can use some o
 
 :::
 
+## Options
+
 ### clipX
 Clipping image from left of the image in x axis. 
 
@@ -22,7 +24,7 @@ block.clipX(option)
 
 **Returns**
 * **clipX** : number
-
+---
 ### clipY
 Clipping image from top of the image in y axis. 
 
@@ -36,7 +38,7 @@ block.clipY(option)
 
 **Returns**
 * **clipY** : number
-
+---
 ### clipWidth
 Clipping image width from right of the image in x axis. 
 
@@ -51,7 +53,7 @@ block.clipWidth(option)
 
 **Returns**
 * **clipWidth** : number
-
+---
 ### clipHeight
 Clipping image height from bottom of the image in y axis. 
 
@@ -65,7 +67,7 @@ block.clipHeight(option)
 
 **Returns**
 * **clipHeight** : number
-
+---
 ### objectFit
 Fitting image into block boundaries relative to width and height with "contain", "cover", "fill" options.
 
@@ -79,7 +81,7 @@ block.objectFit(option)
 
 **Returns**
 * **objectFit** : string
-
+---
 ### repeatX
 Repeating image in x axis by given amount or relative fitting to `width` of ImageBlock.
 
@@ -93,7 +95,7 @@ block.repeatX(option)
 
 **Returns**
 * **repeatX** : number | string
-
+---
 ### repeatY
 Repeating image in y axis by given amount or relative to fitting `height` of ImageBlock.
 

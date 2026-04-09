@@ -9,6 +9,7 @@ Keep in mind that because RectangleBlock inherits from ShapeBlock, it can use so
 
 :::
 
+## Options
 
 ### backgroundColor
 Background color defines color of background for rectangle shape.
@@ -23,7 +24,7 @@ block.backgroundColor(option)
 
 **Returns**
 * **backgroundColor** : number
-
+---
 ### borderRadius
 Border radius defines raidus of borders for rectangle shape.
 
@@ -37,7 +38,7 @@ block.borderRadius(option)
 
 **Returns**
 * **borderRadius** : number[]
-
+---
 ### borderStyle
 Border style defines `solid` or `dotted` style of border for rectangle shape.
 
@@ -51,7 +52,7 @@ block.borderStyle(option)
 
 **Returns**
 * **borderStyle** : "solid" | "dotted"
-
+---
 ### borderWidth
 Border width defines size of border for rectangle shape.
 
@@ -65,7 +66,7 @@ block.borderWidth(option)
 
 **Returns**
 * **borderWidth** : number
-
+---
 ### borderColor
 Border color defines color of border for rectangle shape.
 
@@ -79,7 +80,7 @@ block.borderColor(option)
 
 **Returns**
 * **borderColor** : string
-
+---
 ### border
 Border defines `borderWidth`, `borderStyle`, and `borderColor` in order for border for rectangle shape.
 
@@ -93,7 +94,7 @@ block.border(option)
 
 **Returns**
 * **border** : [`borderWidth`, `borderStyle`, `borderColor`]
-
+---
 ### borderTop
 Border top defines `borderWidth`, `borderStyle`, and `borderColor` in order for top of border for rectangle shape.
 
@@ -107,7 +108,7 @@ block.borderTop(option)
 
 **Returns**
 * **borderTop** : [`borderWidth`, `borderStyle`, `borderColor`]
-
+---
 ### borderBottom
 Border bottom defines `borderWidth`, `borderStyle`, and `borderColor` in order for bottom of border for rectangle shape.
 
@@ -121,7 +122,7 @@ block.borderBottom(option)
 
 **Returns**
 * **borderBottom** : [`borderWidth`, `borderStyle`, `borderColor`]
-
+---
 ### borderLeft
 Border left defines `borderWidth`, `borderStyle`, and `borderColor` in order for left of border for rectangle shape.
 
@@ -135,7 +136,7 @@ block.borderLeft(option)
 
 **Returns**
 * **borderLeft** : [`borderWidth`, `borderStyle`, `borderColor`]
-
+---
 ### borderRight
 Border right defines `borderWidth`, `borderStyle`, and `borderColor` in order for right of border for rectangle shape.
 

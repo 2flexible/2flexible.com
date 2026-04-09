@@ -9,6 +9,8 @@ Keep in mind that because LineBlock inherits from ShapeBlock, it can use some of
 
 :::
 
+## Options
+
 ### lineType
 Line can be straigth line or cubic bezier in LineBlock.
 
@@ -22,7 +24,7 @@ block.lineType(option)
 
 **Returns**
 * **lineType** : "line" || "cubicBezier"
-
+---
 ### startX
 Start point of line in x axis.
 
@@ -36,7 +38,7 @@ block.startX(option)
 
 **Returns**
 * **startX** : number | string
-
+---
 ### startY
 Start point of line in y axis.
 
@@ -50,7 +52,7 @@ block.startY(option)
 
 **Returns**
 * **startY** : number | string
-
+---
 ### endX
 End point of line in x axis.
 
@@ -64,7 +66,7 @@ block.endX(option)
 
 **Returns**
 * **endX** : number | string
-
+---
 ### endY
 End point of line in y axis.
 
@@ -78,7 +80,7 @@ block.endY(option)
 
 **Returns**
 * **endY** : number | string
-
+---
 ### startControlX
 Control point for `startX` in x axis. This option only works when `lineType` is set to `cubicBezier`.
 
@@ -92,7 +94,7 @@ block.startControlX(option)
 
 **Returns**
 * **startControlX** : number | string
-
+---
 ### startControlY
 Control point for `startY` in y axis. This option only works when `lineType` is set to `cubicBezier`.
 
@@ -106,7 +108,7 @@ block.startControlY(option)
 
 **Returns**
 * **startControlY** : number | string
-
+---
 ### endControlX
 Control point for `endX` in x axis. This option only works when `lineType` is set to `cubicBezier`.
 
@@ -120,7 +122,7 @@ block.endControlX(option)
 
 **Returns**
 * **endControlX** : number | string
-
+---
 ### endControlY
 Control point for `endY` in y axis. This option only works when `lineType` is set to `cubicBezier`.
 
@@ -135,7 +137,7 @@ block.endControlY(option)
 
 **Returns**
 * **endControlY** : number | string
-
+---
 ### controlPointsSize
 describtion
 
@@ -149,7 +151,7 @@ block.controlPointsSize(option)
 
 **Returns**
 * **controlPointsSize** : number | string
-
+---
 ### editable
 describtion
 
@@ -163,7 +165,7 @@ block.editable(option)
 
 **Returns**
 * **editable** : boolean
-
+---
 ### startDraggable
 Dragging start control point in relative x and y axis. This option depeneds on `editable` property.
 
@@ -177,7 +179,7 @@ block.startDraggable(option)
 
 **Returns**
 * **startDraggable** : boolean
-
+---
 ### endDraggable
 Dragging end control point in relative x and y axis. This option depeneds on `editable` property.
 
@@ -191,7 +193,7 @@ block.endDraggable(option)
 
 **Returns**
 * **endDraggable** : boolean
-
+---
 ### startControllable
 Start controlrollable enables or disables controling for start control point. This option depeneds on `editable` property.
 
@@ -205,7 +207,7 @@ block.startControllable(option)
 
 **Returns**
 * **startControllable** : boolean
-
+---
 ### endControllable
 End controlrollable enables or disables controling for end control point. This option depeneds on `editable` property.
 
@@ -219,7 +221,7 @@ block.endControllable(option)
 
 **Returns**
 * **endControllable** : boolean
-
+---
 ### lineColor
 Line color defines color of line for LineBlock.
 
@@ -233,7 +235,7 @@ block.lineColor(option)
 
 **Returns**
 * **lineColor** : number
-
+---
 ### backgroundColor
 Background color defines color of background for LineBlock.
 
@@ -247,7 +249,7 @@ block.backgroundColor(option)
 
 **Returns**
 * **backgroundColor** : string
-
+---
 ### closeLine
 Closing defined line in LineBlock.
 
@@ -261,7 +263,7 @@ block.closeLine(option)
 
 **Returns**
 * **closeLine** : boolean
-
+---
 ### stickStart
 Sticking line start point to a block, in defined x and y axis relative to sticked block.
 
@@ -275,7 +277,7 @@ block.stickStart(option)
 
 **Returns**
 * **stickStart** : `{block: Block , x: number, y: number}` | undefined
-
+---
 ### stickEnd
 Sticking line end point to a block, in defined x and y axis relative to sticked block.
 
@@ -289,7 +291,7 @@ block.stickEnd(option)
 
 **Returns**
 * **stickStart** : `{block: Block , x: number, y: number}` | undefined
-
+---
 ### joinTo
 Join to defines which line to join. Joined lines move, resize, drag together, behaving like a grouped blocks.
 

@@ -9,6 +9,8 @@ Keep in mind that because CircleBlock inherits from ShapeBlock, it can use some 
 
 :::
 
+## Options
+
 ### startAngle
 Start angle in radians of circle shape, measured from the positive x-axis. 
 
@@ -22,7 +24,7 @@ block.startAngle(option)
 
 **Returns**
 * **startAngle** : number
-
+---
 ### endAngle
 End angle in radians of circle shape, measured from the positive x-axis. 
 
@@ -37,7 +39,7 @@ block.endAngle(option)
 **Returns**
 * **endAngle** : number
 
-
+---
 ### innerRadius
 Inner radius of circle in circle shape. Inner radius helps you create shapes line donat.  
 
@@ -51,7 +53,7 @@ block.innerRadius(option)
 
 **Returns**
 * **innerRadius** : number
-
+---
 ### backgroundColor
 Background color defines color of background for circle shape.
 
@@ -65,7 +67,7 @@ block.backgroundColor(option)
 
 **Returns**
 * **backgroundColor** : number
-
+---
 ### borderStyle
 Border style defines `solid` or `dotted` style of border for circle shape.
 
@@ -79,7 +81,7 @@ block.borderStyle(option)
 
 **Returns**
 * **borderStyle** : "solid" | "dotted"
-
+---
 ### borderWidth
 Border width defines size of border for circle shape.
 
@@ -93,7 +95,7 @@ block.borderWidth(option)
 
 **Returns**
 * **borderWidth** : number
-
+---
 ### borderColor
 Border color defines color of border for circle shape.
 
@@ -108,7 +110,7 @@ block.borderColor(option)
 **Returns**
 * **borderColor** : string
 
-
+---
 ### border
 Border defines `borderWidth`, `borderStyle`, and `borderColor` in order for border for circle shape.
 

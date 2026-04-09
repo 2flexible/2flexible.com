@@ -9,6 +9,8 @@ Keep in mind that because TextBlock inherits from ShapeBlock, it can use some of
 
 :::
 
+## Options
+
 ### text
 Define text in string for text shape.
 
@@ -22,7 +24,7 @@ block.text(option)
 
 **Returns**
 * **text** : string
-
+---
 ### color
 Color width defines width of fill color for text shape
 
@@ -36,7 +38,7 @@ block.color(option)
 
 **Returns**
 * **color** : string
-
+---
 ### strokeWidth
 Stroke width defines width of stroke for text shape
 
@@ -50,7 +52,7 @@ block.strokeWidth(option)
 
 **Returns**
 * **strokeWidth** : number
-
+---
 ### strokeColor
 Stroke Color defines color of stroke for text shape
 
@@ -64,7 +66,7 @@ block.strokeColor(option)
 
 **Returns**
 * **strokeColor** : string
-
+---
 ### fontFamily
 Font family defines font family of text shape.
 
@@ -78,7 +80,7 @@ block.fontFamily(option)
 
 **Returns**
 * **fontFamily** : string
-
+---
 ### fontWeight
 Font Weight defines font weight of text shape. Font weight depends on the font famliy.
 
@@ -92,7 +94,7 @@ block.fontWeight(option)
 
 **Returns**
 * **fontWeight** : "normal" | "bold" | "bolder" | "lighter" | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
-
+---
 ### fontSize
 Font Size defines font size of text shape. 
 
@@ -106,7 +108,7 @@ block.fontSize(option)
 
 **Returns**
 * **fontSize** : number
-
+---
 ### fontStyle
 Font Style defines font style of text shape. 
 
@@ -120,7 +122,7 @@ block.fontStyle(option)
 
 **Returns**
 * **fontStyle** : "normal" | "italic" | "oblique"
-
+---
 ### fontVariant
 Font Variant defines font variant of text shape. 
 
@@ -134,7 +136,7 @@ block.fontVariant(option)
 
 **Returns**
 * **fontVariant** : "normal" | "small-caps"
-
+---
 ### editable
 Editable property adds a event for modifiying text for TextBlock.
 
@@ -148,7 +150,7 @@ block.editable(option)
 
 **Returns**
 * **editable** : boolean
-
+---
 ### onEdit
 Given callback function to `onEdit` option works while editable is true.  
 
@@ -162,7 +164,7 @@ block.onEdit(option)
 
 **Returns**
 * **onEdit** : () => void
-
+---
 ### resizeLineHeight
 Text height can be resized without buinding to height.
 
@@ -176,7 +178,7 @@ block.resizeLineHeight(option)
 
 **Returns**
 * **resizeLineHeight** : boolean
-
+---
 ### wrap
 Text can be wrapped in letters or words relative to width. Default value `nowrap` which is no wrapping applies to text. 
 
