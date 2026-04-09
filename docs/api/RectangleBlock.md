@@ -3,6 +3,20 @@ new RectangleBlock({...options})
 ```
 RectangleBlock class is rectangle shape inherted from `ShapeBlock` class.
 
+### backgroundColor
+Background color defines color of background for rectangle shape.
+
+```javascript
+block.backgroundColor(option)
+```
+
+**Option**
+* **type** : number
+* **default**: "black"
+
+**Returns**
+* **backgroundColor** : number
+
 ### borderRadius
 Border radius defines raidus of borders for rectangle shape.
 
@@ -58,20 +72,6 @@ block.borderColor(option)
 
 **Returns**
 * **borderColor** : string
-
-### backgroundColor
-Background color defines color of background for rectangle shape.
-
-```javascript
-block.backgroundColor(option)
-```
-
-**Option**
-* **type** : number
-* **default**: "black"
-
-**Returns**
-* **backgroundColor** : number
 
 ### border
 Border defines `borderWidth`, `borderStyle`, and `borderColor` in order for border for rectangle shape.
