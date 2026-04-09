@@ -1,5 +1,16 @@
+```javascript
+new TextBlock("Hello", {...options})
+```
+TextBlock class is text shape inherted from `ShapeBlock` class. TextBlock first property must be text string.
+
+:::info
+
+Keep in mind that because TextBlock inherits from ShapeBlock, it can use some of the options of ShapeBlock.
+
+:::
+
 ### text
-describtion
+Define text in string for text shape.
 
 ```javascript
 block.text(option)
@@ -7,13 +18,13 @@ block.text(option)
 
 **Option**
 * **type** : string
-* **default**:
+* **default**: ""
 
 **Returns**
 * **text** : string
 
 ### color
-describtion
+Color width defines width of fill color for text shape
 
 ```javascript
 block.color(option)
@@ -21,13 +32,13 @@ block.color(option)
 
 **Option**
 * **type** : string
-* **default**:
+* **default**: undefined
 
 **Returns**
 * **color** : string
 
 ### strokeWidth
-describtion
+Stroke width defines width of stroke for text shape
 
 ```javascript
 block.strokeWidth(option)
@@ -35,13 +46,13 @@ block.strokeWidth(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **strokeWidth** : number
 
 ### strokeColor
-describtion
+Stroke Color defines color of stroke for text shape
 
 ```javascript
 block.strokeColor(option)
@@ -49,13 +60,13 @@ block.strokeColor(option)
 
 **Option**
 * **type** : string
-* **default**:
+* **default**: undefined
 
 **Returns**
 * **strokeColor** : string
 
 ### fontFamily
-describtion
+Font family defines font family of text shape.
 
 ```javascript
 block.fontFamily(option)
@@ -63,13 +74,13 @@ block.fontFamily(option)
 
 **Option**
 * **type** : string
-* **default**:
+* **default**: "sans-serif"
 
 **Returns**
 * **fontFamily** : string
 
 ### fontWeight
-describtion
+Font Weight defines font weight of text shape. Font weight depends on the font famliy.
 
 ```javascript
 block.fontWeight(option)
@@ -77,27 +88,27 @@ block.fontWeight(option)
 
 **Option**
 * **type** : "normal" | "bold" | "bolder" | "lighter" | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
-* **default**:
+* **default**: "normal"
 
 **Returns**
-* **fontWeight** : string | number
+* **fontWeight** : "normal" | "bold" | "bolder" | "lighter" | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
 
 ### fontSize
-describtion
+Font Size defines font size of text shape. 
 
 ```javascript
 block.fontSize(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : string | number
+* **default**: 0
 
 **Returns**
-* **fontSize** : string
+* **fontSize** : number
 
 ### fontStyle
-describtion
+Font Style defines font style of text shape. 
 
 ```javascript
 block.fontStyle(option)
@@ -105,13 +116,13 @@ block.fontStyle(option)
 
 **Option**
 * **type** : "normal" | "italic" | "oblique"
-* **default**:
+* **default**: "normal"
 
 **Returns**
-* **fontStyle** : string
+* **fontStyle** : "normal" | "italic" | "oblique"
 
 ### fontVariant
-describtion
+Font Variant defines font variant of text shape. 
 
 ```javascript
 block.fontVariant(option)
@@ -119,125 +130,13 @@ block.fontVariant(option)
 
 **Option**
 * **type** : "normal" | "small-caps"
-* **default**:
+* **default**: "normal"
 
 **Returns**
-* **fontVariant** : string
-
-### fontStretch
-describtion
-
-```javascript
-block.fontStretch(option)
-```
-
-**Option**
-* **type** : "normal" | "ultra-condensed" | "extra-condensed" | "condensed" | "semi-condensed" | "semi-expanded" | "expanded" | "extra-expanded" | "ultra-expanded"
-* **default**:
-
-**Returns**
-* **fontStretch** : string
-
-### fontKerning
-describtion
-
-```javascript
-block.fontKerning(option)
-```
-
-**Option**
-* **type** : "normal" | "auto" | "none"
-* **default**:
-
-**Returns**
-* **fontKerning** : string
-
-### fontVariantCaps
-describtion
-
-```javascript
-block.fontVariantCaps(option)
-```
-
-**Option**
-* **type** : "normal" | "small-caps" | "all-small-caps" | "petite-caps" | "all-petite-caps" | "unicase" | "titling-caps"
-* **default**:
-
-**Returns**
-* **fontVariantCaps** : string
-
-### textBaseline
-describtion
-
-```javascript
-block.textBaseline(option)
-```
-
-**Option**
-* **type** : "alphabetic" | "top" | "hanging" | "middle" | "ideographic" | "bottom"
-* **default**:
-
-**Returns**
-* **textBaseline** : string
-
-### textRendering
-describtion
-
-```javascript
-block.textRendering(option)
-```
-
-**Option**
-* **type** : "auto" | "optimizeSpeed" | "optimizeLegibility" | "geometricPrecision"
-* **default**:
-
-**Returns**
-* **textRendering** : string
-
-### wordSpacing
-describtion
-
-```javascript
-block.wordSpacing(option)
-```
-
-**Option**
-* **type** : string
-* **default**:
-
-**Returns**
-* **wordSpacing** : string
-
-### letterSpacing
-describtion
-
-```javascript
-block.letterSpacing(option)
-```
-
-**Option**
-* **type** : string
-* **default**:
-
-**Returns**
-* **letterSpacing** : string
-
-### direction
-describtion
-
-```javascript
-block.direction(option)
-```
-
-**Option**
-* **type** : "ltr" | "rtl"
-* **default**:
-
-**Returns**
-* **direction** : string
+* **fontVariant** : "normal" | "small-caps"
 
 ### editable
-describtion
+Editable property adds a event for modifiying text for TextBlock.
 
 ```javascript
 block.editable(option)
@@ -245,13 +144,13 @@ block.editable(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: false
 
 **Returns**
 * **editable** : boolean
 
 ### resizeLineHeight
-describtion
+Text height can be resized without buinding to height.
 
 ```javascript
 block.resizeLineHeight(option)
@@ -259,22 +158,22 @@ block.resizeLineHeight(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: false
 
 **Returns**
 * **resizeLineHeight** : boolean
 
 ### wrap
-describtion
+Text can be wrapped in letters or words relative to width. Default value `nowrap` which is no wrapping applies to text. 
 
 ```javascript
 block.wrap(option)
 ```
 
 **Option**
-* **type** : "letter" | "word"
-* **default**:
+* **type** : "nowrap" | "letter" | "word"
+* **default**: "nowrap"
 
 **Returns**
-* **wrap** : string
+* **wrap** : "nowrap" | "letter" | "word"
 ```
