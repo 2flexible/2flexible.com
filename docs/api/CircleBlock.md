@@ -3,6 +3,12 @@ new CircleBlock({...options})
 ```
 CircleBlock class is circle shape inherted from `ShapeBlock` class.
 
+:::info
+
+Keep in mind that because CircleBlock inherits from ShapeBlock, it can use some of the options of ShapeBlock. You can check [shape block api](/docs/api/ShapeBlock.md) for other options apply to CircleBlock. 
+
+:::
+
 ### startAngle
 Start angle in radians of circle shape, measured from the positive x-axis. 
 
@@ -55,7 +61,7 @@ block.backgroundColor(option)
 
 **Option**
 * **type** : number
-* **default**: "black"
+* **default**: undefined
 
 **Returns**
 * **backgroundColor** : number
@@ -72,7 +78,7 @@ block.borderStyle(option)
 * **default**: "solid"
 
 **Returns**
-* **borderStyle** : string
+* **borderStyle** : "solid" | "dotted"
 
 ### borderWidth
 Border width defines size of border for circle shape.

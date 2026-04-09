@@ -3,6 +3,12 @@ new ImageBlock(image, {...options})
 ```
 ImageBlock class is image shape inherted from `ShapeBlock` class. ImageBlock first property must be string of image path or html image element.
 
+:::info
+
+Keep in mind that because ImageBlock inherits from ShapeBlock, it can use some of the options of ShapeBlock. You can check [shape block api](/docs/api/ShapeBlock.md) for other options apply to ImageBlock. 
+
+:::
+
 ### clipX
 Clipping image from left of the image in x axis. 
 

@@ -3,6 +3,13 @@ new RectangleBlock({...options})
 ```
 RectangleBlock class is rectangle shape inherted from `ShapeBlock` class.
 
+:::info
+
+Keep in mind that because RectangleBlock inherits from ShapeBlock, it can use some of the options of ShapeBlock. You can check [shape block api](/docs/api/ShapeBlock.md) for other options apply to RectangleBlock. 
+
+:::
+
+
 ### backgroundColor
 Background color defines color of background for rectangle shape.
 
@@ -12,7 +19,7 @@ block.backgroundColor(option)
 
 **Option**
 * **type** : number
-* **default**: "black"
+* **default**: undefined
 
 **Returns**
 * **backgroundColor** : number
@@ -43,7 +50,7 @@ block.borderStyle(option)
 * **default**: "solid"
 
 **Returns**
-* **borderStyle** : string
+* **borderStyle** : "solid" | "dotted"
 
 ### borderWidth
 Border width defines size of border for rectangle shape.

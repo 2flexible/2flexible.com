@@ -5,7 +5,7 @@ TextBlock class is text shape inherted from `ShapeBlock` class. TextBlock first 
 
 :::info
 
-Keep in mind that because TextBlock inherits from ShapeBlock, it can use some of the options of ShapeBlock.
+Keep in mind that because TextBlock inherits from ShapeBlock, it can use some of the options of ShapeBlock. You can check [shape block api](/docs/api/ShapeBlock.md) for other options apply to TextBlock. 
 
 :::
 
@@ -149,6 +149,20 @@ block.editable(option)
 **Returns**
 * **editable** : boolean
 
+### onEdit
+Given callback function to `onEdit` option works while editable is true.  
+
+```javascript
+block.onEdit(option)
+```
+
+**Option**
+* **type** : () => void
+* **default**: undefined
+
+**Returns**
+* **onEdit** : () => void
+
 ### resizeLineHeight
 Text height can be resized without buinding to height.
 
@@ -176,4 +190,3 @@ block.wrap(option)
 
 **Returns**
 * **wrap** : "nowrap" | "letter" | "word"
-```
