@@ -1,19 +1,24 @@
+```javascript
+new RectangleBlock({...options})
+```
+RectangleBlock class is rectangle shape inherted from `ShapeBlock` class.
+
 ### borderRadius
-describtion
+Border radius defines raidus of borders for rectangle shape.
 
 ```javascript
 block.borderRadius(option)
 ```
 
 **Option**
-* **type** : number[]
-* **default**:
+* **type** : number[] | number
+* **default**: 0
 
 **Returns**
 * **borderRadius** : number[]
 
 ### borderStyle
-describtion
+Border style defines `solid` or `dotted` style of border for rectangle shape.
 
 ```javascript
 block.borderStyle(option)
@@ -21,27 +26,27 @@ block.borderStyle(option)
 
 **Option**
 * **type** : "solid" | "dotted"
-* **default**:
+* **default**: "solid"
 
 **Returns**
 * **borderStyle** : string
 
 ### borderWidth
-describtion
+Border width defines size of border for rectangle shape.
 
 ```javascript
 block.borderWidth(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: 0
 
 **Returns**
 * **borderWidth** : number
 
 ### borderColor
-describtion
+Border color defines color of border for rectangle shape.
 
 ```javascript
 block.borderColor(option)
@@ -49,13 +54,13 @@ block.borderColor(option)
 
 **Option**
 * **type** : string
-* **default**:
+* **default**: "black"
 
 **Returns**
 * **borderColor** : string
 
 ### backgroundColor
-describtion
+Background color defines color of background for rectangle shape.
 
 ```javascript
 block.backgroundColor(option)
@@ -63,77 +68,77 @@ block.backgroundColor(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: "black"
 
 **Returns**
 * **backgroundColor** : number
 
 ### border
-describtion
+Border defines `borderWidth`, `borderStyle`, and `borderColor` in order for border for rectangle shape.
 
 ```javascript
 block.border(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **default**: undefined
 
 **Returns**
-* **border** : string
+* **border** : [`borderWidth`, `borderStyle`, `borderColor`]
 
 ### borderTop
-describtion
+Border top defines `borderWidth`, `borderStyle`, and `borderColor` in order for top of border for rectangle shape.
 
 ```javascript
 block.borderTop(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **default**: undefined
 
 **Returns**
-* **borderTop** : string
+* **borderTop** : [`borderWidth`, `borderStyle`, `borderColor`]
 
 ### borderBottom
-describtion
+Border bottom defines `borderWidth`, `borderStyle`, and `borderColor` in order for bottom of border for rectangle shape.
 
 ```javascript
 block.borderBottom(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **default**: undefined
 
 **Returns**
-* **borderBottom** : string
+* **borderBottom** : [`borderWidth`, `borderStyle`, `borderColor`]
 
 ### borderLeft
-describtion
+Border left defines `borderWidth`, `borderStyle`, and `borderColor` in order for left of border for rectangle shape.
 
 ```javascript
 block.borderLeft(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **default**: undefined
 
 **Returns**
-* **borderLeft** : string
+* **borderLeft** : [`borderWidth`, `borderStyle`, `borderColor`]
 
 ### borderRight
-describtion
+Border right defines `borderWidth`, `borderStyle`, and `borderColor` in order for right of border for rectangle shape.
 
 ```javascript
 block.borderRight(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **default**: undefined
 
 **Returns**
-* **borderRight** : string
+* **borderRight** : [`borderWidth`, `borderStyle`, `borderColor`]
