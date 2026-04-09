@@ -1,61 +1,67 @@
+```javascript
+new ImageBlock(image, {...options})
+```
+ImageBlock class is rectangle shape inherted from `ShapeBlock` class.
+
 ### clipX
-describtion
+Clipping image from left of the image in x axis. 
 
 ```javascript
 block.clipX(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: 0
 
 **Returns**
 * **clipX** : number
 
 ### clipY
-describtion
+Clipping image from top of the image in y axis. 
 
 ```javascript
 block.clipY(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: 0
 
 **Returns**
 * **clipY** : number
 
 ### clipWidth
-describtion
+Clipping image width from right of the image in x axis. 
+
 
 ```javascript
 block.clipWidth(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: `width`
 
 **Returns**
 * **clipWidth** : number
 
 ### clipHeight
-describtion
+Clipping image height from bottom of the image in y axis. 
 
 ```javascript
 block.clipHeight(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: `height`
 
 **Returns**
 * **clipHeight** : number
 
 ### objectFit
-describtion
+Fitting image into block boundaries relative to width and height with "contain", "cover", "fill" options.
 
 ```javascript
 block.objectFit(option)
@@ -63,41 +69,13 @@ block.objectFit(option)
 
 **Option**
 * **type** : "contain" | "cover" | "fill"
-* **default**:
+* **default**: undefined
 
 **Returns**
 * **objectFit** : string
 
-### smoothing
-describtion
-
-```javascript
-block.smoothing(option)
-```
-
-**Option**
-* **type** : boolean
-* **default**:
-
-**Returns**
-* **smoothing** : boolean
-
-### smoothingQuality
-describtion
-
-```javascript
-block.smoothingQuality(option)
-```
-
-**Option**
-* **type** : "low" | "medium" | "high"
-* **default**:
-
-**Returns**
-* **smoothingQuality** : string
-
 ### repeatX
-describtion
+Repeating image in x axis by given amount or relative fitting to `width` of ImageBlock.
 
 ```javascript
 block.repeatX(option)
@@ -105,13 +83,13 @@ block.repeatX(option)
 
 **Option**
 * **type** : number | "fill"
-* **default**:
+* **default**: undefined
 
 **Returns**
 * **repeatX** : number | string
 
 ### repeatY
-describtion
+Repeating image in y axis by given amount or relative to fitting `height` of ImageBlock.
 
 ```javascript
 block.repeatY(option)
@@ -119,7 +97,7 @@ block.repeatY(option)
 
 **Option**
 * **type** : number | "fill"
-* **default**:
+* **default**: undefined
 
 **Returns**
 * **repeatY** : number | string
