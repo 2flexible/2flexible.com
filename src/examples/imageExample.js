@@ -100,21 +100,3 @@ export function ImageRepateExample() {
     });
     return [image];
 }
-
-export function CustomImgeExample() {
-    const image = new ImageBlock(
-        "https://preview.redd.it/please-upload-a-silly-photo-angle-of-your-cat-heres-mine-v0-dof4y1gotqce1.jpeg?width=640&crop=smart&auto=webp&s=09415d5da5de1cb894e798e7ab6f5abb6075285d",
-        {
-            width: 300,
-            height: 300,
-            x: "23%",
-            y: "13%",
-            objectFit: "fill",
-            smoothing: true,
-            smoothingQuality: "low",
-            selectable: true,
-            draggable: true,
-        }
-    );
-    return [image];
-}
