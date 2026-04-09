@@ -1,48 +1,11 @@
 
-### zoomSpeed
-describtion
-
 ```javascript
-block.zoomSpeed(option)
+new Canvas("myCanvas", 300, 400)
 ```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **zoomSpeed** : number
-
-### zoomInvSpeed
-describtion
-
-```javascript
-block.zoomInvSpeed(option)
-```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **zoomInvSpeed** : number
-
-### moveSpeed
-describtion
-
-```javascript
-block.moveSpeed(option)
-```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **moveSpeed** : number
+Canvas rendering all defined blocks in native html canvas element. Canvas class requires `canvasId`, `width`, `height` for constructoring canvas scene.
 
 ### zoom
-describtion
+Canvas can be zoom to `center` or `point`. In `center` zoom, canvas only zooming to the center of the canvas. In `point` canvas zooming where is the mouse points to.
 
 ```javascript
 block.zoom(option)
@@ -50,13 +13,13 @@ block.zoom(option)
 
 **Option**
 * **type** : "center" | "point"
-* **default**:
+* **default**: "center"
 
 **Returns**
 * **zoom** : "center" | "point"
 
 ### keyboardMovement
-describtion
+In keyboard movement, canvas relative cordinates move on x and y axis via keyboard.Canvas will move up or down If you move wheel without pressing `ctrl` key, otherwise it will move left or right. 
 
 ```javascript
 block.keyboardMovement(option)
@@ -64,13 +27,13 @@ block.keyboardMovement(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **keyboardMovement** : boolean
 
 ### mouseMovement
-describtion
+In mouse movement, canvas relative cordinates move on x and y axis via mouse dragging action. You can enable this feature by pressing `space` key.   
 
 ```javascript
 block.mouseMovement(option)
@@ -78,41 +41,55 @@ block.mouseMovement(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **mouseMovement** : boolean
 
-### history
-describtion
+### zoomSpeed
+Zoom speed defines how much speed we apply on zoom in.
 
 ```javascript
-block.history(option)
-```
-
-**Option**
-* **type** : boolean
-* **default**:
-
-**Returns**
-* **history** : boolean
-
-### historySize
-describtion
-
-```javascript
-block.historySize(option)
+block.zoomSpeed(option)
 ```
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 1.2
 
 **Returns**
-* **historySize** : number
+* **zoomSpeed** : number
+
+### zoomInvSpeed
+Inverse zoom speed defines how much speed we apply on zoom out.
+
+```javascript
+block.zoomInvSpeed(option)
+```
+
+**Option**
+* **type** : number
+* **default**: 0.8
+
+**Returns**
+* **zoomInvSpeed** : number
+
+### moveSpeed
+Movement speed defines how much speed we apply on movement either on `keyboardMovement` or `mouseMovement`
+
+```javascript
+block.moveSpeed(option)
+```
+
+**Option**
+* **type** : number
+* **default**: 10
+
+**Returns**
+* **moveSpeed** : number
 
 ### x
-describtion
+Canvas initial x axis can be defined via `x` option. 
 
 ```javascript
 block.x(option)
@@ -120,13 +97,13 @@ block.x(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **x** : number
 
 ### y
-describtion
+Canvas initial y axis can be defined via `y` option. 
 
 ```javascript
 block.y(option)
@@ -134,13 +111,13 @@ block.y(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **y** : number
 
 ### z
-describtion
+Canvas initial z axis can be defined via `z` option. 
 
 ```javascript
 block.z(option)
@@ -148,13 +125,41 @@ block.z(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 1
 
 **Returns**
 * **z** : number
 
+### history
+History enables to store every taken actions in canvas.
+
+```javascript
+block.history(option)
+```
+
+**Option**
+* **type** : boolean
+* **default**: true
+
+**Returns**
+* **history** : boolean
+
+### historySize
+History size defines how much of actions will store in canvas. If you exceed history size, old actions will be removed to new actins to be added. 
+
+```javascript
+block.historySize(option)
+```
+
+**Option**
+* **type** : number
+* **default**: 100
+
+**Returns**
+* **historySize** : number
+
 ### fps
-describtion
+Canvas animations fps defines via `fps` option.
 
 ```javascript
 block.fps(option)
@@ -162,35 +167,8 @@ block.fps(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 60
 
 **Returns**
 * **fps** : number
 
-### alpha
-describtion
-
-```javascript
-block.alpha(option)
-```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **alpha** : number
-
-### composite
-describtion
-
-```javascript
-block.composite(option)
-```
-
-**Option**
-* **type** : "source-over" | "source-in" | "source-out" | "source-atop" | "destination-over" | "destination-in" | "destination-out" | "destination-atop" | "lighter" | "copy" | "xor" | "multiply" | "screen" | "overlay" | "darken" | "lighten" | "color-dodge" | "color-burn" | "hard-light" | "soft-light" | "difference" | "exclusion" | "hue" | "saturation" | "color" | "luminosity"
-* **default**:
-
-**Returns**
-* **composite** : string
