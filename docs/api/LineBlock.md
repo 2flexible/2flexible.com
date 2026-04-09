@@ -1,5 +1,16 @@
+```javascript
+new LineBlock({...options})
+```
+LineBlock class is line shape inherted from `ShapeBlock` class.
+
+:::info
+
+Keep in mind that because LineBlock inherits from ShapeBlock, it can use some of the options of ShapeBlock. You can check [shape block api](/docs/api/ShapeBlock.md) for other options apply to LineBlock.
+
+:::
+
 ### lineType
-describtion
+Line can be straigth line or cubic bezier in LineBlock.
 
 ```javascript
 block.lineType(option)
@@ -10,245 +21,120 @@ block.lineType(option)
 * **default**: "line"
 
 **Returns**
-* **lineType** : "line" or "cubicBezier"
+* **lineType** : "line" || "cubicBezier"
 
 ### startX
-describtion
+Start point of line in x axis.
 
 ```javascript
 block.startX(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: undefined
 
 **Returns**
-* **startX** : number
+* **startX** : number | string
 
 ### startY
-describtion
+Start point of line in y axis.
 
 ```javascript
 block.startY(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: undefined
 
 **Returns**
-* **startY** : number
+* **startY** : number | string
 
 ### endX
-describtion
+End point of line in x axis.
 
 ```javascript
 block.endX(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: undefined
 
 **Returns**
-* **endX** : number
+* **endX** : number | string
 
 ### endY
-describtion
+End point of line in y axis.
 
 ```javascript
 block.endY(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: undefined
 
 **Returns**
-* **endY** : number
+* **endY** : number | string
 
 ### startControlX
-describtion
+Control point for `startX` in x axis. This option only works when `lineType` is set to `cubicBezier`.
 
 ```javascript
 block.startControlX(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: undefined
 
 **Returns**
-* **startControlX** : number
+* **startControlX** : number | string
 
 ### startControlY
-describtion
+Control point for `startY` in y axis. This option only works when `lineType` is set to `cubicBezier`.
 
 ```javascript
 block.startControlY(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: undefined
 
 **Returns**
-* **startControlY** : number
+* **startControlY** : number | string
 
 ### endControlX
-describtion
+Control point for `endX` in x axis. This option only works when `lineType` is set to `cubicBezier`.
 
 ```javascript
 block.endControlX(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: undefined
 
 **Returns**
-* **endControlX** : number
+* **endControlX** : number | string
 
 ### endControlY
-describtion
+Control point for `endY` in y axis. This option only works when `lineType` is set to `cubicBezier`.
+
 
 ```javascript
 block.endControlY(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: undefined
 
 **Returns**
-* **endControlY** : number
-
-### startDraggable
-describtion
-
-```javascript
-block.startDraggable(option)
-```
-
-**Option**
-* **type** : boolean
-* **default**:
-
-**Returns**
-* **startDraggable** : boolean
-
-### endDraggable
-describtion
-
-```javascript
-block.endDraggable(option)
-```
-
-**Option**
-* **type** : boolean
-* **default**:
-
-**Returns**
-* **endDraggable** : boolean
-
-### startControllable
-describtion
-
-```javascript
-block.startControllable(option)
-```
-
-**Option**
-* **type** : boolean
-* **default**:
-
-**Returns**
-* **startControllable** : boolean
-
-### endControllable
-describtion
-
-```javascript
-block.endControllable(option)
-```
-
-**Option**
-* **type** : boolean
-* **default**:
-
-**Returns**
-* **endControllable** : boolean
-
-### lineWidth
-describtion
-
-```javascript
-block.lineWidth(option)
-```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **lineWidth** : number
-
-### lineColor
-describtion
-
-```javascript
-block.lineColor(option)
-```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **lineColor** : number
-
-### backgroundColor
-describtion
-
-```javascript
-block.backgroundColor(option)
-```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **backgroundColor** : number
-
-### closePath
-describtion
-
-```javascript
-block.closePath(option)
-```
-
-**Option**
-* **type** : boolean
-* **default**:
-
-**Returns**
-* **closePath** : boolean
-
-### joinTo
-describtion
-
-```javascript
-block.joinTo(option)
-```
-
-**Option**
-* **type** : LineBlock
-* **default**:
-
-**Returns**
-* **joinTo** : LineBlock
+* **endControlY** : number | string
 
 ### controlPointsSize
 describtion
@@ -258,11 +144,11 @@ block.controlPointsSize(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string
+* **default**: 5
 
 **Returns**
-* **controlPointsSize** : number
+* **controlPointsSize** : number | string
 
 ### editable
 describtion
@@ -273,35 +159,147 @@ block.editable(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: false
 
 **Returns**
 * **editable** : boolean
 
+### startDraggable
+Dragging start control point in relative x and y axis. This option depeneds on `editable` property.
+
+```javascript
+block.startDraggable(option)
+```
+
+**Option**
+* **type** : boolean
+* **default**: false
+
+**Returns**
+* **startDraggable** : boolean
+
+### endDraggable
+Dragging end control point in relative x and y axis. This option depeneds on `editable` property.
+
+```javascript
+block.endDraggable(option)
+```
+
+**Option**
+* **type** : boolean
+* **default**: false
+
+**Returns**
+* **endDraggable** : boolean
+
+### startControllable
+Start controlrollable enables or disables controling for start control point. This option depeneds on `editable` property.
+
+```javascript
+block.startControllable(option)
+```
+
+**Option**
+* **type** : boolean
+* **default**: false
+
+**Returns**
+* **startControllable** : boolean
+
+### endControllable
+End controlrollable enables or disables controling for end control point. This option depeneds on `editable` property.
+
+```javascript
+block.endControllable(option)
+```
+
+**Option**
+* **type** : boolean
+* **default**: false
+
+**Returns**
+* **endControllable** : boolean
+
+### lineColor
+Line color defines color of line for LineBlock.
+
+```javascript
+block.lineColor(option)
+```
+
+**Option**
+* **type** : number
+* **default**: undefined
+
+**Returns**
+* **lineColor** : number
+
+### backgroundColor
+Background color defines color of background for LineBlock.
+
+```javascript
+block.backgroundColor(option)
+```
+
+**Option**
+* **type** : string
+* **default**: undefined
+
+**Returns**
+* **backgroundColor** : string
+
+### closeLine
+Closing defined line in LineBlock.
+
+```javascript
+block.closeLine(option)
+```
+
+**Option**
+* **type** : boolean
+* **default**: false
+
+**Returns**
+* **closeLine** : boolean
+
 ### stickStart
-describtion
+Sticking line start point to a block, in defined x and y axis relative to sticked block.
 
 ```javascript
 block.stickStart(option)
 ```
 
 **Option**
-* **type** : StickyLine
-* **default**:
+* **type** : `{block: Block , x: number, y: number}`
+* **default**: undefined
 
 **Returns**
-* **stickStart** : StickyLine
+* **stickStart** : `{block: Block , x: number, y: number}` | undefined
 
 ### stickEnd
-describtion
+Sticking line end point to a block, in defined x and y axis relative to sticked block.
 
 ```javascript
 block.stickEnd(option)
 ```
 
 **Option**
-* **type** : StickyLine
-* **default**:
+* **type** : `{block: Block , x: number, y: number}`
+* **default**: undefined
 
 **Returns**
-* **stickEnd** : StickyLine
+* **stickStart** : `{block: Block , x: number, y: number}` | undefined
+
+### joinTo
+Join to defines which line to join. Joined lines move, resize, drag together, behaving like a grouped blocks.
+
+```javascript
+block.joinTo(option)
+```
+
+**Option**
+* **type** : LineBlock
+* **default**: undefined
+
+**Returns**
+* **joinTo** : LineBlock
