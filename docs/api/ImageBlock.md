@@ -1,7 +1,7 @@
 ```javascript
 new ImageBlock(image, {...options})
 ```
-ImageBlock class is rectangle shape inherted from `ShapeBlock` class. ImageBlock first property must be string of image path or html image element.
+ImageBlock class is image shape inherted from `ShapeBlock` class. ImageBlock first property must be string of image path or html image element.
 
 ### clipX
 Clipping image from left of the image in x axis. 
