@@ -11,8 +11,7 @@ import styles from "./index.module.css";
 // import { NavbarMenu } from "../playground/navbar";
 // import { SaveAnimation } from "../playground/animationSave";
 // import { BlockOptions } from "../playground/editPropertiesBar";
-import Stock3 from "@site/static/video/stock3.webm";
-// import Stock5 from "@site/static/video/stock5.mp4";
+import Stock5 from "@site/static/video/stock5.webm";
 import Logo from "@site/static/img/logo.svg";
 
 function HomepageHeader() {
@@ -58,7 +57,7 @@ function HomepageHeader() {
                         objectFit: "cover",
                     }}
                 >
-                    <source src={Stock3} type="video/mp4"></source>
+                    <source src={Stock5} type="video/mp4"></source>
                 </video>
                 <Heading
                     as="h1"
