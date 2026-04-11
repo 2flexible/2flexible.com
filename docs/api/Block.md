@@ -37,12 +37,12 @@ block.x(option)
 
 **Option**
 
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
 
-* **x** : number
+* **x** : number | undfined
 ---
 ### y
 Y position of block can be defined with `y` parameter. Block position always starts from the top left corner of the canvas.
@@ -52,11 +52,11 @@ block.y(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **y** : number
+* **y** : number | undfined
 ---
 ### width
 Width defines block width in canvas.
@@ -66,11 +66,11 @@ block.width(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **width** : number
+* **width** : number | undfined
 ---
 ### height
 Height defines block height in canvas.
@@ -80,11 +80,11 @@ block.height(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **height** : number
+* **height** : number | undfined
 ---
 ### minWidth
 Min width defines minimum resizable width of block in canvas.
@@ -94,11 +94,11 @@ block.minWidth(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **minWidth** : number
+* **minWidth** : number | undfined
 ---
 ### minHeight
 Min height defines minimum resizable height of block in canvas.
@@ -108,11 +108,11 @@ block.minHeight(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **minHeight** : number
+* **minHeight** : number | undfined
 ---
 ### maxWidth
 Max width defines minimum resizable width of block in canvas.
@@ -122,11 +122,11 @@ block.maxWidth(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: width's size
 
 **Returns**
-* **maxWidth** : number
+* **maxWidth** : number | undfined
 ---
 ### maxHeight
 Max height defines minimum resizable height of block in canvas.
@@ -136,11 +136,11 @@ block.maxHeight(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: height's size
 
 **Returns**
-* **maxHeight** : number
+* **maxHeight** : number | undfined
 ---
 ### position
 Position defines how block cordinates will change realtive to parent. Parent can be canvas or block itself.
@@ -150,11 +150,11 @@ block.position(option)
 ```
 
 **Option**
-* **type** : "relative" | "absolute" | "sticky" | "fixed"
+* **type** : "relative" | "absolute" | "sticky" | "fixed" | undfined
 * **default**: undefined
 
 **Returns**
-* **position** : "relative" | "absolute" | "sticky" | "fixed"
+* **position** : "relative" | "absolute" | "sticky" | "fixed" | undfined
 ---
 ### top
 Top defines block y cordinate relative to parent block. Parent can be canvas or block itself.
@@ -164,11 +164,11 @@ block.top(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **top** : number
+* **top** : number | undfined
 ---
 ### bottom
 Bottom defines block y cordinate relative to parent block. Parent can be canvas or block itself.
@@ -178,11 +178,11 @@ block.bottom(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **bottom** : number
+* **bottom** : number | undfined
 ---
 ### left
 Left defines block x cordinate relative to parent block. Parent can be canvas or block itself.
@@ -192,11 +192,11 @@ block.left(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **left** : number
+* **left** : number | undfined
 ---
 ### right
 Right defines block x cordinate relative to parent block. Parent can be canvas or block itself.
@@ -206,11 +206,11 @@ block.right(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **right** : number
+* **right** : number | undfined
 ---
 ### selectable
 Selectable defines blocks can be selectable. Selectable affects events and block transfomrations (resizable, draggable, rotatable).
@@ -220,11 +220,11 @@ block.selectable(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: false
 
 **Returns**
-* **selectable** : boolean
+* **selectable** : boolean | undfined
 ---
 ### padding
 Padding defines inner space for block.
@@ -234,11 +234,11 @@ block.padding(option)
 ```
 
 **Option**
-* **type** : [string | number, string | number, string | number, string | number]
+* **type** : [string | number, string | number, string | number, string | number] | undfined
 * **default**: []
 
 **Returns**
-* **padding** : [number, number, number, number]
+* **padding** : [number, number, number, number] | undfined
 ---
 ### paddingTop
 Padding top defines inner space from top for block.
@@ -248,11 +248,11 @@ block.paddingTop(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **paddingTop** : number
+* **paddingTop** : number | undfined
 ---
 ### paddingRight
 Padding right defines inner space from right for block.
@@ -262,11 +262,11 @@ block.paddingRight(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **paddingRight** : number
+* **paddingRight** : number | undfined
 ---
 ### paddingBottom
 Padding bottom defines inner space from bottom for block.
@@ -276,11 +276,11 @@ block.paddingBottom(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **paddingBottom** : number
+* **paddingBottom** : number | undfined
 ---
 ### paddingLeft
 Padding left defines inner space from left for block.
@@ -290,11 +290,11 @@ block.paddingLeft(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **paddingLeft** : number
+* **paddingLeft** : number | undfined
 ---
 ### margin
 Margin defines outter space for block relative to parent. Parent can be canvas or block itself.
@@ -304,11 +304,11 @@ block.margin(option)
 ```
 
 **Option**
-* **type** : [string | number, string | number, string | number, string | number]
+* **type** : [string | number, string | number, string | number, string | number] | undfined
 * **default**: []
 
 **Returns**
-* **margin** : [number, number, number, number]
+* **margin** : [number, number, number, number] | undfined
 ---
 ### marginTop
 Margin defines outter space from top for block relative to parent. Parent can be canvas or block itself.
@@ -318,11 +318,11 @@ block.marginTop(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **marginTop** : number
+* **marginTop** : number | undfined
 ---
 ### marginRight
 Margin defines outter space from right for block relative to parent. Parent can be canvas or block itself.
@@ -332,11 +332,11 @@ block.marginRight(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **marginRight** : number
+* **marginRight** : number | undfined
 ---
 ### marginBottom
 Margin defines outter space from bottom for block relative to parent. Parent can be canvas or block itself.
@@ -346,11 +346,11 @@ block.marginBottom(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **marginBottom** : number
+* **marginBottom** : number | undfined
 ---
 ### marginLeft
 Margin defines outter space from left for block relative to parent. Parent can be canvas or block itself.
@@ -360,11 +360,11 @@ block.marginLeft(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**: 0
 
 **Returns**
-* **marginLeft** : number
+* **marginLeft** : number | undfined
 ---
 ### zIndex
 Z index defines how block will positioned in canvas. Top element gets higher z index.
@@ -374,11 +374,11 @@ block.zIndex(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undfined
 * **default**: undefined
 
 **Returns**
-* **zIndex** : number
+* **zIndex** : number | undfined
 ---
 ### draggable
 Draggable enables blocks drag and drop transformation in canvas.
@@ -388,11 +388,11 @@ block.draggable(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: false
 
 **Returns**
-* **draggable** : boolean
+* **draggable** : boolean | undfined
 ---
 ### onDrag
 On drag takes callback functions which is invoking each time when `draggable` event invokes.
@@ -402,11 +402,11 @@ block.onDrag(option)
 ```
 
 **Option**
-* **type** : (event: MouseEvent) => void
+* **type** : (event: MouseEvent) => void | undfined
 * **default**: undefined
 
 **Returns**
-* **onDrag** : (event: MouseEvent) => void
+* **onDrag** : (event: MouseEvent) => void | undfined
 ---
 ### dragX
 Drag x enables dragging on x axis.
@@ -416,11 +416,11 @@ block.dragX(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**:
 
 **Returns**
-* **dragX** : boolean
+* **dragX** : boolean | undfined
 ---
 ### dragY
 Drag y enables dragging on y axis.
@@ -430,11 +430,11 @@ block.dragY(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**:
 
 **Returns**
-* **dragY** : boolean
+* **dragY** : boolean | undfined
 ---
 ### rotate
 Rotate defines rotating in radian on blocks.
@@ -444,11 +444,11 @@ block.rotate(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undfined
 * **default**: 0
 
 **Returns**
-* **rotate** : number
+* **rotate** : number | undfined
 ---
 ### rotatable
 Rotatable enables block rotating transforamtion in canvas.
@@ -458,11 +458,11 @@ block.rotatable(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undfined
 * **default**: 0
 
 **Returns**
-* **rotatable** : number
+* **rotatable** : number | undfined
 
 ---
 ### onRotate
@@ -473,11 +473,11 @@ block.onRotate(option)
 ```
 
 **Option**
-* **type** : (event: MouseEvent) => void
+* **type** : (event: MouseEvent) => void | undfined
 * **default**: undefined
 
 **Returns**
-* **onRotate** : (event: MouseEvent) => void
+* **onRotate** : (event: MouseEvent) => void | undfined
 ---
 ### order
 Order defines order of block in LayoutBlocks.
@@ -487,11 +487,11 @@ block.order(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undfined
 * **default**:
 
 **Returns**
-* **order** : number
+* **order** : number | undfined
 ---
 <!-- ### alignSelf
 Align self defines aliging of block for LayoutBlock.
@@ -544,11 +544,11 @@ block.flexBasis(option)
 ```
 
 **Option**
-* **type** : number | "auto"
+* **type** : number | "auto" | undfined
 * **default**: "auto"
 
 **Returns**
-* **flexBasis** : number | "auto"
+* **flexBasis** : number | "auto" | undfined
 ---
 <!-- ### flexGrow
 describtion
@@ -670,11 +670,11 @@ block.hotAreaGap(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undfined
 * **default**: 0
 
 **Returns**
-* **hotAreaGap** : number
+* **hotAreaGap** : number | undfined
 ---
 ### hotCornerSize
 Hot corner size defines size of hot corners
@@ -684,11 +684,11 @@ block.hotCornerSize(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undfined
 * **default**: 5
 
 **Returns**
-* **hotCornerSize** : number
+* **hotCornerSize** : number | undfined
 ---
 ### hotCornerRadius
 Hot corner raidus defines raius of hot corners
@@ -698,11 +698,11 @@ block.hotCornerRadius(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undfined
 * **default**: [0]
 
 **Returns**
-* **hotCornerRadius** : number
+* **hotCornerRadius** : number | undfined
 ---
 ### hotCornerStrokeWidth
 Hot corner stroke width defines stroke width of hot corners
@@ -712,11 +712,11 @@ block.hotCornerStrokeWidth(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undfined
 * **default**: 0
 
 **Returns**
-* **hotCornerStrokeWidth** : number
+* **hotCornerStrokeWidth** : number | undfined
 ---
 ### hotCornerStrokeColor
 Hot corner stroke color defines stroke color of hot corners
@@ -726,11 +726,11 @@ block.hotCornerStrokeColor(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undfined
 * **default**: "blue"
 
 **Returns**
-* **hotCornerStrokeColor** : string
+* **hotCornerStrokeColor** : string | undfined
 ---
 ### hotCornerBackgroundColor
 Hot corner background color defines background color of hot corners
@@ -740,11 +740,11 @@ block.hotCornerBackgroundColor(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undfined
 * **default**: "white"
 
 **Returns**
-* **hotCornerBackgroundColor** : string
+* **hotCornerBackgroundColor** : string | undfined
 ---
 ### hotLineStrokeWidth
 Hot lines stroke width defines stroke width of hot lines
@@ -754,11 +754,11 @@ block.hotLineStrokeWidth(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undfined
 * **default**: 1.5
 
 **Returns**
-* **hotLineStrokeWidth** : number
+* **hotLineStrokeWidth** : number | undfined
 ---
 ### hotLineStrokeColor
 Hot lines stroke color defines stroke color of hot lines
@@ -768,11 +768,11 @@ block.hotLineStrokeColor(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undfined
 * **default**: "blue"
 
 **Returns**
-* **hotLineStrokeColor** : string
+* **hotLineStrokeColor** : string | undfined
 ---
 ### rotationTopLeft
 Rotation top left enables to rotate from top left hot corner of block.
@@ -782,11 +782,11 @@ block.rotationTopLeft(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **rotationTopLeft** : boolean
+* **rotationTopLeft** : boolean | undfined
 ---
 ### rotationTopRight
 Rotation top right enables to rotate from top right hot corner of block.
@@ -796,11 +796,11 @@ block.rotationTopRight(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **rotationTopRight** : boolean
+* **rotationTopRight** : boolean | undfined
 ---
 ### rotationBottomLeft
 Rotation bottom left enables to rotate from bottom left hot corner of block.
@@ -810,11 +810,11 @@ block.rotationBottomLeft(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **rotationBottomLeft** : boolean
+* **rotationBottomLeft** : boolean | undfined
 ---
 ### rotationBottomRight
 Rotation bottom right enables to rotate from bottom right hot corner of block.
@@ -824,11 +824,11 @@ block.rotationBottomRight(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **rotationBottomRight** : boolean
+* **rotationBottomRight** : boolean | undfined
 ---
 ### resizeTopLeft
 Resize top left enables to resize from top left hot corner of block.
@@ -838,11 +838,11 @@ block.resizeTopLeft(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **resizeTopLeft** : boolean
+* **resizeTopLeft** : boolean | undfined
 ---
 ### resizeTopRight
 Resize top right enables to resize from top right hot corner of block.
@@ -852,11 +852,11 @@ block.resizeTopRight(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **resizeTopRight** : boolean
+* **resizeTopRight** : boolean | undfined
 ---
 ### resizeBottomLeft
 Resize bottom left enables to resize from bottom left hot corner of block.
@@ -866,11 +866,11 @@ block.resizeBottomLeft(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **resizeBottomLeft** : boolean
+* **resizeBottomLeft** : boolean | undfined
 ---
 ### resizeBottomRight
 Resize bottom right enables to resize from bottom right hot corner of block.
@@ -880,11 +880,11 @@ block.resizeBottomRight(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **resizeBottomRight** : boolean
+* **resizeBottomRight** : boolean | undfined
 ---
 ### resizeTop
 Resize top enables to reszie from top hot line of block.
@@ -894,11 +894,11 @@ block.resizeTop(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **resizeTop** : boolean
+* **resizeTop** : boolean | undfined
 ---
 ### resizeLeft
 Resize left enables to reszie from left hot line of block.
@@ -908,11 +908,11 @@ block.resizeLeft(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **resizeLeft** : boolean
+* **resizeLeft** : boolean | undfined
 ---
 ### resizeRight
 Resize right enables to reszie from right hot line of block.
@@ -922,11 +922,11 @@ block.resizeRight(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **resizeRight** : boolean
+* **resizeRight** : boolean | undfined
 ---
 ### resizeBottom
 Resize bottom enables to reszie from bottom hot line of block.
@@ -936,11 +936,11 @@ block.resizeBottom(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: true
 
 **Returns**
-* **resizeBottom** : boolean
+* **resizeBottom** : boolean | undfined
 ---
 ### horizontalFlipResize
 Horizontal flip resize enables to resizable event to resize in flip position.
@@ -950,11 +950,11 @@ block.horizontalFlipResize(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: false
 
 **Returns**
-* **horizontalFlipResize** : boolean
+* **horizontalFlipResize** : boolean | undfined
 ---
 ### verticalFlipResize
 Vertical flip resize enables to resizable event to resize in flip position.
@@ -964,11 +964,11 @@ block.verticalFlipResize(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**:
 
 **Returns**
-* **verticalFlipResize** : boolean
+* **verticalFlipResize** : boolean | undfined
 ---
 ### resizable
 Resizable enables block resizing transforamtion in canvas.
@@ -978,11 +978,11 @@ block.resizable(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**:
 
 **Returns**
-* **resizable** : boolean
+* **resizable** : boolean | undfined
 ---
 ### onResize
 On resize takes callback functions which is invoking each time when `resizable` event invokes.
@@ -992,11 +992,11 @@ block.onResize(option)
 ```
 
 **Option**
-* **type** : (event: MouseEvent) => void
+* **type** : (event: MouseEvent) => void | undfined
 * **default**:
 
 **Returns**
-* **onResize** : (event: MouseEvent) => void
+* **onResize** : (event: MouseEvent) => void | undfined
 ---
 ### hidden
 Hidden enables to hide block and its child blocks in canvas.
@@ -1006,11 +1006,11 @@ block.hidden(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undfined
 * **default**: false
 
 **Returns**
-* **hidden** : boolean
+* **hidden** : boolean | undfined
 ---
 ### important
 Important overrides current value of options defined in blocks and persist to important values.
@@ -1020,11 +1020,11 @@ block.important(options)
 ```
 
 **Option**
-* **type** : BlockOptions
+* **type** : BlockOptions | undfined
 * **default**: undefined
 
 **Returns**
-* **important** : BlockOptions
+* **important** : BlockOptions | undfined
 ---
 ### rotationCenterX
 Rotation center x defines center of rotation in x axis.
@@ -1034,11 +1034,11 @@ block.rotationCenterX(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**:
 
 **Returns**
-* **rotationCenterX** : number
+* **rotationCenterX** : number | undfined
 ---
 ### rotationCenterY
 Rotation center y defines center of rotation in y axis.
@@ -1048,11 +1048,11 @@ block.rotationCenterY(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undfined
 * **default**:
 
 **Returns**
-* **rotationCenterY** : number
+* **rotationCenterY** : number | undfined
 ---
 ### cornerTopLeft
 Corner top left defines top left of corner for blocks.
@@ -1062,11 +1062,11 @@ block.cornerTopLeft(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }` | undfined
 * **default**:
 
 **Returns**
-* **cornerTopLeft** : `{ x: number; y: number }`
+* **cornerTopLeft** : `{ x: number; y: number }` | undfined
 ---
 ### cornerTopRight
 Corner top right defines top right of corner for blocks.
@@ -1076,11 +1076,11 @@ block.cornerTopRight(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }` | undfined
 * **default**:
 
 **Returns**
-* **cornerTopRight** : `{ x: number; y: number }`
+* **cornerTopRight** : `{ x: number; y: number }` | undfined
 ---
 ### cornerBottomLeft
 Corner bottom left defines bottom left of corner for blocks.
@@ -1090,11 +1090,11 @@ block.cornerBottomLeft(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }` | undfined
 * **default**:
 
 **Returns**
-* **cornerBottomLeft** : `{ x: number; y: number }`
+* **cornerBottomLeft** : `{ x: number; y: number }` | undfined
 ---
 ### cornerBottomRight
 Corner bottom right defines bottom right of corner for blocks.
@@ -1104,11 +1104,11 @@ block.cornerBottomRight(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }`  | undfined
 * **default**:
 
 **Returns**
-* **cornerBottomRight** : `{ x: number; y: number }`
+* **cornerBottomRight** : `{ x: number; y: number }`  | undfined
 ---
 ### hotCornerTopLeft
 Hot corner top left defines top left of hot corner for blocks.
@@ -1118,11 +1118,11 @@ block.hotCornerTopLeft(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }`  | undfined
 * **default**:
 
 **Returns**
-* **hotCornerTopLeft** : `{ x: number; y: number }`
+* **hotCornerTopLeft** : `{ x: number; y: number }`  | undfined
 ---
 ### hotCornerTopRight
 Hot corner top right defines top right of hot corner for blocks.
@@ -1133,11 +1133,11 @@ block.hotCornerTopRight(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }`  | undfined
 * **default**:
 
 **Returns**
-* **hotCornerTopRight** : `{ x: number; y: number }`
+* **hotCornerTopRight** : `{ x: number; y: number }`  | undfined
 ---
 ### hotCornerBottomLeft
 Hot corner bottom left defines bottom left of hot corner for blocks.
@@ -1148,11 +1148,11 @@ block.hotCornerBottomLeft(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }`  | undfined
 * **default**:
 
 **Returns**
-* **hotCornerBottomLeft** : `{ x: number; y: number }`
+* **hotCornerBottomLeft** : `{ x: number; y: number }`  | undfined
 ---
 ### hotCornerBottomRight
 Hot corner bottom right defines bottom right of hot corner for blocks.
@@ -1163,11 +1163,11 @@ block.hotCornerBottomRight(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }`  | undfined
 * **default**:
 
 **Returns**
-* **hotCornerBottomRight** : `{ x: number; y: number }`
+* **hotCornerBottomRight** : `{ x: number; y: number }`  | undfined
 ---
 ### hotRotCornerTopLeft
 Hot rot corner top left defines top left of hot rotation corner for blocks.
@@ -1177,11 +1177,11 @@ block.hotRotCornerTopLeft(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }`  | undfined
 * **default**:
 
 **Returns**
-* **hotRotCornerTopLeft** : `{ x: number; y: number }`
+* **hotRotCornerTopLeft** : `{ x: number; y: number }`  | undfined
 ---
 ### hotRotCornerTopRight
 Hot rot corner top right defines top right of hot rotation corner for blocks.
@@ -1191,11 +1191,11 @@ block.hotRotCornerTopRight(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }`  | undfined
 * **default**:
 
 **Returns**
-* **hotRotCornerTopRight** : `{ x: number; y: number }`
+* **hotRotCornerTopRight** : `{ x: number; y: number }`  | undfined
 ---
 ### hotRotCornerBottomLeft
 Hot rot corner bottom left defines bottom left of hot rotation corner for blocks.
@@ -1205,11 +1205,11 @@ block.hotRotCornerBottomLeft(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }`  | undfined
 * **default**:
 
 **Returns**
-* **hotRotCornerBottomLeft** : `{ x: number; y: number }`
+* **hotRotCornerBottomLeft** : `{ x: number; y: number }`  | undfined
 ---
 ### hotRotCornerBottomRight
 Hot rot corner bottom right defines bottom right of hot rotation corner for blocks.
@@ -1219,11 +1219,11 @@ block.hotRotCornerBottomRight(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
+* **type** : `{ x: number; y: number }`  | undfined
 * **default**:
 
 **Returns**
-* **hotRotCornerBottomRight** : `{ x: number; y: number }`
+* **hotRotCornerBottomRight** : `{ x: number; y: number }`  | undfined
 ---
 ### hotRotatableAreaTopLeft
 Hot rotatable area top left defines top left of hot rotation area for blocks.
@@ -1233,11 +1233,11 @@ block.hotRotatableAreaTopLeft(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotRotatableAreaTopLeft** : HotCornerArea
+* **hotRotatableAreaTopLeft** : HotCornerArea  | undfined
 ---
 ### hotRotatableAreaTopRight
 Hot rotatable area top right defines top right of hot rotation area for blocks.
@@ -1248,11 +1248,11 @@ block.hotRotatableAreaTopRight(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotRotatableAreaTopRight** : HotCornerArea
+* **hotRotatableAreaTopRight** : HotCornerArea  | undfined
 ---
 ### hotRotatableAreaBottomLeft
 Hot rotatable area bottom left defines bottom left of hot rotation area for blocks.
@@ -1263,11 +1263,11 @@ block.hotRotatableAreaBottomLeft(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotRotatableAreaBottomLeft** : HotCornerArea
+* **hotRotatableAreaBottomLeft** : HotCornerArea  | undfined
 ---
 ### hotRotatableAreaBottomRight
 Hot rotatable area bottom right defines bottom right of hot rotation area for blocks.
@@ -1278,11 +1278,11 @@ block.hotRotatableAreaBottomRight(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotRotatableAreaBottomRight** : HotCornerArea
+* **hotRotatableAreaBottomRight** : HotCornerArea  | undfined
 ---
 ### hotResizableAreaTopLeft
 Hot resizable area top left defines top left of hot resizing area for blocks.
@@ -1292,11 +1292,11 @@ block.hotResizableAreaTopLeft(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotResizableAreaTopLeft** : HotCornerArea
+* **hotResizableAreaTopLeft** : HotCornerArea  | undfined
 ---
 ### hotResizableAreaTopRight
 Hot resizable area top right defines top right of hot resizing area for blocks.
@@ -1307,11 +1307,11 @@ block.hotResizableAreaTopRight(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotResizableAreaTopRight** : HotCornerArea
+* **hotResizableAreaTopRight** : HotCornerArea  | undfined
 ---
 ### hotResizableAreaBottomLeft
 Hot resizable area bottom left defines bottom left of hot resizing area for blocks.
@@ -1322,11 +1322,11 @@ block.hotResizableAreaBottomLeft(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotResizableAreaBottomLeft** : HotCornerArea
+* **hotResizableAreaBottomLeft** : HotCornerArea  | undfined
 ---
 ### hotResizableAreaBottomRight
 Hot resizable area bottom right defines bottom right of hot resizing area for blocks.
@@ -1337,11 +1337,11 @@ block.hotResizableAreaBottomRight(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotResizableAreaBottomRight** : HotCornerArea
+* **hotResizableAreaBottomRight** : HotCornerArea  | undfined
 ---
 ### hotResizableAreaTop
 Hot resizable area top defines top area of hot resizing for blocks.
@@ -1351,11 +1351,11 @@ block.hotResizableAreaTop(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotResizableAreaTop** : HotCornerArea
+* **hotResizableAreaTop** : HotCornerArea  | undfined
 ---
 ### hotResizableAreaRight
 Hot resizable area right defines right area of hot resizing for blocks.
@@ -1366,11 +1366,11 @@ block.hotResizableAreaRight(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotResizableAreaRight** : HotCornerArea
+* **hotResizableAreaRight** : HotCornerArea  | undfined
 ---
 ### hotResizableAreaLeft
 Hot resizable area left defines left area of hot resizing for blocks.
@@ -1381,11 +1381,11 @@ block.hotResizableAreaLeft(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotResizableAreaLeft** : HotCornerArea
+* **hotResizableAreaLeft** : HotCornerArea  | undfined
 ---
 ### hotResizableAreaBottom
 Hot resizable area bottom defines bottom area of hot resizing for blocks.
@@ -1395,11 +1395,11 @@ block.hotResizableAreaBottom(option)
 ```
 
 **Option**
-* **type** : HotCornerArea
+* **type** : HotCornerArea  | undfined
 * **default**:
 
 **Returns**
-* **hotResizableAreaBottom** : HotCornerArea
+* **hotResizableAreaBottom** : HotCornerArea  | undfined
 
 ## Methods
 ### checkInBound
