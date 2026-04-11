@@ -1,7 +1,6 @@
 # Block
 
 Everything in the canvas is a block, you can create your own block by extending the `Block` class.
-You can define list of options available in blocks via passing an object to the constructor:
 
 ```javascript
 class MyBlock extends Block {
@@ -15,23 +14,22 @@ class MyBlock extends Block {
     }
 }
 ```
-
+Options can be defined as parameter that passes to the constructor:
 ```javascript
-new Block(options)
+const block = new Block(options)
 ```
 
-Or you can define them as a method of the block after constructing your block:
+Or can be defined as a method of the block after constructing your block:
 
 ```javascript
-const block = new Block();
 block.x(option);
 ```
 
 ## Options
-
+---
 ### x
 
-You can define your block's x position on canvas, block position always starts from the top left corner of the canvas.
+X position of block can be defined with `x` parameter. Block position always starts from the top left corner of the canvas.
 
 ```javascript
 block.x(option)
@@ -42,13 +40,12 @@ block.x(option)
 * **type** : string | number
 * **default**: 0
 
-
 **Returns**
 
 * **x** : number
-
+---
 ### y
-describtion
+Y position of block can be defined with `y` parameter. Block position always starts from the top left corner of the canvas.
 
 ```javascript
 block.y(option)
@@ -56,13 +53,13 @@ block.y(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **y** : number
-
+---
 ### width
-describtion
+Width defines block width in canvas.
 
 ```javascript
 block.width(option)
@@ -70,13 +67,13 @@ block.width(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **width** : number
-
+---
 ### height
-describtion
+Height defines block height in canvas.
 
 ```javascript
 block.height(option)
@@ -84,13 +81,13 @@ block.height(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **height** : number
-
+---
 ### minWidth
-describtion
+Min width defines minimum resizable width of block in canvas.
 
 ```javascript
 block.minWidth(option)
@@ -98,13 +95,13 @@ block.minWidth(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **minWidth** : number
-
+---
 ### minHeight
-describtion
+Min height defines minimum resizable height of block in canvas.
 
 ```javascript
 block.minHeight(option)
@@ -112,13 +109,13 @@ block.minHeight(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **minHeight** : number
-
+---
 ### maxWidth
-describtion
+Max width defines minimum resizable width of block in canvas.
 
 ```javascript
 block.maxWidth(option)
@@ -126,13 +123,13 @@ block.maxWidth(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: width's size
 
 **Returns**
 * **maxWidth** : number
-
+---
 ### maxHeight
-describtion
+Max height defines minimum resizable height of block in canvas.
 
 ```javascript
 block.maxHeight(option)
@@ -140,27 +137,27 @@ block.maxHeight(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: height's size
 
 **Returns**
 * **maxHeight** : number
-
+---
 ### position
-describtion
+Position defines how block cordinates will change realtive to parent. Parent can be canvas or block itself.
 
 ```javascript
 block.position(option)
 ```
 
 **Option**
-* **type** : "static" | "relative" | "absolute" | "sticky" | "fixed"
-* **default**:
+* **type** : "relative" | "absolute" | "sticky" | "fixed"
+* **default**: undefined
 
 **Returns**
-* **position** : string
-
+* **position** : "relative" | "absolute" | "sticky" | "fixed"
+---
 ### top
-describtion
+Top defines block y cordinate relative to parent block. Parent can be canvas or block itself.
 
 ```javascript
 block.top(option)
@@ -168,13 +165,13 @@ block.top(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **top** : number
-
+---
 ### bottom
-describtion
+Bottom defines block y cordinate relative to parent block. Parent can be canvas or block itself.
 
 ```javascript
 block.bottom(option)
@@ -182,13 +179,13 @@ block.bottom(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **bottom** : number
-
+---
 ### left
-describtion
+Left defines block x cordinate relative to parent block. Parent can be canvas or block itself.
 
 ```javascript
 block.left(option)
@@ -196,13 +193,13 @@ block.left(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **left** : number
-
+---
 ### right
-describtion
+Right defines block x cordinate relative to parent block. Parent can be canvas or block itself.
 
 ```javascript
 block.right(option)
@@ -210,13 +207,13 @@ block.right(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **right** : number
-
+---
 ### selectable
-describtion
+Selectable defines blocks can be selectable. Selectable affects events and block transfomrations (resizable, draggable, rotatable).
 
 ```javascript
 block.selectable(option)
@@ -224,13 +221,13 @@ block.selectable(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: false
 
 **Returns**
 * **selectable** : boolean
-
+---
 ### padding
-describtion
+Padding defines inner space for block.
 
 ```javascript
 block.padding(option)
@@ -238,13 +235,13 @@ block.padding(option)
 
 **Option**
 * **type** : [string | number, string | number, string | number, string | number]
-* **default**:
+* **default**: []
 
 **Returns**
 * **padding** : [number, number, number, number]
-
+---
 ### paddingTop
-describtion
+Padding top defines inner space from top for block.
 
 ```javascript
 block.paddingTop(option)
@@ -252,13 +249,13 @@ block.paddingTop(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **paddingTop** : number
-
+---
 ### paddingRight
-describtion
+Padding right defines inner space from right for block.
 
 ```javascript
 block.paddingRight(option)
@@ -266,13 +263,13 @@ block.paddingRight(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **paddingRight** : number
-
+---
 ### paddingBottom
-describtion
+Padding bottom defines inner space from bottom for block.
 
 ```javascript
 block.paddingBottom(option)
@@ -280,13 +277,13 @@ block.paddingBottom(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **paddingBottom** : number
-
+---
 ### paddingLeft
-describtion
+Padding left defines inner space from left for block.
 
 ```javascript
 block.paddingLeft(option)
@@ -294,13 +291,13 @@ block.paddingLeft(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **paddingLeft** : number
-
+---
 ### margin
-describtion
+Margin defines outter space for block relative to parent. Parent can be canvas or block itself.
 
 ```javascript
 block.margin(option)
@@ -308,13 +305,13 @@ block.margin(option)
 
 **Option**
 * **type** : [string | number, string | number, string | number, string | number]
-* **default**:
+* **default**: []
 
 **Returns**
 * **margin** : [number, number, number, number]
-
+---
 ### marginTop
-describtion
+Margin defines outter space from top for block relative to parent. Parent can be canvas or block itself.
 
 ```javascript
 block.marginTop(option)
@@ -322,13 +319,13 @@ block.marginTop(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **marginTop** : number
-
+---
 ### marginRight
-describtion
+Margin defines outter space from right for block relative to parent. Parent can be canvas or block itself.
 
 ```javascript
 block.marginRight(option)
@@ -336,13 +333,13 @@ block.marginRight(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **marginRight** : number
-
+---
 ### marginBottom
-describtion
+Margin defines outter space from bottom for block relative to parent. Parent can be canvas or block itself.
 
 ```javascript
 block.marginBottom(option)
@@ -350,13 +347,13 @@ block.marginBottom(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **marginBottom** : number
-
+---
 ### marginLeft
-describtion
+Margin defines outter space from left for block relative to parent. Parent can be canvas or block itself.
 
 ```javascript
 block.marginLeft(option)
@@ -364,27 +361,13 @@ block.marginLeft(option)
 
 **Option**
 * **type** : string | number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **marginLeft** : number
-
-### fillRule
-describtion
-
-```javascript
-block.fillRule(option)
-```
-
-**Option**
-* **type** : string
-* **default**:
-
-**Returns**
-* **fillRule** : string
-
+---
 ### zIndex
-describtion
+Z index defines how block will positioned in canvas. Top element gets higher z index.
 
 ```javascript
 block.zIndex(option)
@@ -392,13 +375,13 @@ block.zIndex(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: undefined
 
 **Returns**
 * **zIndex** : number
-
+---
 ### draggable
-describtion
+Draggable enables blocks drag and drop transformation in canvas.
 
 ```javascript
 block.draggable(option)
@@ -406,13 +389,13 @@ block.draggable(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: false
 
 **Returns**
 * **draggable** : boolean
-
+---
 ### onDrag
-describtion
+On drag takes callback functions which is invoking each time when `draggable` event invokes.
 
 ```javascript
 block.onDrag(option)
@@ -420,13 +403,13 @@ block.onDrag(option)
 
 **Option**
 * **type** : (event: MouseEvent) => void
-* **default**:
+* **default**: undefined
 
 **Returns**
 * **onDrag** : (event: MouseEvent) => void
-
+---
 ### dragX
-describtion
+Drag x enables dragging on x axis.
 
 ```javascript
 block.dragX(option)
@@ -438,9 +421,9 @@ block.dragX(option)
 
 **Returns**
 * **dragX** : boolean
-
+---
 ### dragY
-describtion
+Drag y enables dragging on y axis.
 
 ```javascript
 block.dragY(option)
@@ -452,23 +435,9 @@ block.dragY(option)
 
 **Returns**
 * **dragY** : boolean
-
-### visible
-describtion
-
-```javascript
-block.visible(option)
-```
-
-**Option**
-* **type** : boolean
-* **default**:
-
-**Returns**
-* **visible** : boolean
-
+---
 ### rotate
-describtion
+Rotate defines rotating in radian on blocks.
 
 ```javascript
 block.rotate(option)
@@ -476,13 +445,28 @@ block.rotate(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **rotate** : number
+---
+### rotatable
+Rotatable enables block rotating transforamtion in canvas.
 
+```javascript
+block.rotatable(option)
+```
+
+**Option**
+* **type** : number
+* **default**: 0
+
+**Returns**
+* **rotatable** : number
+
+---
 ### onRotate
-describtion
+On rotate takes callback functions which is invoking each time when `rotatable` event invokes.
 
 ```javascript
 block.onRotate(option)
@@ -490,13 +474,13 @@ block.onRotate(option)
 
 **Option**
 * **type** : (event: MouseEvent) => void
-* **default**:
+* **default**: undefined
 
 **Returns**
 * **onRotate** : (event: MouseEvent) => void
-
+---
 ### order
-describtion
+Order defines order of block in LayoutBlocks.
 
 ```javascript
 block.order(option)
@@ -508,9 +492,9 @@ block.order(option)
 
 **Returns**
 * **order** : number
-
-### alignSelf
-describtion
+---
+<!-- ### alignSelf
+Align self defines aliging of block for LayoutBlock.
 
 ```javascript
 block.alignSelf(option)
@@ -522,9 +506,9 @@ block.alignSelf(option)
 
 **Returns**
 * **alignSelf** : string
-
+---
 ### justifySelf
-describtion
+Justify self defines align of block for LayoutBlock.
 
 ```javascript
 block.justifySelf(option)
@@ -536,7 +520,7 @@ block.justifySelf(option)
 
 **Returns**
 * **justifySelf** : string
-
+---
 ### flexShrink
 describtion
 
@@ -549,23 +533,24 @@ block.flexShrink(option)
 * **default**:
 
 **Returns**
-* **flexShrink** : number
-
+* **flexShrink** : number -->
+---
 ### flexBasis
-describtion
+Flex basis defines the initial size of a flex item along the main axis. 
+Implementation based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-basis
 
 ```javascript
 block.flexBasis(option)
 ```
 
 **Option**
-* **type** : number | string
-* **default**:
+* **type** : number | "auto"
+* **default**: "auto"
 
 **Returns**
-* **flexBasis** : number | string
-
-### flexGrow
+* **flexBasis** : number | "auto"
+---
+<!-- ### flexGrow
 describtion
 
 ```javascript
@@ -578,7 +563,7 @@ block.flexGrow(option)
 
 **Returns**
 * **flexGrow** : number
-
+---
 ### gridRow
 describtion
 
@@ -592,7 +577,7 @@ block.gridRow(option)
 
 **Returns**
 * **gridRow** : number[]
-
+---
 ### gridRowStart
 describtion
 
@@ -606,7 +591,7 @@ block.gridRowStart(option)
 
 **Returns**
 * **gridRowStart** : number
-
+---
 ### gridRowEnd
 describtion
 
@@ -620,7 +605,7 @@ block.gridRowEnd(option)
 
 **Returns**
 * **gridRowEnd** : number
-
+---
 ### gridColumn
 describtion
 
@@ -634,7 +619,7 @@ block.gridColumn(option)
 
 **Returns**
 * **gridColumn** : number[]
-
+---
 ### gridColumnStart
 describtion
 
@@ -648,7 +633,7 @@ block.gridColumnStart(option)
 
 **Returns**
 * **gridColumnStart** : number
-
+---
 ### gridColumnEnd
 describtion
 
@@ -662,7 +647,7 @@ block.gridColumnEnd(option)
 
 **Returns**
 * **gridColumnEnd** : number
-
+---
 ### gridArea
 describtion
 
@@ -675,10 +660,10 @@ block.gridArea(option)
 * **default**:
 
 **Returns**
-* **gridArea** : number[] | string
-
+* **gridArea** : number[] | string -->
+---
 ### hotAreaGap
-describtion
+Hot area gap defines gaps between hot lines.
 
 ```javascript
 block.hotAreaGap(option)
@@ -686,13 +671,13 @@ block.hotAreaGap(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **hotAreaGap** : number
-
+---
 ### hotCornerSize
-describtion
+Hot corner size defines size of hot corners
 
 ```javascript
 block.hotCornerSize(option)
@@ -700,13 +685,13 @@ block.hotCornerSize(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 5
 
 **Returns**
 * **hotCornerSize** : number
-
+---
 ### hotCornerRadius
-describtion
+Hot corner raidus defines raius of hot corners
 
 ```javascript
 block.hotCornerRadius(option)
@@ -714,13 +699,13 @@ block.hotCornerRadius(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: [0]
 
 **Returns**
 * **hotCornerRadius** : number
-
+---
 ### hotCornerStrokeWidth
-describtion
+Hot corner stroke width defines stroke width of hot corners
 
 ```javascript
 block.hotCornerStrokeWidth(option)
@@ -728,13 +713,13 @@ block.hotCornerStrokeWidth(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 0
 
 **Returns**
 * **hotCornerStrokeWidth** : number
-
+---
 ### hotCornerStrokeColor
-describtion
+Hot corner stroke color defines stroke color of hot corners
 
 ```javascript
 block.hotCornerStrokeColor(option)
@@ -742,13 +727,13 @@ block.hotCornerStrokeColor(option)
 
 **Option**
 * **type** : string
-* **default**:
+* **default**: "blue"
 
 **Returns**
 * **hotCornerStrokeColor** : string
-
+---
 ### hotCornerBackgroundColor
-describtion
+Hot corner background color defines background color of hot corners
 
 ```javascript
 block.hotCornerBackgroundColor(option)
@@ -756,13 +741,13 @@ block.hotCornerBackgroundColor(option)
 
 **Option**
 * **type** : string
-* **default**:
+* **default**: "white"
 
 **Returns**
 * **hotCornerBackgroundColor** : string
-
+---
 ### hotLineStrokeWidth
-describtion
+Hot lines stroke width defines stroke width of hot lines
 
 ```javascript
 block.hotLineStrokeWidth(option)
@@ -770,13 +755,13 @@ block.hotLineStrokeWidth(option)
 
 **Option**
 * **type** : number
-* **default**:
+* **default**: 1.5
 
 **Returns**
 * **hotLineStrokeWidth** : number
-
+---
 ### hotLineStrokeColor
-describtion
+Hot lines stroke color defines stroke color of hot lines
 
 ```javascript
 block.hotLineStrokeColor(option)
@@ -784,27 +769,13 @@ block.hotLineStrokeColor(option)
 
 **Option**
 * **type** : string
-* **default**:
+* **default**: "blue"
 
 **Returns**
 * **hotLineStrokeColor** : string
-
-### rotationRadius
-describtion
-
-```javascript
-block.rotationRadius(option)
-```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **rotationRadius** : number
-
+---
 ### rotationTopLeft
-describtion
+Rotation top left enables to rotate from top left hot corner of block.
 
 ```javascript
 block.rotationTopLeft(option)
@@ -812,13 +783,13 @@ block.rotationTopLeft(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **rotationTopLeft** : boolean
-
+---
 ### rotationTopRight
-describtion
+Rotation top right enables to rotate from top right hot corner of block.
 
 ```javascript
 block.rotationTopRight(option)
@@ -826,13 +797,13 @@ block.rotationTopRight(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **rotationTopRight** : boolean
-
+---
 ### rotationBottomLeft
-describtion
+Rotation bottom left enables to rotate from bottom left hot corner of block.
 
 ```javascript
 block.rotationBottomLeft(option)
@@ -840,13 +811,13 @@ block.rotationBottomLeft(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **rotationBottomLeft** : boolean
-
+---
 ### rotationBottomRight
-describtion
+Rotation bottom right enables to rotate from bottom right hot corner of block.
 
 ```javascript
 block.rotationBottomRight(option)
@@ -854,13 +825,13 @@ block.rotationBottomRight(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **rotationBottomRight** : boolean
-
+---
 ### resizeTopLeft
-describtion
+Resize top left enables to resize from top left hot corner of block.
 
 ```javascript
 block.resizeTopLeft(option)
@@ -868,13 +839,13 @@ block.resizeTopLeft(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **resizeTopLeft** : boolean
-
+---
 ### resizeTopRight
-describtion
+Resize top right enables to resize from top right hot corner of block.
 
 ```javascript
 block.resizeTopRight(option)
@@ -882,13 +853,13 @@ block.resizeTopRight(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **resizeTopRight** : boolean
-
+---
 ### resizeBottomLeft
-describtion
+Resize bottom left enables to resize from bottom left hot corner of block.
 
 ```javascript
 block.resizeBottomLeft(option)
@@ -896,13 +867,13 @@ block.resizeBottomLeft(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **resizeBottomLeft** : boolean
-
+---
 ### resizeBottomRight
-describtion
+Resize bottom right enables to resize from bottom right hot corner of block.
 
 ```javascript
 block.resizeBottomRight(option)
@@ -910,13 +881,13 @@ block.resizeBottomRight(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **resizeBottomRight** : boolean
-
+---
 ### resizeTop
-describtion
+Resize top enables to reszie from top hot line of block.
 
 ```javascript
 block.resizeTop(option)
@@ -924,13 +895,13 @@ block.resizeTop(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **resizeTop** : boolean
-
+---
 ### resizeLeft
-describtion
+Resize left enables to reszie from left hot line of block.
 
 ```javascript
 block.resizeLeft(option)
@@ -938,13 +909,13 @@ block.resizeLeft(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **resizeLeft** : boolean
-
+---
 ### resizeRight
-describtion
+Resize right enables to reszie from right hot line of block.
 
 ```javascript
 block.resizeRight(option)
@@ -952,13 +923,13 @@ block.resizeRight(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **resizeRight** : boolean
-
+---
 ### resizeBottom
-describtion
+Resize bottom enables to reszie from bottom hot line of block.
 
 ```javascript
 block.resizeBottom(option)
@@ -966,13 +937,13 @@ block.resizeBottom(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: true
 
 **Returns**
 * **resizeBottom** : boolean
-
+---
 ### horizontalFlipResize
-describtion
+Horizontal flip resize enables to resizable event to resize in flip position.
 
 ```javascript
 block.horizontalFlipResize(option)
@@ -980,13 +951,13 @@ block.horizontalFlipResize(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: false
 
 **Returns**
 * **horizontalFlipResize** : boolean
-
+---
 ### verticalFlipResize
-describtion
+Vertical flip resize enables to resizable event to resize in flip position.
 
 ```javascript
 block.verticalFlipResize(option)
@@ -998,9 +969,9 @@ block.verticalFlipResize(option)
 
 **Returns**
 * **verticalFlipResize** : boolean
-
+---
 ### resizable
-describtion
+Resizable enables block resizing transforamtion in canvas.
 
 ```javascript
 block.resizable(option)
@@ -1012,9 +983,9 @@ block.resizable(option)
 
 **Returns**
 * **resizable** : boolean
-
+---
 ### onResize
-describtion
+On resize takes callback functions which is invoking each time when `resizable` event invokes.
 
 ```javascript
 block.onResize(option)
@@ -1026,9 +997,9 @@ block.onResize(option)
 
 **Returns**
 * **onResize** : (event: MouseEvent) => void
-
+---
 ### hidden
-describtion
+Hidden enables to hide block and its child blocks in canvas.
 
 ```javascript
 block.hidden(option)
@@ -1036,28 +1007,27 @@ block.hidden(option)
 
 **Option**
 * **type** : boolean
-* **default**:
+* **default**: false
 
 **Returns**
 * **hidden** : boolean
-
-
-### persistHidden
-describtion
+---
+### important
+Important overrides current value of options defined in blocks and persist to important values.
 
 ```javascript
-block.persistHidden(option)
+block.important(options)
 ```
 
 **Option**
-* **type** : boolean
-* **default**:
+* **type** : BlockOptions
+* **default**: undefined
 
 **Returns**
-* **persistHidden** : boolean
-
+* **important** : BlockOptions
+---
 ### rotationCenterX
-describtion
+Rotation center x defines center of rotation in x axis.
 
 ```javascript
 block.rotationCenterX(option)
@@ -1069,9 +1039,9 @@ block.rotationCenterX(option)
 
 **Returns**
 * **rotationCenterX** : number
-
+---
 ### rotationCenterY
-describtion
+Rotation center y defines center of rotation in y axis.
 
 ```javascript
 block.rotationCenterY(option)
@@ -1083,9 +1053,9 @@ block.rotationCenterY(option)
 
 **Returns**
 * **rotationCenterY** : number
-
+---
 ### cornerTopLeft
-describtion
+Corner top left defines top left of corner for blocks.
 
 ```javascript
 block.cornerTopLeft(option)
@@ -1097,9 +1067,9 @@ block.cornerTopLeft(option)
 
 **Returns**
 * **cornerTopLeft** : `{ x: number; y: number }`
-
+---
 ### cornerTopRight
-describtion
+Corner top right defines top right of corner for blocks.
 
 ```javascript
 block.cornerTopRight(option)
@@ -1111,9 +1081,9 @@ block.cornerTopRight(option)
 
 **Returns**
 * **cornerTopRight** : `{ x: number; y: number }`
-
+---
 ### cornerBottomLeft
-describtion
+Corner bottom left defines bottom left of corner for blocks.
 
 ```javascript
 block.cornerBottomLeft(option)
@@ -1125,9 +1095,9 @@ block.cornerBottomLeft(option)
 
 **Returns**
 * **cornerBottomLeft** : `{ x: number; y: number }`
-
+---
 ### cornerBottomRight
-describtion
+Corner bottom right defines bottom right of corner for blocks.
 
 ```javascript
 block.cornerBottomRight(option)
@@ -1139,9 +1109,9 @@ block.cornerBottomRight(option)
 
 **Returns**
 * **cornerBottomRight** : `{ x: number; y: number }`
-
+---
 ### hotCornerTopLeft
-describtion
+Hot corner top left defines top left of hot corner for blocks.
 
 ```javascript
 block.hotCornerTopLeft(option)
@@ -1153,9 +1123,10 @@ block.hotCornerTopLeft(option)
 
 **Returns**
 * **hotCornerTopLeft** : `{ x: number; y: number }`
-
+---
 ### hotCornerTopRight
-describtion
+Hot corner top right defines top right of hot corner for blocks.
+
 
 ```javascript
 block.hotCornerTopRight(option)
@@ -1167,9 +1138,10 @@ block.hotCornerTopRight(option)
 
 **Returns**
 * **hotCornerTopRight** : `{ x: number; y: number }`
-
+---
 ### hotCornerBottomLeft
-describtion
+Hot corner bottom left defines bottom left of hot corner for blocks.
+
 
 ```javascript
 block.hotCornerBottomLeft(option)
@@ -1181,9 +1153,10 @@ block.hotCornerBottomLeft(option)
 
 **Returns**
 * **hotCornerBottomLeft** : `{ x: number; y: number }`
-
+---
 ### hotCornerBottomRight
-describtion
+Hot corner bottom right defines bottom right of hot corner for blocks.
+
 
 ```javascript
 block.hotCornerBottomRight(option)
@@ -1195,9 +1168,9 @@ block.hotCornerBottomRight(option)
 
 **Returns**
 * **hotCornerBottomRight** : `{ x: number; y: number }`
-
+---
 ### hotRotCornerTopLeft
-describtion
+Hot rot corner top left defines top left of hot rotation corner for blocks.
 
 ```javascript
 block.hotRotCornerTopLeft(option)
@@ -1209,9 +1182,9 @@ block.hotRotCornerTopLeft(option)
 
 **Returns**
 * **hotRotCornerTopLeft** : `{ x: number; y: number }`
-
+---
 ### hotRotCornerTopRight
-describtion
+Hot rot corner top right defines top right of hot rotation corner for blocks.
 
 ```javascript
 block.hotRotCornerTopRight(option)
@@ -1223,9 +1196,9 @@ block.hotRotCornerTopRight(option)
 
 **Returns**
 * **hotRotCornerTopRight** : `{ x: number; y: number }`
-
+---
 ### hotRotCornerBottomLeft
-describtion
+Hot rot corner bottom left defines bottom left of hot rotation corner for blocks.
 
 ```javascript
 block.hotRotCornerBottomLeft(option)
@@ -1237,9 +1210,9 @@ block.hotRotCornerBottomLeft(option)
 
 **Returns**
 * **hotRotCornerBottomLeft** : `{ x: number; y: number }`
-
+---
 ### hotRotCornerBottomRight
-describtion
+Hot rot corner bottom right defines bottom right of hot rotation corner for blocks.
 
 ```javascript
 block.hotRotCornerBottomRight(option)
@@ -1251,9 +1224,9 @@ block.hotRotCornerBottomRight(option)
 
 **Returns**
 * **hotRotCornerBottomRight** : `{ x: number; y: number }`
-
+---
 ### hotRotatableAreaTopLeft
-describtion
+Hot rotatable area top left defines top left of hot rotation area for blocks.
 
 ```javascript
 block.hotRotatableAreaTopLeft(option)
@@ -1265,9 +1238,10 @@ block.hotRotatableAreaTopLeft(option)
 
 **Returns**
 * **hotRotatableAreaTopLeft** : HotCornerArea
-
+---
 ### hotRotatableAreaTopRight
-describtion
+Hot rotatable area top right defines top right of hot rotation area for blocks.
+
 
 ```javascript
 block.hotRotatableAreaTopRight(option)
@@ -1279,9 +1253,10 @@ block.hotRotatableAreaTopRight(option)
 
 **Returns**
 * **hotRotatableAreaTopRight** : HotCornerArea
-
+---
 ### hotRotatableAreaBottomLeft
-describtion
+Hot rotatable area bottom left defines bottom left of hot rotation area for blocks.
+
 
 ```javascript
 block.hotRotatableAreaBottomLeft(option)
@@ -1293,9 +1268,10 @@ block.hotRotatableAreaBottomLeft(option)
 
 **Returns**
 * **hotRotatableAreaBottomLeft** : HotCornerArea
-
+---
 ### hotRotatableAreaBottomRight
-describtion
+Hot rotatable area bottom right defines bottom right of hot rotation area for blocks.
+
 
 ```javascript
 block.hotRotatableAreaBottomRight(option)
@@ -1307,9 +1283,9 @@ block.hotRotatableAreaBottomRight(option)
 
 **Returns**
 * **hotRotatableAreaBottomRight** : HotCornerArea
-
+---
 ### hotResizableAreaTopLeft
-describtion
+Hot resizable area top left defines top left of hot resizing area for blocks.
 
 ```javascript
 block.hotResizableAreaTopLeft(option)
@@ -1321,9 +1297,10 @@ block.hotResizableAreaTopLeft(option)
 
 **Returns**
 * **hotResizableAreaTopLeft** : HotCornerArea
-
+---
 ### hotResizableAreaTopRight
-describtion
+Hot resizable area top right defines top right of hot resizing area for blocks.
+
 
 ```javascript
 block.hotResizableAreaTopRight(option)
@@ -1335,9 +1312,10 @@ block.hotResizableAreaTopRight(option)
 
 **Returns**
 * **hotResizableAreaTopRight** : HotCornerArea
-
+---
 ### hotResizableAreaBottomLeft
-describtion
+Hot resizable area bottom left defines bottom left of hot resizing area for blocks.
+
 
 ```javascript
 block.hotResizableAreaBottomLeft(option)
@@ -1349,9 +1327,10 @@ block.hotResizableAreaBottomLeft(option)
 
 **Returns**
 * **hotResizableAreaBottomLeft** : HotCornerArea
-
+---
 ### hotResizableAreaBottomRight
-describtion
+Hot resizable area bottom right defines bottom right of hot resizing area for blocks.
+
 
 ```javascript
 block.hotResizableAreaBottomRight(option)
@@ -1363,9 +1342,9 @@ block.hotResizableAreaBottomRight(option)
 
 **Returns**
 * **hotResizableAreaBottomRight** : HotCornerArea
-
+---
 ### hotResizableAreaTop
-describtion
+Hot resizable area top defines top area of hot resizing for blocks.
 
 ```javascript
 block.hotResizableAreaTop(option)
@@ -1377,9 +1356,10 @@ block.hotResizableAreaTop(option)
 
 **Returns**
 * **hotResizableAreaTop** : HotCornerArea
-
+---
 ### hotResizableAreaRight
-describtion
+Hot resizable area right defines right area of hot resizing for blocks.
+
 
 ```javascript
 block.hotResizableAreaRight(option)
@@ -1391,9 +1371,10 @@ block.hotResizableAreaRight(option)
 
 **Returns**
 * **hotResizableAreaRight** : HotCornerArea
-
+---
 ### hotResizableAreaLeft
-describtion
+Hot resizable area left defines left area of hot resizing for blocks.
+
 
 ```javascript
 block.hotResizableAreaLeft(option)
@@ -1405,9 +1386,9 @@ block.hotResizableAreaLeft(option)
 
 **Returns**
 * **hotResizableAreaLeft** : HotCornerArea
-
+---
 ### hotResizableAreaBottom
-describtion
+Hot resizable area bottom defines bottom area of hot resizing for blocks.
 
 ```javascript
 block.hotResizableAreaBottom(option)
@@ -1420,30 +1401,213 @@ block.hotResizableAreaBottom(option)
 **Returns**
 * **hotResizableAreaBottom** : HotCornerArea
 
-### translate
-describtion
+## Methods
+### checkInBound
 
 ```javascript
-block.translate(option)
+block.checkInBound(event)
 ```
 
-**Option**
-* **type** : `{ x: number; y: number }`
-* **default**:
+**Parameters**
+* **event** : MouseEvent
 
 **Returns**
-* **translate** : `{ x: number; y: number }`
-
-### overflowTranslate
-describtion
+* **checkInBound** : boolean
+---
+### invokeChange
 
 ```javascript
-block.overflowTranslate(option)
+block.invokeChange()
 ```
 
-**Option**
-* **type** : `{ x: number; y: number }`
-* **default**:
+**Parameters**
 
 **Returns**
-* **overflowTranslate** : `{ x: number; y: number }`
+* **invokeChange** : void
+---
+### set
+```javascript
+block.set(options)
+```
+
+**Parameters**
+* **options**: BlockOptions
+
+**Returns**
+* **set** : void
+---
+### bind
+```javascript
+block.bind(block, options)
+```
+
+**Parameters**
+* **block**: Block
+* **options**: (keyof IBlockOptions)[]
+
+**Returns**
+* **bind** : void
+---
+### animate
+
+```javascript
+block.animate(keyframes, callback)
+```
+
+**Parameters**
+* **point** : `{ x: number; y: number; path: Path2D | undefined }`
+
+**Returns**
+* **animate** : number
+---
+### animationStart
+
+```javascript
+block.animationStart(animationId)
+```
+
+**Parameters**
+* **animationId** : number
+
+**Returns**
+* **animationStart** : void
+---
+### animate
+
+```javascript
+block.animationStop(animationId)
+```
+
+**Parameters**
+* **animationId** : number
+
+**Returns**
+* **animationStop** : void
+---
+### animationStop
+
+```javascript
+block.animate(animationId)
+```
+
+**Parameters**
+* **animationId** : number
+
+**Returns**
+* **animate** : void
+---
+### animationFinish
+
+```javascript
+block.animationFinish(animationId)
+```
+
+**Parameters**
+* **animationId** : number
+
+**Returns**
+* **animationFinish** : void
+---
+### animationReverse
+
+```javascript
+block.animationReverse(animationId)
+```
+
+**Parameters**
+* **animationId** : number
+
+**Returns**
+* **animationReverse** : void
+---
+### animationDelay
+
+```javascript
+block.animationDelay(animationId, value)
+```
+
+**Parameters**
+* **animationId** : number
+* **value**: number
+
+**Returns**
+* **animationDelay** : void
+---
+### animationPlaybackRate
+
+```javascript
+block.animationPlaybackRate(animationId, value)
+```
+
+**Parameters**
+* **animationId** : number
+* **value**: number
+
+**Returns**
+* **animationPlaybackRate** : void
+---
+### animationDirection
+
+```javascript
+block.animationDirection(animationId, value)
+```
+
+**Parameters**
+* **animationId** : number
+* **value**: 'normal' | 'reverse' | 'alternate' | 'alternate-reverse'
+
+**Returns**
+* **animationDirection** : void
+---
+### animationDuration
+
+```javascript
+block.animationDuration(animationId, value)
+```
+
+**Parameters**
+* **animationId** : number
+* **value**: number
+
+**Returns**
+* **animationDuration** : void
+---
+### animationIterationStart
+
+```javascript
+block.animationIterationStart(animationId, value)
+```
+
+**Parameters**
+* **animationId** : number
+* **value**: number
+
+**Returns**
+* **animationIterationStart** : void
+---
+### animationIterations
+
+```javascript
+block.animationIterations(animationId, value)
+```
+
+**Parameters**
+* **animationId** : number
+* **value**: number
+
+**Returns**
+* **animationIterations** : void
+---
+### animationAutoStart
+
+```javascript
+block.animationAutoStart(animationId, value)
+```
+
+**Parameters**
+* **animationId** : number
+* **value**: boolean
+
+**Returns**
+* **animationAutoStart** : void
+---
