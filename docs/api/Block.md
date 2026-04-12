@@ -490,11 +490,11 @@ block.rotatable(option)
 ```
 
 **Option**
-* **type** : number | undfined
-* **default**: 0
+* **type** : boolean | undfined
+* **default**: false
 
 **Returns**
-* **rotatable** : number 
+* **rotatable** : boolean 
 
 ---
 ### onRotate
