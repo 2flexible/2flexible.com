@@ -112,7 +112,7 @@ const config: Config = {
             title: "Too Flexible",
             logo: {
                 alt: "2flexible Logo",
-                src: "img/logo.svg",
+                src: "img/favicon1.svg",
             },
             items: [
                 {

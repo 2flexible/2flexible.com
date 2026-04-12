@@ -83,7 +83,8 @@
     border-radius: 28px;
     padding: 0 20px;
     border: 0.2px solid rgb(63, 63, 63);
-    z-index: 999 !important; 
+    top: 20px;
+    z-index: 999 !important;
 }
 
 .theme-layout-navbar-div {
@@ -116,6 +117,7 @@
     --docsearch-hit-background: var(--ifm-color-white);
     /* Footer */
     --docsearch-footer-background: var(--ifm-color-white);
+    z-index: 9999;
 }
 
 [data-theme="dark"] .DocSearch {
@@ -138,6 +140,7 @@
         var(--ifm-color-emphasis-200) 0%,
         var(--ifm-color-emphasis-100) 100%
     );
+    z-index: 9999;
 }
 
 .DocSearch.DocSearch-Button {
@@ -160,22 +163,42 @@
 .tableOfContents_bqdL.thin-scrollbar.theme-doc-toc-desktop {
     top: calc(var(--ifm-navbar-height) + 2rem);
 }
-.menu__link.menu__link--active{
-  color: #ffffff !important;
-  border-radius: 28px !important;
+.menu__link.menu__link--active {
+    color: #ffffff !important;
+    border-radius: 28px !important;
 }
-.menu__link.menu__link:hover{
-  color: #8b8b8b !important;
-  border-radius: 28px !important;
-  background-color: transparent !important;
+.menu__link.menu__link:hover {
+    color: #8b8b8b !important;
+    border-radius: 28px !important;
+    background-color: transparent !important;
 }
-.table-of-contents__link.toc-highlight.table-of-contents__link--active{
-  color: #8b8b8b !important;
+.table-of-contents__link.toc-highlight.table-of-contents__link--active {
+    color: #8b8b8b !important;
 }
 
 footer {
     background-color: #1d2025 !important;
+    z-index: 999;
 }
 #__docusaurus_skipToContent_fallback {
     padding: 40px 160px 0 160px;
 }
+
+.themedComponent_mlkZ.themedComponent--dark_xIcU,
+.navbar__logo {
+    height: 20px;
+    margin-right: 8px;
+}
+.navbar__item.navbar__link.navbar__link--active {
+    color: #8b8b8b !important;
+}
+.navbar__item.navbar__link.navbar__link:hover {
+    color: #8b8b8b !important;
+}
+.navbar__title.text--truncate:hover {
+    color: #8b8b8b !important;
+}
+/* .navbar__brand {
+    display: flex;
+    align-items: center;
+} */

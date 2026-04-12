@@ -22,13 +22,23 @@ function HomepageHeader() {
     // document.title = localStorage.getItem("title") || document.title;
 
     return (
-        <header style={{ overflow: "hidden", height: "100vh" }}>
+        <header style={{ overflow: "hidden", height: "90vh" }}>
             {/* <CanvasInit>
                 <NavbarMenu />
                 <ContextMenu />
                 <BlockOptions />
                 <SaveAnimation />
             </CanvasInit> */}
+            <div
+                style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "110%",
+                    boxShadow: "inset 0 0 150px 160px rgba(0, 0, 0, 0.7)",
+                }}
+            ></div>
             <div
                 className="container"
                 style={{
@@ -37,7 +47,7 @@ function HomepageHeader() {
                     alignItems: "center",
                     alignContent: "center",
                     flexDirection: "column",
-                    height: "80%",
+                    height: "100%",
                 }}
             >
                 <video
@@ -47,6 +57,7 @@ function HomepageHeader() {
                     width={900}
                     height={700}
                     loop
+                    className="videplayback"
                     style={{
                         width: "100%",
                         height: "120%",
@@ -63,13 +74,30 @@ function HomepageHeader() {
                 <Heading
                     as="h1"
                     className="hero__title"
-                    style={{ display: "flex", alignItems: "center", gap: 20 }}
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 20,
+                        zIndex: 999,
+                    }}
                 >
                     <Logo width={60} height={60}></Logo>
                     Your too flexible infinite canvas library
                 </Heading>
-                <p className="hero__subtitle">Easy to setup, use, and build.</p>
-                <div className={styles.buttons}>
+                <p
+                    style={{
+                        zIndex: 999,
+                    }}
+                    className="hero__subtitle"
+                >
+                    Easy to setup, use, and build.
+                </p>
+                <div
+                    className={styles.buttons}
+                    style={{
+                        zIndex: 999,
+                    }}
+                >
                     <Link
                         className="button button--secondary button--lg"
                         to="/docs/documentation/introduction"
