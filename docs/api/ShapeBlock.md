@@ -1,5 +1,23 @@
+```javascript
+new ShapeBlock(options)
+```
+ShapeBlock class inherted from Block class and helps to define shapes in canvas. You can inhert this ShapeBlock class to create your own shape. ShapeBlock gives you list of options for creating custom shapes or instead you can use `draw` method to define shapes.
+
 ## Options
 
+### draw
+Draw method helps to create shapes with callback function that takes context.
+```javascript
+block.draw(option)
+```
+
+**Option**
+* **type** : `(context: CanvasRenderingContext2D) => void` | undefined
+* **default**: undefined
+
+**Returns**
+* **draw** : void
+---
 ### fill
 Fill option fills current context or given path. This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fill
 ```javascript
@@ -741,6 +759,11 @@ This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRend
 block.beginPath(option)
 ```
 
+**Parameters**
+
+**Returns**
+* **animationStart** : void
+
 ---
 ### closePath
 This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/isclosePath
@@ -748,6 +771,11 @@ This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRend
 ```javascript
 block.closePath(option)
 ```
+
+**Parameters**
+
+**Returns**
+* **animationStart** : void
 
 ---
 ### measureText

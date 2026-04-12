@@ -7,30 +7,16 @@ Canvas rendering all defined blocks in native html canvas element. Canvas class 
 ### zoom
 Canvas can be zoom to `center` or `point`. In `center` zoom, canvas only zooming to the center of the canvas. In `point` canvas zooming where is the mouse points to.
 
-```javascript
-block.zoom(option)
-```
-
-**Option**
-* **type** : "center" | "point"
-* **default**: "center"
-
-**Returns**
+**Parameter**
 * **zoom** : "center" | "point"
+* **default**: "center"
 
 ### keyboardMovement
 In keyboard movement, canvas relative cordinates move on x and y axis via keyboard.Canvas will move up or down If you move wheel without pressing `ctrl` key, otherwise it will move left or right. 
 
-```javascript
-block.keyboardMovement(option)
-```
-
-**Option**
-* **type** : boolean
-* **default**: true
-
-**Returns**
+**Parameter**
 * **keyboardMovement** : boolean
+* **default**: true
 
 ### mouseMovement
 In mouse movement, canvas relative cordinates move on x and y axis via mouse dragging action. You can enable this feature by pressing `space` key.   
@@ -39,12 +25,9 @@ In mouse movement, canvas relative cordinates move on x and y axis via mouse dra
 block.mouseMovement(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : boolean
 * **default**: true
-
-**Returns**
-* **mouseMovement** : boolean
 
 ### zoomSpeed
 Zoom speed defines how much speed we apply on zoom in.
@@ -53,12 +36,9 @@ Zoom speed defines how much speed we apply on zoom in.
 block.zoomSpeed(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : number
 * **default**: 1.2
-
-**Returns**
-* **zoomSpeed** : number
 
 ### zoomInvSpeed
 Inverse zoom speed defines how much speed we apply on zoom out.
@@ -67,12 +47,9 @@ Inverse zoom speed defines how much speed we apply on zoom out.
 block.zoomInvSpeed(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : number
 * **default**: 0.8
-
-**Returns**
-* **zoomInvSpeed** : number
 
 ### moveSpeed
 Movement speed defines how much speed we apply on movement either on `keyboardMovement` or `mouseMovement`
@@ -81,12 +58,9 @@ Movement speed defines how much speed we apply on movement either on `keyboardMo
 block.moveSpeed(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : number
 * **default**: 10
-
-**Returns**
-* **moveSpeed** : number
 
 ### x
 Canvas initial x axis can be defined via `x` option. 
@@ -95,12 +69,9 @@ Canvas initial x axis can be defined via `x` option.
 block.x(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : number
 * **default**: 0
-
-**Returns**
-* **x** : number
 
 ### y
 Canvas initial y axis can be defined via `y` option. 
@@ -109,12 +80,9 @@ Canvas initial y axis can be defined via `y` option.
 block.y(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : number
 * **default**: 0
-
-**Returns**
-* **y** : number
 
 ### z
 Canvas initial z axis can be defined via `z` option. 
@@ -123,12 +91,9 @@ Canvas initial z axis can be defined via `z` option.
 block.z(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : number
 * **default**: 1
-
-**Returns**
-* **z** : number
 
 ### history
 History enables to store every taken actions in canvas.
@@ -137,12 +102,9 @@ History enables to store every taken actions in canvas.
 block.history(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : boolean
 * **default**: true
-
-**Returns**
-* **history** : boolean
 
 ### historySize
 History size defines how much of actions will store in canvas. If you exceed history size, old actions will be removed to new actins to be added. 
@@ -151,12 +113,9 @@ History size defines how much of actions will store in canvas. If you exceed his
 block.historySize(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : number
 * **default**: 100
-
-**Returns**
-* **historySize** : number
 
 ### fps
 Canvas animations fps defines via `fps` option.
@@ -165,10 +124,7 @@ Canvas animations fps defines via `fps` option.
 block.fps(option)
 ```
 
-**Option**
+**Parameter**
 * **type** : number
 * **default**: 60
-
-**Returns**
-* **fps** : number
 

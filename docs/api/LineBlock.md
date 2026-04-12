@@ -1,5 +1,5 @@
 ```javascript
-new LineBlock({...options})
+new LineBlock(options)
 ```
 LineBlock class is line shape inherted from `ShapeBlock` class.
 
@@ -19,11 +19,11 @@ block.lineType(option)
 ```
 
 **Option**
-* **type** : "line" || "cubicBezier"
+* **type** : "line" | "cubicBezier" | undefined
 * **default**: "line"
 
 **Returns**
-* **lineType** : "line" || "cubicBezier"
+* **lineType** : "line" | "cubicBezier"
 ---
 ### startX
 Start point of line in x axis.
@@ -33,11 +33,11 @@ block.startX(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: undefined
 
 **Returns**
-* **startX** : number | string
+* **startX** : number | string | undefined
 ---
 ### startY
 Start point of line in y axis.
@@ -47,11 +47,11 @@ block.startY(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: undefined
 
 **Returns**
-* **startY** : number | string
+* **startY** : number | string | undefined
 ---
 ### endX
 End point of line in x axis.
@@ -61,11 +61,11 @@ block.endX(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: undefined
 
 **Returns**
-* **endX** : number | string
+* **endX** : number | string | undefined
 ---
 ### endY
 End point of line in y axis.
@@ -75,11 +75,11 @@ block.endY(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: undefined
 
 **Returns**
-* **endY** : number | string
+* **endY** : number | string | undefined
 ---
 ### startControlX
 Control point for `startX` in x axis. This option only works when `lineType` is set to `cubicBezier`.
@@ -89,11 +89,11 @@ block.startControlX(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: undefined
 
 **Returns**
-* **startControlX** : number | string
+* **startControlX** : number | string | undefined
 ---
 ### startControlY
 Control point for `startY` in y axis. This option only works when `lineType` is set to `cubicBezier`.
@@ -103,11 +103,11 @@ block.startControlY(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: undefined
 
 **Returns**
-* **startControlY** : number | string
+* **startControlY** : number | string | undefined
 ---
 ### endControlX
 Control point for `endX` in x axis. This option only works when `lineType` is set to `cubicBezier`.
@@ -117,11 +117,11 @@ block.endControlX(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: undefined
 
 **Returns**
-* **endControlX** : number | string
+* **endControlX** : number | string | undefined
 ---
 ### endControlY
 Control point for `endY` in y axis. This option only works when `lineType` is set to `cubicBezier`.
@@ -132,11 +132,11 @@ block.endControlY(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: undefined
 
 **Returns**
-* **endControlY** : number | string
+* **endControlY** : number | string | undefined
 ---
 ### controlPointsSize
 describtion
@@ -146,7 +146,7 @@ block.controlPointsSize(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: 5
 
 **Returns**
@@ -230,11 +230,11 @@ block.lineColor(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undefined
 * **default**: undefined
 
 **Returns**
-* **lineColor** : number
+* **lineColor** : number | undefined
 ---
 ### backgroundColor
 Background color defines color of background for LineBlock.
@@ -244,11 +244,11 @@ block.backgroundColor(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undefined
 * **default**: undefined
 
 **Returns**
-* **backgroundColor** : string
+* **backgroundColor** : string | undefined
 ---
 ### closeLine
 Closing defined line in LineBlock.
@@ -258,7 +258,7 @@ block.closeLine(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undefined
 * **default**: false
 
 **Returns**
@@ -272,7 +272,7 @@ block.stickStart(option)
 ```
 
 **Option**
-* **type** : `{block: Block , x: number, y: number}`
+* **type** : `{block: Block , x: number, y: number}` | undefined
 * **default**: undefined
 
 **Returns**
@@ -286,7 +286,7 @@ block.stickEnd(option)
 ```
 
 **Option**
-* **type** : `{block: Block , x: number, y: number}`
+* **type** : `{block: Block , x: number, y: number}` | undefined
 * **default**: undefined
 
 **Returns**
@@ -300,8 +300,8 @@ block.joinTo(option)
 ```
 
 **Option**
-* **type** : LineBlock
+* **type** : LineBlock | undefined
 * **default**: undefined
 
 **Returns**
-* **joinTo** : LineBlock
+* **joinTo** : LineBlock | undefined

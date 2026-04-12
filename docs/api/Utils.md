@@ -2,7 +2,7 @@
 
 ### fromPercentage
 
-Converting from percenatge to number. `parentSize` parameter must be related parent size. 
+Converting from percenatge to pixel. `parentSize` parameter must be related parent size. 
 
 ```javascript
 fromPercentage(from, parentSize)
@@ -21,7 +21,7 @@ fromPercentage(from, parentSize)
 
 ### fromVW
 
-Converting from viewport's width to number. `parentWidth` parameter must be related parent size. 
+Converting from viewport's width to pixel. `parentWidth` parameter must be related parent size. 
 
 
 ```javascript
@@ -41,7 +41,7 @@ fromVW(from, parentWidth)
 
 ### fromVH
 
-Converting from viewport's height to number. `parentHeight` parameter must be related parent size. 
+Converting from viewport's height to pixel. `parentHeight` parameter must be related parent size. 
 
 
 ```javascript
@@ -61,7 +61,7 @@ fromVH(from, parentHeight)
 
 ### fromRem
 
-Converting from rem for relative parentSize size to number. `parentSize` parameter must be related parent size. Most of the time this `parentSize` should be size of root block or canvas.
+Converting from rem for relative parentSize size to pixel. `parentSize` parameter must be related parent size. Most of the time this `parentSize` should be size of root block or canvas.
 
 ```javascript
 fromRem(from, parentSize)
@@ -80,7 +80,7 @@ fromRem(from, parentSize)
 
 ### fromEm
 
-Converting from em for relative parentSize size to number. `parentSize` parameter must be related parent size.
+Converting from em for relative parentSize size to pixel. `parentSize` parameter must be related parent size.
 
 ```javascript
 fromEm(from, parentSize)
@@ -99,7 +99,7 @@ fromEm(from, parentSize)
 
 ### fromCm
 
-Converting from centimeter size to number. 
+Converting from centimeter size to pixel. 
 
 
 ```javascript
@@ -118,7 +118,7 @@ fromCm(from)
 
 ### fromMm
 
-Converting from millimeter size to number. 
+Converting from millimeter size to pixel. 
 
 
 ```javascript
@@ -137,7 +137,7 @@ fromMm(from)
 
 ### fromQ
 
-Converting from quarter-millimeters size to number. 
+Converting from quarter-millimeters size to pixel. 
 
 
 ```javascript
@@ -156,7 +156,7 @@ fromQ(from)
 
 ### fromIn
 
-Converting from inches size to number. 
+Converting from inches size to pixel. 
 
 
 ```javascript
@@ -175,7 +175,7 @@ fromIn(from)
 
 ### fromPc
 
-Converting from picas size to number. 
+Converting from picas size to pixel. 
 
 
 ```javascript
@@ -194,7 +194,7 @@ fromPc(from)
 
 ### fromPt
 
-Converting from points size to number. 
+Converting from points size to pixel. 
 
 
 ```javascript
@@ -211,24 +211,6 @@ fromPt(from)
 
 ---
 
-### fromPx
-
-Converting from pixels size to number. 
-
-
-```javascript
-fromPx(from)
-```
-
-**Parameters**
-
-* **from** : number
-
-**Returns**
-
-* **fromPx** : number
-
----
 
 ### xIntersect
 
@@ -526,6 +508,26 @@ colorToRgba(color)
 **Returns**
 
 * **colorToRgba** : string
+
+
+### inRange
+Checks if given value do not exceeds `great` or `less` propeties.
+
+```javascript
+inRange(value, great, less)
+```
+
+**Parameters**
+
+* **value** : number
+* **great** : number
+* **less** : number
+
+**Returns**
+
+* **inRange** : boolean
+
+
 
 
   

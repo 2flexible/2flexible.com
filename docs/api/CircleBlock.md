@@ -1,5 +1,5 @@
 ```javascript
-new CircleBlock({...options})
+new CircleBlock(options)
 ```
 CircleBlock class is circle shape inherted from `ShapeBlock` class.
 
@@ -19,7 +19,7 @@ block.startAngle(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: 0
 
 **Returns**
@@ -33,7 +33,7 @@ block.endAngle(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: Math.PI * 2
 
 **Returns**
@@ -48,7 +48,7 @@ block.innerRadius(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: 0
 
 **Returns**
@@ -62,11 +62,11 @@ block.backgroundColor(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undefined
 * **default**: undefined
 
 **Returns**
-* **backgroundColor** : number
+* **backgroundColor** : number | undefined
 ---
 ### borderStyle
 Border style defines `solid` or `dotted` style of border for circle shape.
@@ -76,7 +76,7 @@ block.borderStyle(option)
 ```
 
 **Option**
-* **type** : "solid" | "dotted"
+* **type** : "solid" | "dotted" | undefined
 * **default**: "solid"
 
 **Returns**
@@ -90,7 +90,7 @@ block.borderWidth(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: 0
 
 **Returns**
@@ -104,7 +104,7 @@ block.borderColor(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undefined
 * **default**: "black"
 
 **Returns**
@@ -119,8 +119,8 @@ block.border(option)
 ```
 
 **Option**
-* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string | undefined
 * **default**: undefined
 
 **Returns**
-* **border** : [`borderWidth`, `borderStyle`, `borderColor`]
+* **border** : [`borderWidth`, `borderStyle`, `borderColor`] | undefined

@@ -1,5 +1,5 @@
 ```javascript
-new ImageBlock(image, {...options})
+new ImageBlock(image, options)
 ```
 ImageBlock class is image shape inherted from `ShapeBlock` class. ImageBlock first property must be string of image path or html image element.
 
@@ -19,7 +19,7 @@ block.clipX(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: 0
 
 **Returns**
@@ -33,7 +33,7 @@ block.clipY(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: 0
 
 **Returns**
@@ -48,7 +48,7 @@ block.clipWidth(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: `width`
 
 **Returns**
@@ -62,7 +62,7 @@ block.clipHeight(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: `height`
 
 **Returns**
@@ -76,11 +76,11 @@ block.objectFit(option)
 ```
 
 **Option**
-* **type** : "contain" | "cover" | "fill"
+* **type** : "contain" | "cover" | "fill" | undefined
 * **default**: undefined
 
 **Returns**
-* **objectFit** : string
+* **objectFit** : string | undefined
 ---
 ### repeatX
 Repeating image in x axis by given amount or relative fitting to `width` of ImageBlock.
@@ -90,11 +90,11 @@ block.repeatX(option)
 ```
 
 **Option**
-* **type** : number | "fill"
+* **type** : number | "fill" | undefined
 * **default**: undefined
 
 **Returns**
-* **repeatX** : number | string
+* **repeatX** : number | string | undefined
 ---
 ### repeatY
 Repeating image in y axis by given amount or relative to fitting `height` of ImageBlock.
@@ -104,8 +104,8 @@ block.repeatY(option)
 ```
 
 **Option**
-* **type** : number | "fill"
+* **type** : number | "fill" | undefined
 * **default**: undefined
 
 **Returns**
-* **repeatY** : number | string
+* **repeatY** : number | string | undefined

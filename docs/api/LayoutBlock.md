@@ -17,7 +17,7 @@ block.layout(option)
 * **default**: "flex"
 
 **Returns**
-* **layout** : "flex" | "inline-flex" | "grid" | "inline-grid" | undefined
+* **layout** : "flex" | "inline-flex" | "grid" | "inline-grid"
 ---
 ### justifyContent
 Justify content defines how to distribute the space on LayoutBlock.
@@ -32,7 +32,7 @@ block.justifyContent(option)
 * **default**: "normal" 
 
 **Returns**
-* **justifyContent** : "normal" | "space-evenly" | "space-around" | "space-between" | "center" | "start" | "end" | "stretch" | undefined
+* **justifyContent** : "normal" | "space-evenly" | "space-around" | "space-between" | "center" | "start" | "end" | "stretch"
 ---
 ### alignContent
 Align content defines how to distribute the space on LayoutBlock.
@@ -47,7 +47,7 @@ block.alignContent(option)
 * **default**: "normal"
 
 **Returns**
-* **alignContent** : "normal" | "space-evenly" | "space-around" | "space-between" | "center" | "start" | "end" | "stretch" | undefined
+* **alignContent** : "normal" | "space-evenly" | "space-around" | "space-between" | "center" | "start" | "end" | "stretch"
 ---
 ### alignItems
 Align content defines how to align blocks on LayoutBlock.
@@ -62,7 +62,7 @@ block.alignItems(option)
 * **default**: "normal"
 
 **Returns**
-* **alignItems** : "normal" | "start" | "center" | "end" | "stretch" | undefined
+* **alignItems** : "normal" | "start" | "center" | "end" | "stretch" 
 ---
 ### placeContent
 Place content defines both align and justify content in one property.
@@ -77,7 +77,7 @@ block.placeContent(option)
 * **default**: ["normal", "normal"]
 
 **Returns**
-* **placeContent** : (AlignContent & JustifyContent) | undefined
+* **placeContent** : (AlignContent & JustifyContent) 
 ---
 ### placeItems
 Place content defines both align and justify items in one property.
@@ -92,7 +92,7 @@ block.placeItems(option)
 * **default**: ["normal", "normal"]
 
 **Returns**
-* **placeItems** : (AlignItems & JustifyItems) | undefined
+* **placeItems** : (AlignItems & JustifyItems)
 ---
 ### flexDirection
 Flex direction defines how to align blocks in LayoutBlock.
@@ -107,7 +107,7 @@ block.flexDirection(option)
 * **default**: "column"
 
 **Returns**
-* **flexDirection** : "column" | "column-reverse" | "row" | "row-reverse" | undefined
+* **flexDirection** : "column" | "column-reverse" | "row" | "row-reverse"
 ---
 ### flexWrap
 Flex wrap defines how to wrap flex layout system.
@@ -122,7 +122,7 @@ block.flexWrap(option)
 * **default**: "nowrap"
 
 **Returns**
-* **flexWrap** : "nowrap" | "wrap" | "wrap-reverse" | undefined
+* **flexWrap** : "nowrap" | "wrap" | "wrap-reverse" 
 ---
 ### flexFlow
 Flex flow defines both flexdirection and flexwrap in one array for LayoutBlock.
@@ -137,7 +137,7 @@ block.flexFlow(option)
 * **default**: ["row", "nowrap"]
 
 **Returns**
-* **flexFlow** : ([FlexDirecton, FlexWrap]) | undefined
+* **flexFlow** : ([FlexDirecton, FlexWrap]) 
 ---
 ### justifyItems
 Justify items defines how to align blocks in grid layout system for LayoutBlock.
@@ -152,7 +152,7 @@ block.justifyItems(option)
 * **default**: "normal"
 
 **Returns**
-* **justifyItems** : "normal" | "stretch" | "start" | "end" | "center" | "left" | "right" | undefined
+* **justifyItems** : "normal" | "stretch" | "start" | "end" | "center" | "left" | "right"
 ---
 ### gap
 Gap defines how much space to take in x or y axis for both flexbox and grid layout systems.
@@ -167,7 +167,7 @@ block.gap(option)
 * **default**: 0
 
 **Returns**
-* **gap** : number | number[] | undefined
+* **gap** : number | number[]
 ---
 ### columnGap
 Gap column defines how much space to take in y axis for both flexbox and grid layout systems.
@@ -182,7 +182,7 @@ block.columnGap(option)
 * **default**: 0
 
 **Returns**
-* **columnGap** : number | undefined
+* **columnGap** : number 
 ---
 ### rowGap
 Gap row defines how much space to take in x axis for both flexbox and grid layout systems.
@@ -197,7 +197,7 @@ block.rowGap(option)
 * **default**: 0
 
 **Returns**
-* **rowGap** : number | undefined
+* **rowGap** : number 
 ---
 ### gridAutoRows
 Grid auto rows defines how much size each row will take in rows related to block size. 
@@ -212,7 +212,7 @@ block.gridAutoRows(option)
 * **default**: []
 
 **Returns**
-* **gridAutoRows** : number[] | undefined
+* **gridAutoRows** : number[]
 ---
 ### gridAutoColumns
 Grid auto columns defines how much size each column will take in columns related to block size. 
@@ -227,7 +227,7 @@ block.gridAutoColumns(option)
 * **default**: []
 
 **Returns**
-* **gridAutoColumns** : number[] | undefined
+* **gridAutoColumns** : number[] 
 ---
 ### gridAutoFlow
 Grid auto flow defines how each block will place in grid related to child blocks size. 
@@ -243,7 +243,7 @@ block.gridAutoFlow(option)
 * **default**: "row"
 
 **Returns**
-* **gridAutoFlow** : "row" | "column" | "dense" | "row dense" | "column dense" | undefined
+* **gridAutoFlow** : "row" | "column" | "dense" | "row dense" | "column dense"
 ---
 ### gridTemplateAreas
 Implimentatino based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template-areas
@@ -257,7 +257,7 @@ block.gridTemplateAreas(option)
 * **default**: []
 
 **Returns**
-* **gridTemplateAreas** : string[] | undefined
+* **gridTemplateAreas** : string[]
 ---
 ### gridTemplate
 Grid template defines grid template columns, rows and areeas in one parameter.
@@ -272,7 +272,7 @@ block.gridTemplate(option)
 * **default**: []
 
 **Returns**
-* **gridTemplate** : number[] | undefined
+* **gridTemplate** : number[]
 ---
 ### gridTemplateColumns
 Grid template columns defines column sizes in grid layout system.
@@ -287,7 +287,7 @@ block.gridTemplateColumns(option)
 * **default**: []
 
 **Returns**
-* **gridTemplateColumns** : number[] | number | undefined
+* **gridTemplateColumns** : number[] | number
 ---
 ### gridTemplateRows
 Grid template rows defines row sizes in grid layout system.
@@ -302,7 +302,7 @@ block.gridTemplateRows(option)
 * **default**: 0
 
 **Returns**
-* **gridTemplateRows** : number[] | number | undefined
+* **gridTemplateRows** : number[] | number 
 ---
 ### grid
 Grid template defines gridAutoColumns, gridAutFlow, gridAutoRows, gridTemplateAreas, gridTemplateColumns, gridTemplateRows in one parameter.
@@ -317,4 +317,4 @@ block.grid(option)
 * **default**: []
 
 **Returns**
-* **grid** : number[] | undefined
+* **grid** : number[] 

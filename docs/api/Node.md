@@ -47,7 +47,7 @@ listAllChilds(_func)
 
 **Parameters**
 
-* **_func**: `<T>(element: T) => void`
+* **_func**: `(node: Node) => void`
 
 **Returns**
 
@@ -65,7 +65,7 @@ listOnlyChild(_func, sort, nodes)
 
 **Parameters**
 
-* **_func**: `(element: B, currIdx: number, arrLen: number) => void`
+* **_func**: `(node: B, currIdx: number, arrLen: number) => void`
 * **sort**: string | undefined
 * **nodes**: Node[] | undefined
 

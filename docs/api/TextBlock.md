@@ -1,5 +1,5 @@
 ```javascript
-new TextBlock("Hello", {...options})
+new TextBlock("Hello", options)
 ```
 TextBlock class is text shape inherted from `ShapeBlock` class. TextBlock first property must be text string.
 
@@ -19,7 +19,7 @@ block.text(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undefined
 * **default**: ""
 
 **Returns**
@@ -33,11 +33,11 @@ block.color(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undefined
 * **default**: undefined
 
 **Returns**
-* **color** : string
+* **color** : string | undefined
 ---
 ### strokeWidth
 Stroke width defines width of stroke for text shape
@@ -47,7 +47,7 @@ block.strokeWidth(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undefined
 * **default**: 0
 
 **Returns**
@@ -61,11 +61,11 @@ block.strokeColor(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undefined
 * **default**: undefined
 
 **Returns**
-* **strokeColor** : string
+* **strokeColor** : string | undefined
 ---
 ### fontFamily
 Font family defines font family of text shape.
@@ -75,7 +75,7 @@ block.fontFamily(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undefined
 * **default**: "sans-serif"
 
 **Returns**
@@ -89,7 +89,7 @@ block.fontWeight(option)
 ```
 
 **Option**
-* **type** : "normal" | "bold" | "bolder" | "lighter" | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+* **type** : "normal" | "bold" | "bolder" | "lighter" | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | undefined
 * **default**: "normal"
 
 **Returns**
@@ -103,7 +103,7 @@ block.fontSize(option)
 ```
 
 **Option**
-* **type** : string | number
+* **type** : string | number | undefined
 * **default**: 0
 
 **Returns**
@@ -117,7 +117,7 @@ block.fontStyle(option)
 ```
 
 **Option**
-* **type** : "normal" | "italic" | "oblique"
+* **type** : "normal" | "italic" | "oblique" | undefined
 * **default**: "normal"
 
 **Returns**
@@ -131,8 +131,8 @@ block.fontVariant(option)
 ```
 
 **Option**
-* **type** : "normal" | "small-caps"
-* **default**: "normal"
+* **type** : "normal" | "small-caps" | undefined
+* **default**: "normal" 
 
 **Returns**
 * **fontVariant** : "normal" | "small-caps"
@@ -145,7 +145,7 @@ block.editable(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undefined
 * **default**: false
 
 **Returns**
@@ -159,11 +159,11 @@ block.onEdit(option)
 ```
 
 **Option**
-* **type** : () => void
+* **type** : () => void | undefined
 * **default**: undefined
 
 **Returns**
-* **onEdit** : () => void
+* **onEdit** : () => void | undefined
 ---
 ### resizeLineHeight
 Text height can be resized without buinding to height.
@@ -173,7 +173,7 @@ block.resizeLineHeight(option)
 ```
 
 **Option**
-* **type** : boolean
+* **type** : boolean | undefined
 * **default**: false
 
 **Returns**
@@ -187,7 +187,7 @@ block.wrap(option)
 ```
 
 **Option**
-* **type** : "nowrap" | "letter" | "word"
+* **type** : "nowrap" | "letter" | "word" | undefined
 * **default**: "nowrap"
 
 **Returns**

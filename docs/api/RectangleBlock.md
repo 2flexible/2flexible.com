@@ -1,5 +1,5 @@
 ```javascript
-new RectangleBlock({...options})
+new RectangleBlock(options)
 ```
 RectangleBlock class is rectangle shape inherted from `ShapeBlock` class.
 
@@ -19,11 +19,11 @@ block.backgroundColor(option)
 ```
 
 **Option**
-* **type** : number
+* **type** : number | undefined
 * **default**: undefined
 
 **Returns**
-* **backgroundColor** : number
+* **backgroundColor** : number | undefined
 ---
 ### borderRadius
 Border radius defines raidus of borders for rectangle shape.
@@ -33,7 +33,7 @@ block.borderRadius(option)
 ```
 
 **Option**
-* **type** : number[] | number
+* **type** : number[] | number | undefined
 * **default**: 0
 
 **Returns**
@@ -47,7 +47,7 @@ block.borderStyle(option)
 ```
 
 **Option**
-* **type** : "solid" | "dotted"
+* **type** : "solid" | "dotted" | undefined
 * **default**: "solid"
 
 **Returns**
@@ -61,7 +61,7 @@ block.borderWidth(option)
 ```
 
 **Option**
-* **type** : number | string
+* **type** : number | string | undefined
 * **default**: 0
 
 **Returns**
@@ -75,7 +75,7 @@ block.borderColor(option)
 ```
 
 **Option**
-* **type** : string
+* **type** : string | undefined
 * **default**: "black"
 
 **Returns**
@@ -89,11 +89,11 @@ block.border(option)
 ```
 
 **Option**
-* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string | undefined
 * **default**: undefined
 
 **Returns**
-* **border** : [`borderWidth`, `borderStyle`, `borderColor`]
+* **border** : [`borderWidth`, `borderStyle`, `borderColor`] | undefined
 ---
 ### borderTop
 Border top defines `borderWidth`, `borderStyle`, and `borderColor` in order for top of border for rectangle shape.
@@ -103,11 +103,11 @@ block.borderTop(option)
 ```
 
 **Option**
-* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string | undefined
 * **default**: undefined
 
 **Returns**
-* **borderTop** : [`borderWidth`, `borderStyle`, `borderColor`]
+* **borderTop** : [`borderWidth`, `borderStyle`, `borderColor`] | undefined
 ---
 ### borderBottom
 Border bottom defines `borderWidth`, `borderStyle`, and `borderColor` in order for bottom of border for rectangle shape.
@@ -117,11 +117,11 @@ block.borderBottom(option)
 ```
 
 **Option**
-* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string | undefined
 * **default**: undefined
 
 **Returns**
-* **borderBottom** : [`borderWidth`, `borderStyle`, `borderColor`]
+* **borderBottom** : [`borderWidth`, `borderStyle`, `borderColor`] | undefined
 ---
 ### borderLeft
 Border left defines `borderWidth`, `borderStyle`, and `borderColor` in order for left of border for rectangle shape.
@@ -131,11 +131,11 @@ block.borderLeft(option)
 ```
 
 **Option**
-* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string | undefined
 * **default**: undefined
 
 **Returns**
-* **borderLeft** : [`borderWidth`, `borderStyle`, `borderColor`]
+* **borderLeft** : [`borderWidth`, `borderStyle`, `borderColor`] | undefined
 ---
 ### borderRight
 Border right defines `borderWidth`, `borderStyle`, and `borderColor` in order for right of border for rectangle shape.
@@ -145,8 +145,8 @@ block.borderRight(option)
 ```
 
 **Option**
-* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string | undefined
 * **default**: undefined
 
 **Returns**
-* **borderRight** : [`borderWidth`, `borderStyle`, `borderColor`]
+* **borderRight** : [`borderWidth`, `borderStyle`, `borderColor`] | undefined
