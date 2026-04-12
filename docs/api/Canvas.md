@@ -1,6 +1,6 @@
 
 ```javascript
-new Canvas("myCanvas", 300, 400)
+new Canvas("canvasId", width, height)
 ```
 Canvas rendering all defined blocks in native html canvas element. Canvas class requires `canvasId`, `width`, `height` for constructoring canvas scene.
 

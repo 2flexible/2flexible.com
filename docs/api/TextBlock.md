@@ -1,5 +1,5 @@
 ```javascript
-new TextBlock("Hello", options)
+new TextBlock("text", options)
 ```
 TextBlock class is text shape inherted from `ShapeBlock` class. TextBlock first property must be text string.
 
