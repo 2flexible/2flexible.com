@@ -6,6 +6,7 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
+import "./index.page.css";
 // import CanvasInit from "../playground/playground";
 // import { ContextMenu } from "../playground/contextMenu";
 // import { NavbarMenu } from "../playground/navbar";
@@ -36,7 +37,7 @@ function HomepageHeader() {
                     alignItems: "center",
                     alignContent: "center",
                     flexDirection: "column",
-                    height: "100%",
+                    height: "80%",
                 }}
             >
                 <video
@@ -72,6 +73,13 @@ function HomepageHeader() {
                     <Link
                         className="button button--secondary button--lg"
                         to="/docs/documentation/introduction"
+                        style={{
+                            backgroundColor: "#1d2025",
+                            color: "white",
+                            border: "none",
+                            border: "0.2px solid rgb(63, 63, 63)",
+                            borderRadius: "28px",
+                        }}
                     >
                         Documentation
                     </Link>
