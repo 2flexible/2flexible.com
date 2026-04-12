@@ -129,7 +129,7 @@ if(animationId === "myFirstAnimation") simpleRectangle.animationStart("myFirstAn
 <ControlsAnimation />
 </CanvasBuilder>
 
-Additinally you stop animation with `animationStop` or finish animation with `animationFinish`. You can conter other parametrs like `animationDirection`, `animatonDelay`, `animationReverse` etc. See [Block animation api](/docs/api/Block/#animation) for more information.
+Additinally you stop animation with `animationStop` or finish animation with `animationFinish`. You can conter other parametrs like `animationDirection`, `animatonDelay`, `animationReverse` etc. See [Block animation api](/docs/api/Block/#animate) for more information.
 
 
 If you want to give a delay for your animation you can use `delay` option which is takes milliseconds. In our example animation will start working after 2 seconds.

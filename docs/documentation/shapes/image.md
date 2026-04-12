@@ -1,4 +1,4 @@
-import {ImageExample, ImageCuttingExample, ImageFitExample, ImageRepateExample, CustomImgeExample} from '@site/src/examples/imageExample';
+import {ImageExample, ImageCuttingExample, ImageFitExample, ImageRepateExample} from '@site/src/examples/imageExample';
 import CanvasBuilder from '@site/src/examples/CanvasBuilder';
 
 # Image Block
@@ -44,15 +44,4 @@ new ImageBlock("../image.png", {...options, repeatX: "fill", repeatY: 2})
 ```
 <CanvasBuilder id={"canvas4"} width={600} height={400}>
 <ImageRepateExample />
-</CanvasBuilder>
-
-
-## Smoothing
-You can use `smoothing`, `smoothingQuality` options for additional performance gain in canvas.
-
-```javascript
-new ImageBlock("../image.png", {...options, smoothing: true, smoothingQuality: "low"})
-```
-<CanvasBuilder id={"canvas5"} width={600} height={400}>
-<CustomImgeExample />
 </CanvasBuilder>

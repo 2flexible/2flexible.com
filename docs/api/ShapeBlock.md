@@ -1,616 +1,817 @@
-### fill
-describtion
+```javascript
+new ShapeBlock(options)
+```
+ShapeBlock class inherted from Block class and helps to define shapes in canvas. You can inhert this ShapeBlock class to create your own shape. ShapeBlock gives you list of options for creating custom shapes or instead you can use `draw` method to define shapes.
 
+## Options
+
+### draw
+Draw method helps to create shapes with callback function that takes context.
+```javascript
+block.draw(option)
+```
+
+**Option**
+* **type** : `(context: CanvasRenderingContext2D) => void` | undefined
+* **default**: undefined
+
+**Returns**
+* **draw** : void
+---
+### fill
+Fill option fills current context or given path. This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fill
 ```javascript
 block.fill(option)
 ```
 
 **Option**
-* **type** : boolean
-* **default**:
+* **type** : `{ fill: boolean, path: Path2D | undefined, fillRule: "evenodd" | "nonzero" }` | undefined
+* **default**: undefined
 
 **Returns**
-* **fill** : boolean
-
+* **fill** : `{ fill: boolean, path: Path2D | undefined, fillRule: "evenodd" | "nonzero" }` | undefined
+---
 ### fillStyle
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle
 
 ```javascript
 block.fillStyle(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : string | CanvasGradient | CanvasPattern | undefined
+* **default**: undefined
 
 **Returns**
-* **fillStyle** : string
-
+* **fillStyle** : string | CanvasGradient | CanvasPattern | undefined
+---
 ### stroke
-describtion
+Stroke option strokes current context or given path. This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/stroke
 
 ```javascript
 block.stroke(option)
 ```
 
 **Option**
-* **type** : boolean
-* **default**:
+* **type** : `{ stroke: boolean, path: Path2D | undefined }` | undefined
+* **default**: undefined
 
 **Returns**
-* **stroke** : boolean
-
+* **stroke** : `{ stroke: boolean, path: Path2D | undefined }` | undefined
+---
 ### strokeStyle
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeStyle
 
 ```javascript
 block.strokeStyle(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : string | CanvasGradient | CanvasPattern | undefined
+* **default**: undefined
 
 **Returns**
-* **strokeStyle** : string
-
-### line
-describtion
+* **strokeStyle** : string | CanvasGradient | CanvasPattern | undefined
+---
+### lineTo
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineTo
 
 ```javascript
-block.line(option)
+block.lineTo(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
-* **default**:
+* **type** : `{ x: number; y: number }` | undefined
+* **default**: undefined
 
 **Returns**
-* **line** : `{ x: number; y: number }`
-
+* **lineTo** : `{ x: number; y: number }` | undefined
+---
 ### lineWidth
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineWidth
 
 ```javascript
 block.lineWidth(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | undefined
+* **default**: undefined
 
 **Returns**
-* **lineWidth** : number
-
+* **lineWidth** : number | undefined
+---
 ### lineDash
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setLineDash
+
 
 ```javascript
 block.lineDash(option)
 ```
 
 **Option**
-* **type** : number[]
-* **default**:
+* **type** : number[] | undefined
+* **default**: undefined
 
 **Returns**
-* **lineDash** : number[]
+* **lineDash** : number[] | undefined
+---
+### lineDashOffset
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineDashOffset
 
+
+```javascript
+block.lineDashOffset(option)
+```
+
+**Option**
+* **type** : number | undefined
+* **default**: undefined
+
+**Returns**
+* **lineDashOffset** : number | undefined
+---
 ### lineCap
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineCap
 
 ```javascript
 block.lineCap(option)
 ```
 
 **Option**
-* **type** : "butt" | "round" | "square"
-* **default**:
+* **type** : "butt" | "round" | "square" | undefined
+* **default**: undefined
 
 **Returns**
-* **lineCap** : string
-
+* **lineCap** : "butt" | "round" | "square" | undefined
+---
 ### lineJoin
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineJoin
 
 ```javascript
 block.lineJoin(option)
 ```
 
 **Option**
-* **type** : "miter" | "round" | "bevel"
-* **default**:
+* **type** : "miter" | "round" | "bevel" | undefined
+* **default**: undefined
 
 **Returns**
-* **lineJoin** : string
-
-### bezierCurve
-describtion
+* **lineJoin** : "miter" | "round" | "bevel" | undefined
+---
+### bezierCurveTo
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/bezierCurveToTo
 
 ```javascript
-block.bezierCurve(option)
+block.bezierCurveTo(option)
 ```
 
 **Option**
-* **type** : `{ cpx1: number; cpy1: number; cpx2: number; cpy2: number; endX: number; endY: number }`
-* **default**:
+* **type** : `{ cpx1: number; cpy1: number; cpx2: number; cpy2: number; endX: number; endY: number }` | undefined
+* **default**: undefined
 
 **Returns**
-* **bezierCurve** : `{ cpx1: number; cpy1: number; cpx2: number; cpy2: number; endX: number; endY: number }`
-
-### quadraticCurve
-describtion
+* **bezierCurveTo** : `{ cpx1: number; cpy1: number; cpx2: number; cpy2: number; endX: number; endY: number }` | undefined
+---
+### quadraticCurveTo
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/quadraticCurveTo
 
 ```javascript
-block.quadraticCurve(option)
+block.quadraticCurveTo(option)
 ```
 
 **Option**
-* **type** : `{ cpx1: number; cpy1: number; endX: number; endY: number }`
-* **default**:
+* **type** : `{ cpx1: number; cpy1: number; endX: number; endY: number }` | undefined
+* **default**: undefined
 
 **Returns**
-* **quadraticCurve** : `{ cpx1: number; cpy1: number; endX: number; endY: number }`
+* **quadraticCurveTo** : `{ cpx1: number; cpy1: number; endX: number; endY: number }` | undefined
+---
+### arc
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc
 
+```javascript
+block.arc(option)
+```
+
+**Option**
+* **type** : `{x: number, y: number, radius: number, startAngle: number, endAngle: number, counterclockwise: boolean | undefined}` | undefined
+* **default**: undefined
+
+**Returns**
+* **arc** : `{x: number, y: number, radius: number, startAngle: number, endAngle: number, counterclockwise: boolean | undefined}` | undefined
+---
+### arcTo
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arcTo
+
+```javascript
+block.arcTo(option)
+```
+
+**Option**
+* **type** : `{x1: number, y1: number, x2: number, y2: number, radius: number}` | undefined
+* **default**: undefined
+
+**Returns**
+* **arcTo** : `{x1: number, y1: number, x2: number, y2: number, radius: number}` | undefined
+---
+### ellipse
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/ellipse
+
+```javascript
+block.ellipse(option)
+```
+
+**Option**
+* **type** : `{x: number, y: number, radiusX: number, radiusY: number, rotation: number, startAngle: number, endAngle: number, counterclockwise: boolean | undefined}` | undefined
+* **default**: undefined
+
+**Returns**
+* **ellipse** :` {x: number, y: number, radiusX: number, radiusY: number, rotation: number, startAngle: number, endAngle: number, counterclockwise: boolean | undefined}` | undefined
+---
 ### rect
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rect
 
 ```javascript
 block.rect(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number; width: number; height: number }`
-* **default**:
+* **type** : `{ x: number; y: number; width: number; height: number }` | undefined
+* **default**: undefined
 
 **Returns**
-* **rect** : `{ x: number; y: number; width: number; height: number }`
-
+* **rect** : `{ x: number; y: number; width: number; height: number }` | undefined
+---
 ### roundRect
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/roundRect
 
 ```javascript
 block.roundRect(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number; width: number; height: number; borderRadius: number[] }`
-* **default**:
+* **type** : `{ x: number; y: number; width: number; height: number; borderRadius: number[] }` | undefined
+* **default**: undefined
 
 **Returns**
-* **roundRect** : `{ x: number; y: number; width: number; height: number; borderRadius: number[] }`
-
+* **roundRect** : `{ x: number; y: number; width: number; height: number; borderRadius: number[] }` | undefined
+---
 ### strokeRect
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeRect
 
 ```javascript
 block.strokeRect(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number; width: number; height: number }`
-* **default**:
+* **type** : `{ x: number; y: number; width: number; height: number }` | undefined
+* **default**: undefined
 
 **Returns**
-* **strokeRect** : `{ x: number; y: number; width: number; height: number }`
-
-### pointInPath
-describtion
-
-```javascript
-block.pointInPath(option)
-```
-
-**Option**
-* **type** : `{ x: number; y: number; path?: Path2D; fillRule?: CanvasFillRule }`
-* **default**:
-
-**Returns**
-* **pointInPath** : `{ x: number; y: number; path?: Path2D; fillRule?: CanvasFillRule }`
-
-### pointInStroke
-describtion
-
-```javascript
-block.pointInStroke(option)
-```
-
-**Option**
-* **type** : `{ x: number; y: number; path?: Path2D }`
-* **default**:
-
-**Returns**
-* **pointInStroke** : `{ x: number; y: number; path?: Path2D }`
-
+* **strokeRect** : `{ x: number; y: number; width: number; height: number }` | undefined
+---
 ### moveTo
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/moveTo
 
 ```javascript
 block.moveTo(option)
 ```
 
 **Option**
-* **type** : `{ x: number; y: number }`
-* **default**:
+* **type** : `{ x: number; y: number }` | undefined
+* **default**: undefined
 
 **Returns**
-* **moveTo** : `{ x: number; y: number }`
-
+* **moveTo** : `{ x: number; y: number }` | undefined
+---
 ### radialGradient
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/createRadialGradient
 
 ```javascript
 block.radialGradient(option)
 ```
 
 **Option**
-* **type** : `{ x0: number; y0: number; r0: number; x1: number; y1: number; r1: number }`
-* **default**:
+* **type** : `{ x0: number; y0: number; r0: number; x1: number; y1: number; r1: number }` | undefined
+* **default**: undefined
 
 **Returns**
-* **radialGradient** : `{ x0: number; y0: number; r0: number; x1: number; y1: number; r1: number }`
-
+* **radialGradient** : CanvasGradient | undefined
+---
 ### linearGradient
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/createLinearGradient
 
 ```javascript
 block.linearGradient(option)
 ```
 
 **Option**
-* **type** : `{ x0: number; y0: number; x1: number; y1: number }`
-* **default**:
+* **type** : `{ x0: number; y0: number; x1: number; y1: number }` | undefined
+* **default**: undefined
 
 **Returns**
-* **linearGradient** : `{ x0: number; y0: number; x1: number; y1: number }`
-
+* **linearGradient** : CanvasGradient | undefined
+---
 ### conicGradient
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/createConicGradient
 
 ```javascript
 block.conicGradient(option)
 ```
 
 **Option**
-* **type** : `{ angle: number; x: number; y: number }`
-* **default**:
+* **type** : `{ angle: number; x: number; y: number }` | undefined
+* **default**: undefined
 
 **Returns**
-* **conicGradient** : `{ angle: number; x: number; y: number }`
-
+* **conicGradient** : CanvasGradient | undefined
+---
 ### colorStops
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasGradient/addColorStop
 
 ```javascript
 block.colorStops(option)
 ```
 
 **Option**
-* **type** : `{ stop: number; color: string }[]`
-* **default**:
+* **type** : `{ stop: number; color: string }[]` | undefined
+* **default**: undefined
 
 **Returns**
-* **colorStops** : `{ stop: number; color: string }[]`
-
+* **colorStops** : `{ stop: number; color: string }[]` | undefined
+---
 ### blur
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/blur
 
 ```javascript
 block.blur(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: undefined
 
 **Returns**
-* **blur** : number
-
+* **blur** : number | undefined
+---
 ### brightness
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/brightness
 
 ```javascript
 block.brightness(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: undefined
 
 **Returns**
-* **brightness** : number
-
+* **brightness** : number | undefined
+---
 ### contrast
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/contrast
+
 
 ```javascript
 block.contrast(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: undefined
 
 **Returns**
-* **contrast** : number
-
+* **contrast** : number | undefined
+---
 ### dropShadow
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/drop-shadow
 
 ```javascript
 block.dropShadow(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : `[number | string, number | string, number | string, string]` | undefined
+* **default**: undefined
 
 **Returns**
-* **dropShadow** : number
-
+* **dropShadow** : `[number, number, number, string]` | undefined
+---
 ### grayscale
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/grayscale
 
 ```javascript
 block.grayscale(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: undefined
 
 **Returns**
-* **grayscale** : number
-
+* **grayscale** : number | undefined
+---
 ### hueRotate
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/hue-rotate
 
 ```javascript
 block.hueRotate(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: undefined
 
 **Returns**
-* **hueRotate** : number
-
+* **hueRotate** : number | undefined
+---
 ### saturate
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/saturate
+
 
 ```javascript
 block.saturate(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: undefined
 
 **Returns**
-* **saturate** : number
-
+* **saturate** : number | undefined
+---
 ### sepia
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/sepia
 
 ```javascript
 block.sepia(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: undefined
 
 **Returns**
-* **sepia** : number
+* **sepia** : number | undefined
+---
+### shadowBlur
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowBlur
 
+```javascript
+block.shadowBlur(option)
+```
+
+**Option**
+* **type** : number | string | undefined
+* **default**: undefined
+
+**Returns**
+* **shadowBlur** : number | undefined
+---
+### shadowColor
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowColor
+
+```javascript
+block.shadowColor(option)
+```
+
+**Option**
+* **type** : string
+* **default**: undefined
+
+**Returns**
+* **shadowColor** : string | undefined
+---
+### shadowOffsetX
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowOffsetX
+
+```javascript
+block.shadowOffsetX(option)
+```
+
+**Option**
+* **type** : number | string | undefined
+* **default**: undefined
+
+**Returns**
+* **shadowOffsetX** : number | undefined
+---
+### shadowOffsetY
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/shadowOffsetY
+
+```javascript
+block.shadowOffsetY(option)
+```
+
+**Option**
+* **type** : number | string | undefined
+* **default**: undefined
+
+**Returns**
+* **shadowOffsetY** : number | undefined
+---
 ### fillText
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillText
 
 ```javascript
 block.fillText(option)
 ```
 
 **Option**
-* **type** : `{ text: string; x: number; y: number; maxWidth: number }`
-* **default**:
+* **type** : `{ text: string; x: number; y: number; maxWidth: number | undefined }` | undefined
+* **default**: undefined
 
 **Returns**
-* **fillText** : `{ text: string; x: number; y: number; maxWidth: number }`
-
+* **fillText** : `{ text: string; x: number; y: number; maxWidth: number | undefined }` | undefined
+---
 ### strokeText
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/strokeText
 
 ```javascript
 block.strokeText(option)
 ```
 
 **Option**
-* **type** : `{ text: string; x: number; y: number; maxWidth: number }`
-* **default**:
+* **type** : `{ text: string; x: number; y: number; maxWidth: number | undefined }` | undefined
+* **default**: undefined
 
 **Returns**
-* **strokeText** : `{ text: string; x: number; y: number; maxWidth: number }`
-
-### fontWeight
-describtion
-
-```javascript
-block.fontWeight(option)
-```
-
-**Option**
-* **type** : "normal" | "bold" | "bolder" | "lighter" | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
-* **default**:
-
-**Returns**
-* **fontWeight** : string | number
-
-### fontStyle
-describtion
-
-```javascript
-block.fontStyle(option)
-```
-
-**Option**
-* **type** : "normal" | "italic" | "oblique"
-* **default**:
-
-**Returns**
-* **fontStyle** : string
-
-### fontVariant
-describtion
-
-```javascript
-block.fontVariant(option)
-```
-
-**Option**
-* **type** : "normal" | "small-caps"
-* **default**:
-
-**Returns**
-* **fontVariant** : string
-
+* **strokeText** : `{ text: string; x: number; y: number; maxWidth: number | undefined }` | undefined
+---
 ### fontStretch
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fontStretch
 
 ```javascript
 block.fontStretch(option)
 ```
 
 **Option**
-* **type** : "normal" | "ultra-condensed" | "extra-condensed" | "condensed" | "semi-condensed" | "semi-expanded" | "expanded" | "extra-expanded" | "ultra-expanded"
-* **default**:
+* **type** : "normal" | "ultra-condensed" | "extra-condensed" | "condensed" | "semi-condensed" | "semi-expanded" | "expanded" | "extra-expanded" | "ultra-expanded" | undefined
+* **default**: undefined
 
 **Returns**
-* **fontStretch** : string
-
+* **fontStretch** : "normal" | "ultra-condensed" | "extra-condensed" | "condensed" | "semi-condensed" | "semi-expanded" | "expanded" | "extra-expanded" | "ultra-expanded" | undefined
+---
 ### fontKerning
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fontKerning
 
 ```javascript
 block.fontKerning(option)
 ```
 
 **Option**
-* **type** : "normal" | "auto" | "none"
-* **default**:
+* **type** : "normal" | "auto" | "none" | undefined
+* **default**: undefined
 
 **Returns**
-* **fontKerning** : string
-
+* **fontKerning** : "normal" | "auto" | "none" | undefined
+---
 ### fontVariantCaps
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fontVariantCaps
 
 ```javascript
 block.fontVariantCaps(option)
 ```
 
 **Option**
-* **type** : "normal" | "small-caps" | "all-small-caps" | "petite-caps" | "all-petite-caps" | "unicase" | "titling-caps"
-* **default**:
+* **type** : "normal" | "small-caps" | "all-small-caps" | "petite-caps" | "all-petite-caps" | "unicase" | "titling-caps" | undefined
+* **default**: undefined
 
 **Returns**
-* **fontVariantCaps** : string
-
+* **fontVariantCaps** : "normal" | "small-caps" | "all-small-caps" | "petite-caps" | "all-petite-caps" | "unicase" | "titling-caps" | undefined
+---
 ### textBaseline
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textBaseline
 
 ```javascript
 block.textBaseline(option)
 ```
 
 **Option**
-* **type** : "alphabetic" | "top" | "hanging" | "middle" | "ideographic" | "bottom"
-* **default**:
+* **type** : "alphabetic" | "top" | "hanging" | "middle" | "ideographic" | "bottom" | undefined
+* **default**: undefined
 
 **Returns**
-* **textBaseline** : string
-
+* **textBaseline** : "alphabetic" | "top" | "hanging" | "middle" | "ideographic" | "bottom" | undefined
+---
 ### textRendering
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textRendering
 
 ```javascript
 block.textRendering(option)
 ```
 
 **Option**
-* **type** : "auto" | "optimizeSpeed" | "optimizeLegibility" | "geometricPrecision"
-* **default**:
+* **type** : "auto" | "optimizeSpeed" | "optimizeLegibility" | "geometricPrecision" | undefined
+* **default**: undefined
 
 **Returns**
-* **textRendering** : string
-
+* **textRendering** : "auto" | "optimizeSpeed" | "optimizeLegibility" | "geometricPrecision" | undefined
+---
 ### wordSpacing
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/wordSpacing
 
 ```javascript
 block.wordSpacing(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : string | number | undefined
+* **default**: undefined
 
 **Returns**
-* **wordSpacing** : string
-
+* **wordSpacing** : number | undefined
+---
 ### letterSpacing
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/letterSpacing
 
 ```javascript
 block.letterSpacing(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : string | undefined
+* **default**: undefined
 
 **Returns**
-* **letterSpacing** : string
-
+* **letterSpacing** : number | undefined
+---
 ### direction
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/direction
 
 ```javascript
 block.direction(option)
 ```
 
 **Option**
-* **type** : "ltr" | "rtl"
-* **default**:
+* **type** : "ltr" | "rtl" | "inherit" | undefined
+* **default**: undefined
 
 **Returns**
-* **direction** : string
+* **direction** : "ltr" | "rtl" | "inherit" | undefined
+---
+### textAlign
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/textAlign
 
+```javascript
+block.textAlign(option)
+```
+
+**Option**
+* **type** : "center" | "end" | "left" | "right" | "start" | undefined
+* **default**: undefined
+
+**Returns**
+* **textAlign** : "center" | "end" | "left" | "right" | "start" | undefined
+---
 ### clip
-describtion
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clip
 
 ```javascript
 block.clip(option)
 ```
 
 **Option**
-* **type** : `{ path?: Path2D; fillRule?: CanvasFillRule }`
-* **default**:
+* **type** : `{ path: Path2D | undefined; fillRule: CanvasFillRule | undefined }` | undefined
+* **default**: undefined
 
 **Returns**
-* **clip** : `{ path?: Path2D; fillRule?: CanvasFillRule }`
+* **clip** : `{ path: Path2D | undefined; fillRule: CanvasFillRule | undefined }` | undefined
 
-### pathData
-describtion
+---
+### drawImage
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage
 
 ```javascript
-block.pathData(option)
+block.drawImage(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : `{source: CanvasImageSource, x: number, y: number, width: number, height: number, clipX: number, clipY: number, clipWidth: number, clipHeight: number}` | undefined
+* **default**: undefined
 
 **Returns**
-* **pathData** : string
+* **drawImage** : `{source: CanvasImageSource, x: number, y: number, width: number, height: number, clipX: number, clipY: number, clipWidth: number, clipHeight: number}` | undefined
+---
+### imageSmoothingEnabled
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/imageSmoothingEnabled
+
+```javascript
+block.imageSmoothingEnabled(option)
 ```
+
+**Option**
+* **type** : boolean | undefined
+* **default**: undefined
+
+**Returns**
+* **imageSmoothingEnabled** : boolean | undefined
+---
+### imageSmoothingQuality
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/imageSmoothingQuality
+
+```javascript
+block.imageSmoothingQuality(option)
+```
+
+**Option**
+* **type** : "high" | "low" | "medium" | undefined
+* **default**: undefined
+
+**Returns**
+* **imageSmoothingQuality** : "high" | "low" | "medium" | undefined
+---
+### globalAlpha
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalAlpha
+
+```javascript
+block.globalAlpha(option)
+```
+
+**Option**
+* **type** : number | string | undefined
+* **default**: undefined
+
+**Returns**
+* **globalAlpha** : number | undefined
+---
+### globalCompositeOperation
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation
+
+```javascript
+block.globalCompositeOperation(option)
+```
+
+**Option**
+* **type** : "source-over" | "source-in" | "source-out" | "source-atop" | "destination-over" | "destination-in" | "destination-out" | "destination-atop" | "lighter" | "copy" | "xor" | "multiply" | "screen" | "overlay" | "darken" | "lighten" | "color-dodge" | "color-burn" | "hard-light" | "soft-light" | "difference" | "exclusion" | "hue" | "saturation" | "color" | "luminosity" | undefined
+* **default**: undefined
+
+**Returns**
+* **globalCompositeOperation** : "source-over" | "source-in" | "source-out" | "source-atop" | "destination-over" | "destination-in" | "destination-out" | "destination-atop" | "lighter" | "copy" | "xor" | "multiply" | "screen" | "overlay" | "darken" | "lighten" | "color-dodge" | "color-burn" | "hard-light" | "soft-light" | "difference" | "exclusion" | "hue" | "saturation" | "color" | "luminosity" | undefined
+---
+
+## Methods
+### beginPath
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/isbeginPath
+
+```javascript
+block.beginPath(option)
+```
+
+**Parameters**
+
+**Returns**
+* **animationStart** : void
+
+---
+### closePath
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/isclosePath
+
+```javascript
+block.closePath(option)
+```
+
+**Parameters**
+
+**Returns**
+* **animationStart** : void
+
+---
+### measureText
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/measureText
+
+```javascript
+block.measureText(option)
+```
+
+**Parameters**
+* **text** : string
+
+**Returns**
+* **measureText** : TextMetrics
+---
+### pointInPath
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/isPointInPath
+
+```javascript
+block.pointInPath(point)
+```
+**Parameters**
+* **point** : `{ x: number; y: number; path: Path2D | undefined; fillRule: CanvasFillRule | undefined }`
+
+**Returns**
+* **pointInPath** : boolean
+---
+### pointInStroke
+This method based on https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/isPointInStroke
+
+```javascript
+block.pointInStroke(option)
+```
+
+**Parameters**
+* **point** : `{ x: number; y: number; path: Path2D | undefined }`
+
+**Returns**
+* **pointInStroke** : boolean

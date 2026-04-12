@@ -1,142 +1,126 @@
-
-### radius
-describtion
-
 ```javascript
-block.radius(option)
+new CircleBlock(options)
 ```
+CircleBlock class is circle shape inherted from `ShapeBlock` class.
 
-**Option**
-* **type** : number
-* **default**:
+:::info
 
-**Returns**
-* **radius** : number
+Keep in mind that because CircleBlock inherits from ShapeBlock, it can use some of the options of ShapeBlock. You can check [shape block api](/docs/api/ShapeBlock.md) for other options apply to CircleBlock. 
 
-### radiusX
-describtion
+:::
 
-```javascript
-block.radiusX(option)
-```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **radiusX** : number
-
-### radiusY
-describtion
-
-```javascript
-block.radiusY(option)
-```
-
-**Option**
-* **type** : number
-* **default**:
-
-**Returns**
-* **radiusY** : number
+## Options
 
 ### startAngle
-describtion
+Start angle in radians of circle shape, measured from the positive x-axis. 
 
 ```javascript
 block.startAngle(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: 0
 
 **Returns**
 * **startAngle** : number
-
+---
 ### endAngle
-describtion
+End angle in radians of circle shape, measured from the positive x-axis. 
 
 ```javascript
 block.endAngle(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: Math.PI * 2
 
 **Returns**
 * **endAngle** : number
 
+---
+### innerRadius
+Inner radius of circle in circle shape. Inner radius helps you create shapes line donat.  
+
+```javascript
+block.innerRadius(option)
+```
+
+**Option**
+* **type** : number | string | undefined
+* **default**: 0
+
+**Returns**
+* **innerRadius** : number
+---
 ### backgroundColor
-describtion
+Background color defines color of background for circle shape.
 
 ```javascript
 block.backgroundColor(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | undefined
+* **default**: undefined
 
 **Returns**
-* **backgroundColor** : number
-
-### border
-describtion
-
-```javascript
-block.border(option)
-```
-
-**Option**
-* **type** : string
-* **default**:
-
-**Returns**
-* **border** : string
-
+* **backgroundColor** : number | undefined
+---
 ### borderStyle
-describtion
+Border style defines `solid` or `dotted` style of border for circle shape.
 
 ```javascript
 block.borderStyle(option)
 ```
 
 **Option**
-* **type** : "solid" | "dotted"
-* **default**:
+* **type** : "solid" | "dotted" | undefined
+* **default**: "solid"
 
 **Returns**
-* **borderStyle** : string
-
+* **borderStyle** : "solid" | "dotted"
+---
 ### borderWidth
-describtion
+Border width defines size of border for circle shape.
 
 ```javascript
 block.borderWidth(option)
 ```
 
 **Option**
-* **type** : number
-* **default**:
+* **type** : number | string | undefined
+* **default**: 0
 
 **Returns**
 * **borderWidth** : number
-
+---
 ### borderColor
-describtion
+Border color defines color of border for circle shape.
 
 ```javascript
 block.borderColor(option)
 ```
 
 **Option**
-* **type** : string
-* **default**:
+* **type** : string | undefined
+* **default**: "black"
 
 **Returns**
 * **borderColor** : string
+
+---
+### border
+Border defines `borderWidth`, `borderStyle`, and `borderColor` in order for border for circle shape.
+
+```javascript
+block.border(option)
 ```
 
+**Option**
+* **type** : [`borderWidth`, `borderStyle`, `borderColor`] | string | undefined
+* **default**: undefined
+
+**Returns**
+* **border** : [`borderWidth`, `borderStyle`, `borderColor`] | undefined

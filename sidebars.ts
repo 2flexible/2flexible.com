@@ -67,6 +67,7 @@ const sidebars: SidebarsConfig = {
             collapsible: false,
             items: [
                 "api/Canvas",
+                "api/Node",
                 "api/Block",
                 "api/LayoutBlock",
                 "api/ShapeBlock",
@@ -76,6 +77,7 @@ const sidebars: SidebarsConfig = {
                 "api/LineBlock",
                 "api/ImageBlock",
                 "api/VideoBlock",
+                "api/Utils",
             ],
         },
     ],
