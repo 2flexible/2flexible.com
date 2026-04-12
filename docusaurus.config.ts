@@ -79,7 +79,7 @@ const config: Config = {
             appId: "LSHQKBQWTG",
 
             // Public API key: it is safe to commit it
-            apiKey: "460b5a0595f386719378065cbd14b495",
+            apiKey: "3a5ece87b0650704df3d85649e6b1174",
 
             indexName: "2flex",
 
