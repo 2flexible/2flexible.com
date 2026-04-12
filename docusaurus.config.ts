@@ -67,21 +67,21 @@ const config: Config = {
             } satisfies Preset.Options,
         ],
     ],
-
+    // themes: ["@docusaurus/theme-search-algolia"],
     themeConfig: {
         // Replace with your project's social card
-        image: "img/docusaurus-social-card.jpg",
+        image: "img/logo.svg",
         colorMode: {
             respectPrefersColorScheme: true,
         },
         algolia: {
             // The application ID provided by Algolia
-            appId: "YOUR_APP_ID",
+            appId: "LSHQKBQWTG",
 
             // Public API key: it is safe to commit it
-            apiKey: "YOUR_SEARCH_API_KEY",
+            apiKey: "460b5a0595f386719378065cbd14b495",
 
-            indexName: "YOUR_INDEX_NAME",
+            indexName: "2flex",
 
             // Optional: see doc section below
             contextualSearch: true,
@@ -105,7 +105,7 @@ const config: Config = {
             insights: false,
 
             // Optional: whether you want to use the new Ask AI feature (undefined by default)
-            askAi: "YOUR_ALGOLIA_ASK_AI_ASSISTANT_ID",
+            // askAi: "YOUR_ALGOLIA_ASK_AI_ASSISTANT_ID",
 
             //... other Algolia params
         },
