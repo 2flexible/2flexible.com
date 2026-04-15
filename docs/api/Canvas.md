@@ -6,11 +6,11 @@ Canvas rendering all defined blocks in native html canvas element. Canvas class 
 
 ## Parameters
 
-### zoom
-Canvas can be zoom to `center` or `point`. In `center` zoom, canvas only zooming to the center of the canvas. In `point` canvas zooming where is the mouse points to.
+### zoomType
+Canvas can zoom to `center` or `point`. In `center` zoom, canvas only zooming to the center of the canvas. In `point` canvas zooming where is the mouse points to.
 
 **Parameter**
-* **zoom** : "center" | "point"
+* **type** : "center" | "point"
 * **default**: "center"
 ---
 ### keyboardMovement
@@ -64,33 +64,33 @@ block.moveSpeed(option)
 * **type** : number
 * **default**: 10
 ---
-### x
-Canvas initial x axis can be defined via `x` option. 
+### positionX
+Canvas initial x axis can be defined via `positionX` option. 
 
 ```javascript
-block.x(option)
+block.positionX(option)
 ```
 
 **Parameter**
 * **type** : number
 * **default**: 0
 ---
-### y
-Canvas initial y axis can be defined via `y` option. 
+### positionY
+Canvas initial y axis can be defined via `positionY` option. 
 
 ```javascript
-block.y(option)
+block.positionY(option)
 ```
 
 **Parameter**
 * **type** : number
 * **default**: 0
 ---
-### z
-Canvas initial z axis can be defined via `z` option. 
+### positionZ
+Canvas initial z axis can be defined via `positionZ` option. 
 
 ```javascript
-block.z(option)
+block.positionZ(option)
 ```
 
 **Parameter**
