@@ -34,7 +34,7 @@ block.borderRadius(option)
 
 **Option**
 * **type** : number[] | number | undefined
-* **default**: 0
+* **default**: [0, 0, 0, 0]
 
 **Returns**
 * **borderRadius** : number[]

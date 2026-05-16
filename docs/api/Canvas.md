@@ -130,3 +130,247 @@ block.fps(option)
 * **type** : number
 * **default**: 60
 
+## Methods
+### canvas
+
+```javascript
+block.canvas()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **canvas** : void
+---
+### context
+
+```javascript
+block.context()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **context** : void
+---
+### add
+
+```javascript
+block.add()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **add** : void
+---
+### export
+
+```javascript
+block.export()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **export** : void
+---
+### load
+
+```javascript
+block.load()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **load** : void
+---
+### inBoundBlock
+
+```javascript
+block.inBoundBlock()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **inBoundBlock** : void
+---
+### clearRect
+
+```javascript
+block.clearRect()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **clearRect** : void
+---
+### takeSnapshot
+
+```javascript
+block.takeSnapshot()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **takeSnapshot** : void
+---
+### undo
+
+```javascript
+block.undo()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **undo** : void
+---
+### redo
+
+```javascript
+block.redo()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **redo** : void
+---
+### invokeChange
+
+```javascript
+block.invokeChange()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **invokeChange** : void
+---
+### registerAnimation
+
+```javascript
+block.registerAnimation()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **registerAnimation** : void
+---
+### removeAnimation
+
+```javascript
+block.removeAnimation()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **removeAnimation** : void
+---
+### registerEvent
+
+```javascript
+block.registerEvent()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **registerEvent** : void
+---
+### removeEvent
+
+```javascript
+block.removeEvent()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **removeEvent** : void
+---
+### registerZIndex
+
+```javascript
+block.registerZIndex()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **registerZIndex** : void
+---
+### whoIsTheFirst
+
+```javascript
+block.whoIsTheFirst()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **whoIsTheFirst** : void
+---
+### find
+
+```javascript
+block.find()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **find** : void
+
+---
+### canvasBounding
+
+```javascript
+block.canvasBounding()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **canvasBounding** : void
+
+---
+### registerBlock
+
+```javascript
+block.registerBlock()
+```
+
+**Parameters**
+* **value**: boolean
+
+**Returns**
+* **registerBlock** : void
+
+

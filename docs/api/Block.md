@@ -57,7 +57,7 @@ block.onRender(option)
 
 **Returns**
 
-* **onRender** : number | undefined
+* **onRender** : () => void | undefined
 ---
 ### x
 
@@ -197,7 +197,7 @@ block.top(option)
 
 **Option**
 * **type** : string | number | undfined
-* **default**: 0
+* **default**: undefined
 
 **Returns**
 * **top** : number 
@@ -211,7 +211,7 @@ block.bottom(option)
 
 **Option**
 * **type** : string | number | undfined
-* **default**: 0
+* **default**: undefined
 
 **Returns**
 * **bottom** : number
@@ -225,7 +225,7 @@ block.left(option)
 
 **Option**
 * **type** : string | number | undfined
-* **default**: 0
+* **default**: undefined
 
 **Returns**
 * **left** : number 
@@ -239,7 +239,7 @@ block.right(option)
 
 **Option**
 * **type** : string | number | undfined
-* **default**: 0
+* **default**: undefined
 
 **Returns**
 * **right** : number 
@@ -1053,10 +1053,10 @@ block.important(options)
 
 **Option**
 * **type** : BlockOptions | undfined
-* **default**: undefined
+* **default**: {}
 
 **Returns**
-* **important** : BlockOptions | undfined
+* **important** : BlockOptions | {}
 ---
 ### rotationCenterX
 Rotation center x defines center of rotation in x axis.
@@ -1690,3 +1690,37 @@ block.animationAutoStart(animationId, value)
 
 **Returns**
 * **animationAutoStart** : void
+---
+### registerZIndex
+Registers z index of block in canvas for later use. Mainly used for mouse events.
+```javascript
+block.registerZIndex(inOut)
+```
+
+**Parameters**
+* **inOut** : { in: number | undefined; out: number | undefined }
+
+**Returns**
+* **registerZIndex** : void
+---
+### ImFirst
+Checks if z index higher that others. Mainly used with `registerZIndex` for mouse events.
+```javascript
+block.ImFirst
+```
+**Parameters**
+
+**Returns**
+* **ImFirst** : boolean
+---
+### inBound
+Checks if block in boundries of canvas.
+
+```javascript
+block.inBound
+```
+
+**Parameters**
+
+**Returns**
+* **inBound** : boolean
