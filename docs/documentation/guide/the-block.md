@@ -39,8 +39,8 @@ new Reactangle({x: 0, y: 0, width: 100, height: 100,
 You can also customize many transformation features. [More of the customizing transformation features](/docs/documentation/advanced_features/customization)
 ```javascript
 new Reactangle({x: 0, y: 0, width: 100, height: 100,
-    resizeTop: false,
-    resizeBottom: false,
+    resizableTop: false,
+    resizableBottom: false,
     hotCornerStrokeColor: "red",
     selectable: true,
     resizable: true})

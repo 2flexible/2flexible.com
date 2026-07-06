@@ -246,8 +246,8 @@ export function CustomizableCircle() {
         draggable: true,
         selectable: true,
         resizable: true,
-        resizeTop: false,
-        resizeBottom: false,
+        resizableTop: false,
+        resizableBottom: false,
         hotCornerStrokeColor: "red",
         hotLineStrokeColor: "red",
     });

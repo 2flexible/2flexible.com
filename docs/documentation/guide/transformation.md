@@ -27,7 +27,7 @@ new Reactangle({...options, draggable: true, onDrag: draggingAction})
 You can determine which axis you want to drag your block. Try to drag rectangle block in x and y axis, see what axis changeing. In our example only y axis will change.
 
 ```javascript
-new Reactangle({...options, dragX: false, dragY: true})
+new Reactangle({...options, draggableX: false, draggableY: true})
 ```
 <CanvasBuilder id={"canvas2"} width={600} height={400}>
 <RotatingAxisExample />
@@ -68,7 +68,7 @@ new Reactangle({...options, horizontalFlipResize: true, verticalFlipResize: true
 You can disable some of the corner and side resizing on blocks.
 
 ```javascript
-new Reactangle({...options, resizeTopLeft: false, resizeTop: false, resizeTopRight: false })
+new Reactangle({...options, resizableTopLeft: false, resizableTop: false, resizableTopRight: false })
 ```
 <CanvasBuilder id={"canvas5"} width={600} height={400}>
 <ResizingCustomExample />
