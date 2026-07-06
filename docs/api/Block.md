@@ -440,11 +440,11 @@ block.onDrag(option)
 **Returns**
 * **onDrag** : (event: MouseEvent) => void | undfined
 ---
-### dragX
+### draggableX
 Drag x enables dragging on x axis.
 
 ```javascript
-block.dragX(option)
+block.draggableX(option)
 ```
 
 **Option**
@@ -452,13 +452,13 @@ block.dragX(option)
 * **default**: true
 
 **Returns**
-* **dragX** : boolean
+* **draggableX** : boolean
 ---
-### dragY
+### draggableY
 Drag y enables dragging on y axis.
 
 ```javascript
-block.dragY(option)
+block.draggableY(option)
 ```
 
 **Option**
@@ -466,7 +466,7 @@ block.dragY(option)
 * **default**: true
 
 **Returns**
-* **dragY** : boolean
+* **draggableY** : boolean
 ---
 ### rotate
 Rotate defines rotating in radian on blocks.
@@ -806,11 +806,11 @@ block.hotLineStrokeColor(option)
 **Returns**
 * **hotLineStrokeColor** : string
 ---
-### rotationTopLeft
+### rotatableTopLeft
 Rotation top left enables to rotate from top left hot corner of block.
 
 ```javascript
-block.rotationTopLeft(option)
+block.rotatableTopLeft(option)
 ```
 
 **Option**
@@ -818,13 +818,13 @@ block.rotationTopLeft(option)
 * **default**: true
 
 **Returns**
-* **rotationTopLeft** : boolean
+* **rotatableTopLeft** : boolean
 ---
-### rotationTopRight
+### rotatableTopRight
 Rotation top right enables to rotate from top right hot corner of block.
 
 ```javascript
-block.rotationTopRight(option)
+block.rotatableTopRight(option)
 ```
 
 **Option**
@@ -832,13 +832,13 @@ block.rotationTopRight(option)
 * **default**: true
 
 **Returns**
-* **rotationTopRight** : boolean 
+* **rotatableTopRight** : boolean 
 ---
-### rotationBottomLeft
+### rotatableBottomLeft
 Rotation bottom left enables to rotate from bottom left hot corner of block.
 
 ```javascript
-block.rotationBottomLeft(option)
+block.rotatableBottomLeft(option)
 ```
 
 **Option**
@@ -846,13 +846,13 @@ block.rotationBottomLeft(option)
 * **default**: true
 
 **Returns**
-* **rotationBottomLeft** : boolean 
+* **rotatableBottomLeft** : boolean 
 ---
-### rotationBottomRight
+### rotatableBottomRight
 Rotation bottom right enables to rotate from bottom right hot corner of block.
 
 ```javascript
-block.rotationBottomRight(option)
+block.rotatableBottomRight(option)
 ```
 
 **Option**
@@ -860,13 +860,13 @@ block.rotationBottomRight(option)
 * **default**: true
 
 **Returns**
-* **rotationBottomRight** : boolean
+* **rotatableBottomRight** : boolean
 ---
-### resizeTopLeft
+### resizableTopLeft
 Resize top left enables to resize from top left hot corner of block.
 
 ```javascript
-block.resizeTopLeft(option)
+block.resizableTopLeft(option)
 ```
 
 **Option**
@@ -874,13 +874,13 @@ block.resizeTopLeft(option)
 * **default**: true
 
 **Returns**
-* **resizeTopLeft** : boolean
+* **resizableTopLeft** : boolean
 ---
-### resizeTopRight
+### resizableTopRight
 Resize top right enables to resize from top right hot corner of block.
 
 ```javascript
-block.resizeTopRight(option)
+block.resizableTopRight(option)
 ```
 
 **Option**
@@ -888,13 +888,13 @@ block.resizeTopRight(option)
 * **default**: true
 
 **Returns**
-* **resizeTopRight** : boolean
+* **resizableTopRight** : boolean
 ---
-### resizeBottomLeft
+### resizableBottomLeft
 Resize bottom left enables to resize from bottom left hot corner of block.
 
 ```javascript
-block.resizeBottomLeft(option)
+block.resizableBottomLeft(option)
 ```
 
 **Option**
@@ -902,13 +902,13 @@ block.resizeBottomLeft(option)
 * **default**: true
 
 **Returns**
-* **resizeBottomLeft** : boolean 
+* **resizableBottomLeft** : boolean 
 ---
-### resizeBottomRight
+### resizableBottomRight
 Resize bottom right enables to resize from bottom right hot corner of block.
 
 ```javascript
-block.resizeBottomRight(option)
+block.resizableBottomRight(option)
 ```
 
 **Option**
@@ -916,13 +916,13 @@ block.resizeBottomRight(option)
 * **default**: true
 
 **Returns**
-* **resizeBottomRight** : boolean 
+* **resizableBottomRight** : boolean 
 ---
-### resizeTop
+### resizableTop
 Resize top enables to reszie from top hot line of block.
 
 ```javascript
-block.resizeTop(option)
+block.resizableTop(option)
 ```
 
 **Option**
@@ -930,13 +930,13 @@ block.resizeTop(option)
 * **default**: true
 
 **Returns**
-* **resizeTop** : boolean 
+* **resizableTop** : boolean 
 ---
-### resizeLeft
+### resizableLeft
 Resize left enables to reszie from left hot line of block.
 
 ```javascript
-block.resizeLeft(option)
+block.resizableLeft(option)
 ```
 
 **Option**
@@ -944,13 +944,13 @@ block.resizeLeft(option)
 * **default**: true
 
 **Returns**
-* **resizeLeft** : boolean
+* **resizableLeft** : boolean
 ---
-### resizeRight
+### resizableRight
 Resize right enables to reszie from right hot line of block.
 
 ```javascript
-block.resizeRight(option)
+block.resizableRight(option)
 ```
 
 **Option**
@@ -958,13 +958,13 @@ block.resizeRight(option)
 * **default**: true
 
 **Returns**
-* **resizeRight** : boolean
+* **resizableRight** : boolean
 ---
-### resizeBottom
+### resizableBottom
 Resize bottom enables to reszie from bottom hot line of block.
 
 ```javascript
-block.resizeBottom(option)
+block.resizableBottom(option)
 ```
 
 **Option**
@@ -972,7 +972,7 @@ block.resizeBottom(option)
 * **default**: true
 
 **Returns**
-* **resizeBottom** : boolean
+* **resizableBottom** : boolean
 ---
 ### horizontalFlipResize
 Horizontal flip resize enables to resizable event to resize in flip position.

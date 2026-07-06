@@ -52,8 +52,8 @@ export function RotatingAxisExample() {
         backgroundColor: "blue",
         draggable: true,
         selectable: true,
-        dragX: false,
-        dragY: true,
+        draggableX: false,
+        draggableY: true,
     });
 
     return [rect];
@@ -114,9 +114,9 @@ export function ResizingCustomExample() {
         backgroundColor: "orange",
         selectable: true,
         resizable: true,
-        resizeTopLeft: false,
-        resizeTop: false,
-        resizeTopRight: false,
+        resizableTopLeft: false,
+        resizableTop: false,
+        resizableTopRight: false,
     });
 
     return [rect];

@@ -182,8 +182,8 @@ function loadOptions(block) {
 
         // { option: "draggable", value: block.draggable(), category: "checkbox" },
         // { option: "onDrag", value: block.onDrag(), category: "custom" },
-        // { option: "dragX", value: block.dragX(), category: "text" },
-        // { option: "dragY", value: block.dragY(), category: "text" },
+        // { option: "draggableX", value: block.draggableX(), category: "text" },
+        // { option: "draggableY", value: block.draggableY(), category: "text" },
 
         // { option: "rotate", value: block.rotate(), category: "text" },
         // { option: "onRotate", value: block.onRotate(), category: "custom" },
@@ -229,53 +229,53 @@ function loadOptions(block) {
         // },
 
         // {
-        //     option: "rotationTopLeft",
-        //     value: block.rotationTopLeft(),
+        //     option: "rotatableTopLeft",
+        //     value: block.rotatableTopLeft(),
         //     category: "text",
         // },
         // {
-        //     option: "rotationTopRight",
-        //     value: block.rotationTopRight(),
+        //     option: "rotatableTopRight",
+        //     value: block.rotatableTopRight(),
         //     category: "text",
         // },
         // {
-        //     option: "rotationBottomLeft",
-        //     value: block.rotationBottomLeft(),
+        //     option: "rotatableBottomLeft",
+        //     value: block.rotatableBottomLeft(),
         //     category: "text",
         // },
         // {
-        //     option: "rotationBottomRight",
-        //     value: block.rotationBottomRight(),
-        //     category: "text",
-        // },
-
-        // {
-        //     option: "resizeTopLeft",
-        //     value: block.resizeTopLeft(),
-        //     category: "text",
-        // },
-        // {
-        //     option: "resizeTopRight",
-        //     value: block.resizeTopRight(),
-        //     category: "text",
-        // },
-        // {
-        //     option: "resizeBottomLeft",
-        //     value: block.resizeBottomLeft(),
-        //     category: "text",
-        // },
-        // {
-        //     option: "resizeBottomRight",
-        //     value: block.resizeBottomRight(),
+        //     option: "rotatableBottomRight",
+        //     value: block.rotatableBottomRight(),
         //     category: "text",
         // },
 
-        // { option: "resizeTop", value: block.resizeTop(), category: "text" },
-        // { option: "resizeLeft", value: block.resizeLeft(), category: "text" },
-        // { option: "resizeRight", value: block.resizeRight(), category: "text" },
         // {
-        //     option: "resizeBottom",
-        //     value: block.resizeBottom(),
+        //     option: "resizableTopLeft",
+        //     value: block.resizableTopLeft(),
+        //     category: "text",
+        // },
+        // {
+        //     option: "resizableTopRight",
+        //     value: block.resizableTopRight(),
+        //     category: "text",
+        // },
+        // {
+        //     option: "resizableBottomLeft",
+        //     value: block.resizableBottomLeft(),
+        //     category: "text",
+        // },
+        // {
+        //     option: "resizableBottomRight",
+        //     value: block.resizableBottomRight(),
+        //     category: "text",
+        // },
+
+        // { option: "resizableTop", value: block.resizableTop(), category: "text" },
+        // { option: "resizableLeft", value: block.resizableLeft(), category: "text" },
+        // { option: "resizableRight", value: block.resizableRight(), category: "text" },
+        // {
+        //     option: "resizableBottom",
+        //     value: block.resizableBottom(),
         //     category: "text",
         // },
 
