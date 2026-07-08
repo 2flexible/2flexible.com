@@ -155,7 +155,7 @@ block.maxWidth(option)
 
 **Option**
 * **type** : string | number | undfined
-* **default**: width's size
+* **default**: Infinity
 
 **Returns**
 * **maxWidth** : number
@@ -169,7 +169,7 @@ block.maxHeight(option)
 
 **Option**
 * **type** : string | number | undfined
-* **default**: height's size
+* **default**: Infinity
 
 **Returns**
 * **maxHeight** : number
